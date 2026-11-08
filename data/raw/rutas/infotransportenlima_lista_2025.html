@@ -1,0 +1,4429 @@
+<!DOCTYPE html>
+<html dir='ltr' lang='es' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<style type='text/css'>@font-face{font-family:'Dancing Script';font-style:normal;font-weight:400;font-display:swap;src:url(//fonts.gstatic.com/s/dancingscript/v29/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3Sup5.ttf)format('truetype');}@font-face{font-family:'EB Garamond';font-style:italic;font-weight:600;font-display:swap;src:url(//fonts.gstatic.com/s/ebgaramond/v33/SlGFmQSNjdsmc35JDF1K5GRwUjcdlttVFm-rI7diR799U60.ttf)format('truetype');}@font-face{font-family:'EB Garamond';font-style:normal;font-weight:400;font-display:swap;src:url(//fonts.gstatic.com/s/ebgaramond/v33/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkBI96.ttf)format('truetype');}@font-face{font-family:'Lato';font-style:italic;font-weight:700;font-display:swap;src:url(//fonts.gstatic.com/s/lato/v25/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf)format('truetype');}@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url(//fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wWw.ttf)format('truetype');}@font-face{font-family:'Lato';font-style:normal;font-weight:700;font-display:swap;src:url(//fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPHA.ttf)format('truetype');}@font-face{font-family:'Lato';font-style:normal;font-weight:900;font-display:swap;src:url(//fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh50XSwiPHA.ttf)format('truetype');}@font-face{font-family:'Lora';font-style:normal;font-weight:400;font-display:swap;src:url(//fonts.gstatic.com/s/lora/v37/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkqg.ttf)format('truetype');}@font-face{font-family:'Open Sans';font-style:italic;font-weight:600;font-stretch:normal;font-display:swap;src:url(//fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWVAexQ.ttf)format('truetype');}@font-face{font-family:'Open Sans';font-style:italic;font-weight:800;font-stretch:normal;font-display:swap;src:url(//fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWVAexQ.ttf)format('truetype');}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-stretch:normal;font-display:swap;src:url(//fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf)format('truetype');}@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-stretch:normal;font-display:swap;src:url(//fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4gaVc.ttf)format('truetype');}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-stretch:normal;font-display:swap;src:url(//fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf)format('truetype');}@font-face{font-family:'Roboto';font-style:italic;font-weight:600;font-stretch:normal;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLl_XuAj-lg.ttf)format('truetype');}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:normal;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiA8.ttf)format('truetype');}@font-face{font-family:'Roboto';font-style:normal;font-weight:600;font-stretch:normal;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYaalmUiA8.ttf)format('truetype');}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-stretch:normal;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjalmUiA8.ttf)format('truetype');}</style>
+<style>
+/* 1. ELIMINACIÓN DE LETRA CAPITAL Y UNIFICACIÓN DE COLOR */
+.post-body p::first-letter, 
+.post-body div::first-letter,
+.post-body span::first-letter,
+[class*='post-body']::first-letter {
+    all: unset !important;
+    color: inherit !important; /* ESTA LÍNEA HACE LA MAGIA: Hereda el color del texto */
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    float: none !important;
+    display: inline !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* 2. CABECERA LIMPIA (Blanco sobre Azul) */
+.portal-header h1, 
+.portal-header h1::first-letter {
+    all: unset !important;
+    color: #ffffff !important; 
+    font-size: 2.2em !important;
+    font-weight: 800 !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3) !important;
+    float: none !important;
+    display: inline-block !important;
+}
+
+.portal-header p {
+    color: #e3f2fd !important;
+}
+</style>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<title>RUTAS REGULARES AUTORIZADAS POR LA ATU </title>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<!-- Chrome, Firefox OS and Opera -->
+<meta content='#ffffff' name='theme-color'/>
+<!-- Windows Phone -->
+<meta content='#ffffff' name='msapplication-navbutton-color'/>
+<meta content='blogger' name='generator'/>
+<link href='https://infotransportenlima.blogspot.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='https://infotransportenlima.blogspot.com/2025/02/lista-rutas-regulares-2025.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Transporte urbano en Lima y Callao - Atom" href="https://infotransportenlima.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Transporte urbano en Lima y Callao - RSS" href="https://infotransportenlima.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Transporte urbano en Lima y Callao - Atom" href="https://draft.blogger.com/feeds/2510862522957832303/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="Transporte urbano en Lima y Callao - Atom" href="https://infotransportenlima.blogspot.com/feeds/8024452524504041186/comments/default" />
+<!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+<link href='https://cdn-icons-png.flaticon.com/512/1912/1912510.png' rel='image_src'/>
+<meta content='Esta es la lista completa de las rutas de transporte público autorizadas en Lima y Callao' name='description'/>
+<meta content='https://infotransportenlima.blogspot.com/2025/02/lista-rutas-regulares-2025.html' property='og:url'/>
+<meta content='RUTAS REGULARES AUTORIZADAS POR LA ATU ' property='og:title'/>
+<meta content='Esta es la lista completa de las rutas de transporte público autorizadas en Lima y Callao' property='og:description'/>
+<meta content='https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_vZRNwDXAb4xV9qVDSwIcgSndaEGhOwS1NhdL7RsoijUEwOgQcetwsVbtspeJ6OcgKB1RO7TfORYXnx3gqKO97Oh5JLguU0Tkf-eudEf8go7lupS9OXXdlvWuo=w1200-h630-p-k-no-nu' property='og:image'/>
+<style id='page-skin-1' type='text/css'><!--
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+body{
+overflow-wrap:break-word;
+word-break:break-word;
+word-wrap:break-word
+}
+.hidden{
+display:none
+}
+.invisible{
+visibility:hidden
+}
+.container::after,.float-container::after{
+clear:both;
+content:"";
+display:table
+}
+.clearboth{
+clear:both
+}
+#comments .comment .comment-actions,.subscribe-popup .FollowByEmail .follow-by-email-submit,.widget.Profile .profile-link{
+background:0 0;
+border:0;
+box-shadow:none;
+color:#3367D6;
+cursor:pointer;
+font-size:14px;
+font-weight:700;
+outline:0;
+text-decoration:none;
+text-transform:uppercase;
+width:auto
+}
+.dim-overlay{
+background-color:rgba(0,0,0,.54);
+height:100vh;
+left:0;
+position:fixed;
+top:0;
+width:100%
+}
+#sharing-dim-overlay{
+background-color:transparent
+}
+input::-ms-clear{
+display:none
+}
+.blogger-logo,.svg-icon-24.blogger-logo{
+fill:#ff9800;
+opacity:1
+}
+.loading-spinner-large{
+-webkit-animation:mspin-rotate 1.568s infinite linear;
+animation:mspin-rotate 1.568s infinite linear;
+height:48px;
+overflow:hidden;
+position:absolute;
+width:48px;
+z-index:200
+}
+.loading-spinner-large>div{
+-webkit-animation:mspin-revrot 5332ms infinite steps(4);
+animation:mspin-revrot 5332ms infinite steps(4)
+}
+.loading-spinner-large>div>div{
+-webkit-animation:mspin-singlecolor-large-film 1333ms infinite steps(81);
+animation:mspin-singlecolor-large-film 1333ms infinite steps(81);
+background-size:100%;
+height:48px;
+width:3888px
+}
+.mspin-black-large>div>div,.mspin-grey_54-large>div>div{
+background-image:url(https://www.blogblog.com/indie/mspin_black_large.svg)
+}
+.mspin-white-large>div>div{
+background-image:url(https://www.blogblog.com/indie/mspin_white_large.svg)
+}
+.mspin-grey_54-large{
+opacity:.54
+}
+@-webkit-keyframes mspin-singlecolor-large-film{
+from{
+-webkit-transform:translateX(0);
+transform:translateX(0)
+}
+to{
+-webkit-transform:translateX(-3888px);
+transform:translateX(-3888px)
+}
+}
+@keyframes mspin-singlecolor-large-film{
+from{
+-webkit-transform:translateX(0);
+transform:translateX(0)
+}
+to{
+-webkit-transform:translateX(-3888px);
+transform:translateX(-3888px)
+}
+}
+@-webkit-keyframes mspin-rotate{
+from{
+-webkit-transform:rotate(0);
+transform:rotate(0)
+}
+to{
+-webkit-transform:rotate(360deg);
+transform:rotate(360deg)
+}
+}
+@keyframes mspin-rotate{
+from{
+-webkit-transform:rotate(0);
+transform:rotate(0)
+}
+to{
+-webkit-transform:rotate(360deg);
+transform:rotate(360deg)
+}
+}
+@-webkit-keyframes mspin-revrot{
+from{
+-webkit-transform:rotate(0);
+transform:rotate(0)
+}
+to{
+-webkit-transform:rotate(-360deg);
+transform:rotate(-360deg)
+}
+}
+@keyframes mspin-revrot{
+from{
+-webkit-transform:rotate(0);
+transform:rotate(0)
+}
+to{
+-webkit-transform:rotate(-360deg);
+transform:rotate(-360deg)
+}
+}
+.skip-navigation{
+background-color:#fff;
+box-sizing:border-box;
+color:#000;
+display:block;
+height:0;
+left:0;
+line-height:50px;
+overflow:hidden;
+padding-top:0;
+position:fixed;
+text-align:center;
+top:0;
+-webkit-transition:box-shadow .3s,height .3s,padding-top .3s;
+transition:box-shadow .3s,height .3s,padding-top .3s;
+width:100%;
+z-index:900
+}
+.skip-navigation:focus{
+box-shadow:0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+height:50px
+}
+#main{
+outline:0
+}
+.main-heading{
+position:absolute;
+clip:rect(1px,1px,1px,1px);
+padding:0;
+border:0;
+height:1px;
+width:1px;
+overflow:hidden
+}
+.Attribution{
+margin-top:1em;
+text-align:center
+}
+.Attribution .blogger img,.Attribution .blogger svg{
+vertical-align:bottom
+}
+.Attribution .blogger img{
+margin-right:.5em
+}
+.Attribution div{
+line-height:24px;
+margin-top:.5em
+}
+.Attribution .copyright,.Attribution .image-attribution{
+font-size:.7em;
+margin-top:1.5em
+}
+.BLOG_mobile_video_class{
+display:none
+}
+.bg-photo{
+background-attachment:scroll!important
+}
+body .CSS_LIGHTBOX{
+z-index:900
+}
+.extendable .show-less,.extendable .show-more{
+border-color:#3367D6;
+color:#3367D6;
+margin-top:8px
+}
+.extendable .show-less.hidden,.extendable .show-more.hidden{
+display:none
+}
+.inline-ad{
+display:none;
+max-width:100%;
+overflow:hidden
+}
+.adsbygoogle{
+display:block
+}
+#cookieChoiceInfo{
+bottom:0;
+top:auto
+}
+iframe.b-hbp-video{
+border:0
+}
+.post-body img{
+max-width:100%
+}
+.post-body iframe{
+max-width:100%
+}
+.post-body a[imageanchor="1"]{
+display:inline-block
+}
+.byline{
+margin-right:1em
+}
+.byline:last-child{
+margin-right:0
+}
+.link-copied-dialog{
+max-width:520px;
+outline:0
+}
+.link-copied-dialog .modal-dialog-buttons{
+margin-top:8px
+}
+.link-copied-dialog .goog-buttonset-default{
+background:0 0;
+border:0
+}
+.link-copied-dialog .goog-buttonset-default:focus{
+outline:0
+}
+.paging-control-container{
+margin-bottom:16px
+}
+.paging-control-container .paging-control{
+display:inline-block
+}
+.paging-control-container .comment-range-text::after,.paging-control-container .paging-control{
+color:#3367D6
+}
+.paging-control-container .comment-range-text,.paging-control-container .paging-control{
+margin-right:8px
+}
+.paging-control-container .comment-range-text::after,.paging-control-container .paging-control::after{
+content:"\b7";
+cursor:default;
+padding-left:8px;
+pointer-events:none
+}
+.paging-control-container .comment-range-text:last-child::after,.paging-control-container .paging-control:last-child::after{
+content:none
+}
+.byline.reactions iframe{
+height:20px
+}
+.b-notification{
+color:#000;
+background-color:#fff;
+border-bottom:solid 1px #000;
+box-sizing:border-box;
+padding:16px 32px;
+text-align:center
+}
+.b-notification.visible{
+-webkit-transition:margin-top .3s cubic-bezier(.4,0,.2,1);
+transition:margin-top .3s cubic-bezier(.4,0,.2,1)
+}
+.b-notification.invisible{
+position:absolute
+}
+.b-notification-close{
+position:absolute;
+right:8px;
+top:8px
+}
+.no-posts-message{
+line-height:40px;
+text-align:center
+}
+@media screen and (max-width:968px){
+body.item-view .post-body a[imageanchor="1"][style*="float: left;"],body.item-view .post-body a[imageanchor="1"][style*="float: right;"]{
+float:none!important;
+clear:none!important
+}
+body.item-view .post-body a[imageanchor="1"] img{
+display:block;
+height:auto;
+margin:0 auto
+}
+body.item-view .post-body>.separator:first-child>a[imageanchor="1"]:first-child{
+margin-top:20px
+}
+.post-body a[imageanchor]{
+display:block
+}
+body.item-view .post-body a[imageanchor="1"]{
+margin-left:0!important;
+margin-right:0!important
+}
+body.item-view .post-body a[imageanchor="1"]+a[imageanchor="1"]{
+margin-top:16px
+}
+}
+.item-control{
+display:none
+}
+#comments{
+border-top:1px dashed rgba(0,0,0,.54);
+margin-top:20px;
+padding:20px
+}
+#comments .comment-thread ol{
+margin:0;
+padding-left:0;
+padding-left:0
+}
+#comments .comment .comment-replybox-single,#comments .comment-thread .comment-replies{
+margin-left:60px
+}
+#comments .comment-thread .thread-count{
+display:none
+}
+#comments .comment{
+list-style-type:none;
+padding:0 0 30px;
+position:relative
+}
+#comments .comment .comment{
+padding-bottom:8px
+}
+.comment .avatar-image-container{
+position:absolute
+}
+.comment .avatar-image-container img{
+border-radius:50%
+}
+.avatar-image-container svg,.comment .avatar-image-container .avatar-icon{
+border-radius:50%;
+border:solid 1px #a10023;
+box-sizing:border-box;
+fill:#a10023;
+height:35px;
+margin:0;
+padding:7px;
+width:35px
+}
+.comment .comment-block{
+margin-top:10px;
+margin-left:60px;
+padding-bottom:0
+}
+#comments .comment-author-header-wrapper{
+margin-left:40px
+}
+#comments .comment .thread-expanded .comment-block{
+padding-bottom:20px
+}
+#comments .comment .comment-header .user,#comments .comment .comment-header .user a{
+color:#354552;
+font-style:normal;
+font-weight:700
+}
+#comments .comment .comment-actions{
+bottom:0;
+margin-bottom:15px;
+position:absolute
+}
+#comments .comment .comment-actions>*{
+margin-right:8px
+}
+#comments .comment .comment-header .datetime{
+bottom:0;
+color:#0023a1;
+display:inline-block;
+font-size:13px;
+font-style:italic;
+margin-left:8px
+}
+#comments .comment .comment-footer .comment-timestamp a,#comments .comment .comment-header .datetime a{
+color:#0023a1
+}
+#comments .comment .comment-content,.comment .comment-body{
+margin-top:12px;
+word-break:break-word
+}
+.comment-body{
+margin-bottom:12px
+}
+#comments.embed[data-num-comments="0"]{
+border:0;
+margin-top:0;
+padding-top:0
+}
+#comments.embed[data-num-comments="0"] #comment-post-message,#comments.embed[data-num-comments="0"] div.comment-form>p,#comments.embed[data-num-comments="0"] p.comment-footer{
+display:none
+}
+#comment-editor-src{
+display:none
+}
+.comments .comments-content .loadmore.loaded{
+max-height:0;
+opacity:0;
+overflow:hidden
+}
+.extendable .remaining-items{
+height:0;
+overflow:hidden;
+-webkit-transition:height .3s cubic-bezier(.4,0,.2,1);
+transition:height .3s cubic-bezier(.4,0,.2,1)
+}
+.extendable .remaining-items.expanded{
+height:auto
+}
+.svg-icon-24,.svg-icon-24-button{
+cursor:pointer;
+height:24px;
+width:24px;
+min-width:24px
+}
+.touch-icon{
+margin:-12px;
+padding:12px
+}
+.touch-icon:active,.touch-icon:focus{
+background-color:rgba(153,153,153,.4);
+border-radius:50%
+}
+svg:not(:root).touch-icon{
+overflow:visible
+}
+html[dir=rtl] .rtl-reversible-icon{
+-webkit-transform:scaleX(-1);
+-ms-transform:scaleX(-1);
+transform:scaleX(-1)
+}
+.svg-icon-24-button,.touch-icon-button{
+background:0 0;
+border:0;
+margin:0;
+outline:0;
+padding:0
+}
+.touch-icon-button .touch-icon:active,.touch-icon-button .touch-icon:focus{
+background-color:transparent
+}
+.touch-icon-button:active .touch-icon,.touch-icon-button:focus .touch-icon{
+background-color:rgba(153,153,153,.4);
+border-radius:50%
+}
+.Profile .default-avatar-wrapper .avatar-icon{
+border-radius:50%;
+border:solid 1px #000000;
+box-sizing:border-box;
+fill:#000000;
+margin:0
+}
+.Profile .individual .default-avatar-wrapper .avatar-icon{
+padding:25px
+}
+.Profile .individual .avatar-icon,.Profile .individual .profile-img{
+height:120px;
+width:120px
+}
+.Profile .team .default-avatar-wrapper .avatar-icon{
+padding:8px
+}
+.Profile .team .avatar-icon,.Profile .team .default-avatar-wrapper,.Profile .team .profile-img{
+height:40px;
+width:40px
+}
+.snippet-container{
+margin:0;
+position:relative;
+overflow:hidden
+}
+.snippet-fade{
+bottom:0;
+box-sizing:border-box;
+position:absolute;
+width:96px
+}
+.snippet-fade{
+right:0
+}
+.snippet-fade:after{
+content:"\2026"
+}
+.snippet-fade:after{
+float:right
+}
+.post-bottom{
+-webkit-box-align:center;
+-webkit-align-items:center;
+-ms-flex-align:center;
+align-items:center;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-flex-wrap:wrap;
+-ms-flex-wrap:wrap;
+flex-wrap:wrap
+}
+.post-footer{
+-webkit-box-flex:1;
+-webkit-flex:1 1 auto;
+-ms-flex:1 1 auto;
+flex:1 1 auto;
+-webkit-flex-wrap:wrap;
+-ms-flex-wrap:wrap;
+flex-wrap:wrap;
+-webkit-box-ordinal-group:2;
+-webkit-order:1;
+-ms-flex-order:1;
+order:1
+}
+.post-footer>*{
+-webkit-box-flex:0;
+-webkit-flex:0 1 auto;
+-ms-flex:0 1 auto;
+flex:0 1 auto
+}
+.post-footer .byline:last-child{
+margin-right:1em
+}
+.jump-link{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+-webkit-box-ordinal-group:3;
+-webkit-order:2;
+-ms-flex-order:2;
+order:2
+}
+.centered-top-container.sticky{
+left:0;
+position:fixed;
+right:0;
+top:0;
+width:auto;
+z-index:8;
+-webkit-transition-property:opacity,-webkit-transform;
+transition-property:opacity,-webkit-transform;
+transition-property:transform,opacity;
+transition-property:transform,opacity,-webkit-transform;
+-webkit-transition-duration:.2s;
+transition-duration:.2s;
+-webkit-transition-timing-function:cubic-bezier(.4,0,.2,1);
+transition-timing-function:cubic-bezier(.4,0,.2,1)
+}
+.centered-top-placeholder{
+display:none
+}
+.collapsed-header .centered-top-placeholder{
+display:block
+}
+.centered-top-container .Header .replaced h1,.centered-top-placeholder .Header .replaced h1{
+display:none
+}
+.centered-top-container.sticky .Header .replaced h1{
+display:block
+}
+.centered-top-container.sticky .Header .header-widget{
+background:0 0
+}
+.centered-top-container.sticky .Header .header-image-wrapper{
+display:none
+}
+.centered-top-container img,.centered-top-placeholder img{
+max-width:100%
+}
+.collapsible{
+-webkit-transition:height .3s cubic-bezier(.4,0,.2,1);
+transition:height .3s cubic-bezier(.4,0,.2,1)
+}
+.collapsible,.collapsible>summary{
+display:block;
+overflow:hidden
+}
+.collapsible>:not(summary){
+display:none
+}
+.collapsible[open]>:not(summary){
+display:block
+}
+.collapsible:focus,.collapsible>summary:focus{
+outline:0
+}
+.collapsible>summary{
+cursor:pointer;
+display:block;
+padding:0
+}
+.collapsible:focus>summary,.collapsible>summary:focus{
+background-color:transparent
+}
+.collapsible>summary::-webkit-details-marker{
+display:none
+}
+.collapsible-title{
+-webkit-box-align:center;
+-webkit-align-items:center;
+-ms-flex-align:center;
+align-items:center;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex
+}
+.collapsible-title .title{
+-webkit-box-flex:1;
+-webkit-flex:1 1 auto;
+-ms-flex:1 1 auto;
+flex:1 1 auto;
+-webkit-box-ordinal-group:1;
+-webkit-order:0;
+-ms-flex-order:0;
+order:0;
+overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap
+}
+.collapsible-title .chevron-down,.collapsible[open] .collapsible-title .chevron-up{
+display:block
+}
+.collapsible-title .chevron-up,.collapsible[open] .collapsible-title .chevron-down{
+display:none
+}
+.overflowable-container{
+max-height:48px;
+overflow:hidden;
+position:relative
+}
+.overflow-button{
+cursor:pointer
+}
+#overflowable-dim-overlay{
+background:0 0
+}
+.overflow-popup{
+box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+background-color:#ffffff;
+left:0;
+max-width:calc(100% - 32px);
+position:absolute;
+top:0;
+visibility:hidden;
+z-index:101
+}
+.overflow-popup ul{
+list-style:none
+}
+.overflow-popup .tabs li,.overflow-popup li{
+display:block;
+height:auto
+}
+.overflow-popup .tabs li{
+padding-left:0;
+padding-right:0
+}
+.overflow-button.hidden,.overflow-popup .tabs li.hidden,.overflow-popup li.hidden{
+display:none
+}
+.ripple{
+position:relative
+}
+.ripple>*{
+z-index:1
+}
+.splash-wrapper{
+bottom:0;
+left:0;
+overflow:hidden;
+pointer-events:none;
+position:absolute;
+right:0;
+top:0;
+z-index:0
+}
+.splash{
+background:#ccc;
+border-radius:100%;
+display:block;
+opacity:.6;
+position:absolute;
+-webkit-transform:scale(0);
+-ms-transform:scale(0);
+transform:scale(0)
+}
+.splash.animate{
+-webkit-animation:ripple-effect .4s linear;
+animation:ripple-effect .4s linear
+}
+@-webkit-keyframes ripple-effect{
+100%{
+opacity:0;
+-webkit-transform:scale(2.5);
+transform:scale(2.5)
+}
+}
+@keyframes ripple-effect{
+100%{
+opacity:0;
+-webkit-transform:scale(2.5);
+transform:scale(2.5)
+}
+}
+.search{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+line-height:24px;
+width:24px
+}
+.search.focused{
+width:100%
+}
+.search.focused .section{
+width:100%
+}
+.search form{
+z-index:101
+}
+.search h3{
+display:none
+}
+.search form{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-flex:1;
+-webkit-flex:1 0 0;
+-ms-flex:1 0 0px;
+flex:1 0 0;
+border-bottom:solid 1px transparent;
+padding-bottom:8px
+}
+.search form>*{
+display:none
+}
+.search.focused form>*{
+display:block
+}
+.search .search-input label{
+display:none
+}
+.centered-top-placeholder.cloned .search form{
+z-index:30
+}
+.search.focused form{
+border-color:#354552;
+position:relative;
+width:auto
+}
+.collapsed-header .centered-top-container .search.focused form{
+border-bottom-color:transparent
+}
+.search-expand{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto
+}
+.search-expand-text{
+display:none
+}
+.search-close{
+display:inline;
+vertical-align:middle
+}
+.search-input{
+-webkit-box-flex:1;
+-webkit-flex:1 0 1px;
+-ms-flex:1 0 1px;
+flex:1 0 1px
+}
+.search-input input{
+background:0 0;
+border:0;
+box-sizing:border-box;
+color:#354552;
+display:inline-block;
+outline:0;
+width:calc(100% - 48px)
+}
+.search-input input.no-cursor{
+color:transparent;
+text-shadow:0 0 0 #354552
+}
+.collapsed-header .centered-top-container .search-action,.collapsed-header .centered-top-container .search-input input{
+color:#354552
+}
+.collapsed-header .centered-top-container .search-input input.no-cursor{
+color:transparent;
+text-shadow:0 0 0 #354552
+}
+.collapsed-header .centered-top-container .search-input input.no-cursor:focus,.search-input input.no-cursor:focus{
+outline:0
+}
+.search-focused>*{
+visibility:hidden
+}
+.search-focused .search,.search-focused .search-icon{
+visibility:visible
+}
+.search.focused .search-action{
+display:block
+}
+.search.focused .search-action:disabled{
+opacity:.3
+}
+.sidebar-container{
+background-color:#f7f7f7;
+max-width:320px;
+overflow-y:auto;
+-webkit-transition-property:-webkit-transform;
+transition-property:-webkit-transform;
+transition-property:transform;
+transition-property:transform,-webkit-transform;
+-webkit-transition-duration:.3s;
+transition-duration:.3s;
+-webkit-transition-timing-function:cubic-bezier(0,0,.2,1);
+transition-timing-function:cubic-bezier(0,0,.2,1);
+width:320px;
+z-index:101;
+-webkit-overflow-scrolling:touch
+}
+.sidebar-container .navigation{
+line-height:0;
+padding:16px
+}
+.sidebar-container .sidebar-back{
+cursor:pointer
+}
+.sidebar-container .widget{
+background:0 0;
+margin:0 16px;
+padding:16px 0
+}
+.sidebar-container .widget .title{
+color:#000000;
+margin:0
+}
+.sidebar-container .widget ul{
+list-style:none;
+margin:0;
+padding:0
+}
+.sidebar-container .widget ul ul{
+margin-left:1em
+}
+.sidebar-container .widget li{
+font-size:16px;
+line-height:normal
+}
+.sidebar-container .widget+.widget{
+border-top:1px dashed #000000
+}
+.BlogArchive li{
+margin:16px 0
+}
+.BlogArchive li:last-child{
+margin-bottom:0
+}
+.Label li a{
+display:inline-block
+}
+.BlogArchive .post-count,.Label .label-count{
+float:right;
+margin-left:.25em
+}
+.BlogArchive .post-count::before,.Label .label-count::before{
+content:"("
+}
+.BlogArchive .post-count::after,.Label .label-count::after{
+content:")"
+}
+.widget.Translate .skiptranslate>div{
+display:block!important
+}
+.widget.Profile .profile-link{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex
+}
+.widget.Profile .team-member .default-avatar-wrapper,.widget.Profile .team-member .profile-img{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+margin-right:1em
+}
+.widget.Profile .individual .profile-link{
+-webkit-box-orient:vertical;
+-webkit-box-direction:normal;
+-webkit-flex-direction:column;
+-ms-flex-direction:column;
+flex-direction:column
+}
+.widget.Profile .team .profile-link .profile-name{
+-webkit-align-self:center;
+-ms-flex-item-align:center;
+align-self:center;
+display:block;
+-webkit-box-flex:1;
+-webkit-flex:1 1 auto;
+-ms-flex:1 1 auto;
+flex:1 1 auto
+}
+.dim-overlay{
+background-color:rgba(0,0,0,.54);
+z-index:100
+}
+body.sidebar-visible{
+overflow-y:hidden
+}
+@media screen and (max-width:1619px){
+.sidebar-container{
+bottom:0;
+position:fixed;
+top:0;
+left:auto;
+right:0
+}
+.sidebar-container.sidebar-invisible{
+-webkit-transition-timing-function:cubic-bezier(.4,0,.6,1);
+transition-timing-function:cubic-bezier(.4,0,.6,1);
+-webkit-transform:translateX(320px);
+-ms-transform:translateX(320px);
+transform:translateX(320px)
+}
+}
+.dialog{
+box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+background:#ffffff;
+box-sizing:border-box;
+color:#354552;
+padding:30px;
+position:fixed;
+text-align:center;
+width:calc(100% - 24px);
+z-index:101
+}
+.dialog input[type=email],.dialog input[type=text]{
+background-color:transparent;
+border:0;
+border-bottom:solid 1px rgba(53,69,82,.12);
+color:#354552;
+display:block;
+font-family:Roboto;
+font-size:16px;
+line-height:24px;
+margin:auto;
+padding-bottom:7px;
+outline:0;
+text-align:center;
+width:100%
+}
+.dialog input[type=email]::-webkit-input-placeholder,.dialog input[type=text]::-webkit-input-placeholder{
+color:#354552
+}
+.dialog input[type=email]::-moz-placeholder,.dialog input[type=text]::-moz-placeholder{
+color:#354552
+}
+.dialog input[type=email]:-ms-input-placeholder,.dialog input[type=text]:-ms-input-placeholder{
+color:#354552
+}
+.dialog input[type=email]::-ms-input-placeholder,.dialog input[type=text]::-ms-input-placeholder{
+color:#354552
+}
+.dialog input[type=email]::placeholder,.dialog input[type=text]::placeholder{
+color:#354552
+}
+.dialog input[type=email]:focus,.dialog input[type=text]:focus{
+border-bottom:solid 2px #3367D6;
+padding-bottom:6px
+}
+.dialog input.no-cursor{
+color:transparent;
+text-shadow:0 0 0 #354552
+}
+.dialog input.no-cursor:focus{
+outline:0
+}
+.dialog input.no-cursor:focus{
+outline:0
+}
+.dialog input[type=submit]{
+font-family:Roboto
+}
+.dialog .goog-buttonset-default{
+color:#3367D6
+}
+.subscribe-popup{
+max-width:364px
+}
+.subscribe-popup h3{
+color:transparent;
+font-size:1.8em;
+margin-top:0
+}
+.subscribe-popup .FollowByEmail h3{
+display:none
+}
+.subscribe-popup .FollowByEmail .follow-by-email-submit{
+color:#3367D6;
+display:inline-block;
+margin:0 auto;
+margin-top:24px;
+width:auto;
+white-space:normal
+}
+.subscribe-popup .FollowByEmail .follow-by-email-submit:disabled{
+cursor:default;
+opacity:.3
+}
+@media (max-width:800px){
+.blog-name div.widget.Subscribe{
+margin-bottom:16px
+}
+body.item-view .blog-name div.widget.Subscribe{
+margin:8px auto 16px auto;
+width:100%
+}
+}
+body#layout .bg-photo,body#layout .bg-photo-overlay{
+display:none
+}
+body#layout .page_body{
+padding:0;
+position:relative;
+top:0
+}
+body#layout .page{
+display:inline-block;
+left:inherit;
+position:relative;
+vertical-align:top;
+width:540px
+}
+body#layout .centered{
+max-width:954px
+}
+body#layout .navigation{
+display:none
+}
+body#layout .sidebar-container{
+display:inline-block;
+width:40%
+}
+body#layout .hamburger-menu,body#layout .search{
+display:none
+}
+.widget.Sharing .sharing-button{
+display:none
+}
+.widget.Sharing .sharing-buttons li{
+padding:0
+}
+.widget.Sharing .sharing-buttons li span{
+display:none
+}
+.post-share-buttons{
+position:relative
+}
+.centered-bottom .share-buttons .svg-icon-24,.share-buttons .svg-icon-24{
+fill:#00a17e
+}
+.sharing-open.touch-icon-button:active .touch-icon,.sharing-open.touch-icon-button:focus .touch-icon{
+background-color:transparent
+}
+.share-buttons{
+background-color:#ffffff;
+border-radius:2px;
+box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+color:#00a17e;
+list-style:none;
+margin:0;
+padding:8px 0;
+position:absolute;
+top:-11px;
+min-width:200px;
+z-index:101
+}
+.share-buttons.hidden{
+display:none
+}
+.sharing-button{
+background:0 0;
+border:0;
+margin:0;
+outline:0;
+padding:0;
+cursor:pointer
+}
+.share-buttons li{
+margin:0;
+height:48px
+}
+.share-buttons li:last-child{
+margin-bottom:0
+}
+.share-buttons li .sharing-platform-button{
+box-sizing:border-box;
+cursor:pointer;
+display:block;
+height:100%;
+margin-bottom:0;
+padding:0 16px;
+position:relative;
+width:100%
+}
+.share-buttons li .sharing-platform-button:focus,.share-buttons li .sharing-platform-button:hover{
+background-color:rgba(128,128,128,.1);
+outline:0
+}
+.share-buttons li svg[class*=" sharing-"],.share-buttons li svg[class^=sharing-]{
+position:absolute;
+top:10px
+}
+.share-buttons li span.sharing-platform-button{
+position:relative;
+top:0
+}
+.share-buttons li .platform-sharing-text{
+display:block;
+font-size:16px;
+line-height:48px;
+white-space:nowrap
+}
+.share-buttons li .platform-sharing-text{
+margin-left:56px
+}
+.flat-button{
+cursor:pointer;
+display:inline-block;
+font-weight:700;
+text-transform:uppercase;
+border-radius:2px;
+padding:8px;
+margin:-8px
+}
+.flat-icon-button{
+background:0 0;
+border:0;
+margin:0;
+outline:0;
+padding:0;
+margin:-12px;
+padding:12px;
+cursor:pointer;
+box-sizing:content-box;
+display:inline-block;
+line-height:0
+}
+.flat-icon-button,.flat-icon-button .splash-wrapper{
+border-radius:50%
+}
+.flat-icon-button .splash.animate{
+-webkit-animation-duration:.3s;
+animation-duration:.3s
+}
+h1,h2,h3,h4,h5,h6{
+margin:0
+}
+.post-body h1,.post-body h2,.post-body h3,.post-body h4,.post-body h5,.post-body h6{
+margin:1em 0
+}
+.action-link,a{
+color:#3367D6;
+cursor:pointer;
+text-decoration:none
+}
+.action-link:visited,a:visited{
+color:#9C27B0
+}
+.action-link:hover,a:hover{
+color:#D52C1F
+}
+body{
+background-color:#ffffff;
+color:#354552;
+font:normal 400 20px Roboto;
+margin:0 auto
+}
+.unused{
+background:#ffffff none repeat scroll top left
+}
+.dim-overlay{
+z-index:100
+}
+.all-container{
+min-height:100vh;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-orient:vertical;
+-webkit-box-direction:normal;
+-webkit-flex-direction:column;
+-ms-flex-direction:column;
+flex-direction:column
+}
+body.sidebar-visible .all-container{
+overflow-y:scroll
+}
+.page{
+max-width:1280px;
+width:100%
+}
+.Blog{
+padding:0;
+padding-left:136px
+}
+.main_content_container{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+margin:0 auto;
+max-width:1600px;
+width:100%
+}
+.centered-top-container{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto
+}
+.centered-top,.centered-top-placeholder{
+box-sizing:border-box;
+width:100%
+}
+.centered-top{
+box-sizing:border-box;
+margin:0 auto;
+max-width:1280px;
+padding:44px 136px 32px 136px;
+width:100%
+}
+.centered-top h3{
+color:rgba(0,0,0,0.54);
+font:600 14px Open Sans, sans-serif
+}
+.centered{
+width:100%
+}
+.centered-top-firstline{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+position:relative;
+width:100%
+}
+.main_header_elements{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-flex:0;
+-webkit-flex:0 1 auto;
+-ms-flex:0 1 auto;
+flex:0 1 auto;
+-webkit-box-ordinal-group:2;
+-webkit-order:1;
+-ms-flex-order:1;
+order:1;
+overflow-x:hidden;
+width:100%
+}
+html[dir=rtl] .main_header_elements{
+-webkit-box-ordinal-group:3;
+-webkit-order:2;
+-ms-flex-order:2;
+order:2
+}
+body.search-view .centered-top.search-focused .blog-name{
+display:none
+}
+.widget.Header img{
+max-width:100%
+}
+.blog-name{
+-webkit-box-flex:1;
+-webkit-flex:1 1 auto;
+-ms-flex:1 1 auto;
+flex:1 1 auto;
+min-width:0;
+-webkit-box-ordinal-group:2;
+-webkit-order:1;
+-ms-flex-order:1;
+order:1;
+-webkit-transition:opacity .2s cubic-bezier(.4,0,.2,1);
+transition:opacity .2s cubic-bezier(.4,0,.2,1)
+}
+.subscribe-section-container{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+-webkit-box-ordinal-group:3;
+-webkit-order:2;
+-ms-flex-order:2;
+order:2
+}
+.search{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+-webkit-box-ordinal-group:4;
+-webkit-order:3;
+-ms-flex-order:3;
+order:3;
+line-height:24px
+}
+.search svg{
+margin-bottom:0px;
+margin-top:0px;
+padding-bottom:0;
+padding-top:0
+}
+.search,.search.focused{
+display:block;
+width:auto
+}
+.search .section{
+opacity:0;
+position:absolute;
+right:0;
+top:0;
+-webkit-transition:opacity .2s cubic-bezier(.4,0,.2,1);
+transition:opacity .2s cubic-bezier(.4,0,.2,1)
+}
+.search-expand{
+background:0 0;
+border:0;
+margin:0;
+outline:0;
+padding:0;
+display:block
+}
+.search.focused .search-expand{
+visibility:hidden
+}
+.hamburger-menu{
+float:right;
+height:24px
+}
+.search-expand,.subscribe-section-container{
+margin-left:44px
+}
+.hamburger-section{
+-webkit-box-flex:1;
+-webkit-flex:1 0 auto;
+-ms-flex:1 0 auto;
+flex:1 0 auto;
+margin-left:44px;
+-webkit-box-ordinal-group:3;
+-webkit-order:2;
+-ms-flex-order:2;
+order:2
+}
+html[dir=rtl] .hamburger-section{
+-webkit-box-ordinal-group:2;
+-webkit-order:1;
+-ms-flex-order:1;
+order:1
+}
+.search-expand-icon{
+display:none
+}
+.search-expand-text{
+display:block
+}
+.search-input{
+width:100%
+}
+.search-focused .hamburger-section{
+visibility:visible
+}
+.centered-top-secondline .PageList ul{
+margin:0;
+max-height:288px;
+overflow-y:hidden
+}
+.centered-top-secondline .PageList li{
+margin-right:30px
+}
+.centered-top-secondline .PageList li:first-child a{
+padding-left:0
+}
+.centered-top-secondline .PageList .overflow-popup ul{
+overflow-y:auto
+}
+.centered-top-secondline .PageList .overflow-popup li{
+display:block
+}
+.centered-top-secondline .PageList .overflow-popup li.hidden{
+display:none
+}
+.overflowable-contents li{
+display:inline-block;
+height:48px
+}
+.sticky .blog-name{
+overflow:hidden
+}
+.sticky .blog-name .widget.Header h1{
+overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap
+}
+.sticky .blog-name .widget.Header p,.sticky .centered-top-secondline{
+display:none
+}
+.centered-top-container,.centered-top-placeholder{
+background:#ffffff none repeat scroll top left
+}
+.centered-top .svg-icon-24{
+fill:#25a186
+}
+.blog-name h1,.blog-name h1 a{
+color:transparent;
+font:normal 700 24px Roboto;
+line-height:24px;
+text-transform:uppercase
+}
+.widget.Header .header-widget p{
+font:400 14px Open Sans, sans-serif;
+font-style:italic;
+color:rgba(0,0,0,0.54);
+line-height:1.6;
+max-width:676px
+}
+.centered-top .flat-button{
+color:#25a186;
+cursor:pointer;
+font:600 14px Open Sans, sans-serif;
+line-height:24px;
+text-transform:uppercase;
+-webkit-transition:opacity .2s cubic-bezier(.4,0,.2,1);
+transition:opacity .2s cubic-bezier(.4,0,.2,1)
+}
+.subscribe-button{
+background:0 0;
+border:0;
+margin:0;
+outline:0;
+padding:0;
+display:block
+}
+html[dir=ltr] .search form{
+margin-right:12px
+}
+.search.focused .section{
+opacity:1;
+margin-right:36px;
+width:calc(100% - 36px)
+}
+.search input{
+border:0;
+color:rgba(0,0,0,0.54);
+font:normal bold 16px Roboto;
+line-height:24px;
+outline:0;
+width:100%
+}
+.search form{
+padding-bottom:0
+}
+.search input[type=submit]{
+display:none
+}
+.search input::-webkit-input-placeholder{
+text-transform:uppercase
+}
+.search input::-moz-placeholder{
+text-transform:uppercase
+}
+.search input:-ms-input-placeholder{
+text-transform:uppercase
+}
+.search input::-ms-input-placeholder{
+text-transform:uppercase
+}
+.search input::placeholder{
+text-transform:uppercase
+}
+.centered-top-secondline .dim-overlay,.search .dim-overlay{
+background:0 0
+}
+.centered-top-secondline .PageList .overflow-button a,.centered-top-secondline .PageList li a{
+color:#25a186;
+font:600 14px Open Sans, sans-serif;
+line-height:48px;
+padding:12px
+}
+.centered-top-secondline .PageList li.selected a{
+color:#25a186
+}
+.centered-top-secondline .overflow-popup .PageList li a{
+color:#354552
+}
+.PageList ul{
+padding:0
+}
+.sticky .search form{
+border:0
+}
+.sticky{
+box-shadow:0 0 20px 0 rgba(0,0,0,.7)
+}
+.sticky .centered-top{
+padding-bottom:0;
+padding-top:0
+}
+.sticky .blog-name h1,.sticky .search,.sticky .search-expand,.sticky .subscribe-button{
+line-height:40px
+}
+.sticky .hamburger-section,.sticky .search-expand,.sticky .search.focused .search-submit{
+-webkit-box-align:center;
+-webkit-align-items:center;
+-ms-flex-align:center;
+align-items:center;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+height:40px
+}
+.subscribe-popup h3{
+color:rgba(0,0,0,0.84);
+font:700 24px Open Sans, sans-serif;
+margin-bottom:24px
+}
+.subscribe-popup div.widget.FollowByEmail .follow-by-email-address{
+color:rgba(0,0,0,0.84);
+font:400 14px Open Sans, sans-serif
+}
+.subscribe-popup div.widget.FollowByEmail .follow-by-email-submit{
+color:#3367D6;
+font:600 14px Open Sans, sans-serif;
+margin-top:24px
+}
+.post-content{
+-webkit-box-flex:0;
+-webkit-flex:0 1 auto;
+-ms-flex:0 1 auto;
+flex:0 1 auto;
+-webkit-box-ordinal-group:2;
+-webkit-order:1;
+-ms-flex-order:1;
+order:1;
+margin-right:76px;
+max-width:676px;
+width:100%
+}
+.post-filter-message{
+background-color:#3367D6;
+color:#ffffff;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+font:normal 600 16px Roboto;
+margin:40px 136px 48px 136px;
+padding:10px;
+position:relative
+}
+.post-filter-message>*{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto
+}
+.post-filter-message .search-query{
+font-style:italic;
+quotes:"\201c" "\201d" "\2018" "\2019"
+}
+.post-filter-message .search-query::before{
+content:open-quote
+}
+.post-filter-message .search-query::after{
+content:close-quote
+}
+.post-filter-message div{
+display:inline-block
+}
+.post-filter-message a{
+color:#ffffff;
+display:inline-block;
+text-transform:uppercase
+}
+.post-filter-description{
+-webkit-box-flex:1;
+-webkit-flex:1 1 auto;
+-ms-flex:1 1 auto;
+flex:1 1 auto;
+margin-right:16px
+}
+.post-title{
+margin-top:0
+}
+body.feed-view .post-outer-container{
+margin-top:85px
+}
+body.feed-view .feed-message+.post-outer-container,body.feed-view .post-outer-container:first-child{
+margin-top:0
+}
+.post-outer{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+position:relative
+}
+.post-outer .snippet-thumbnail{
+-webkit-box-align:center;
+-webkit-align-items:center;
+-ms-flex-align:center;
+align-items:center;
+background:#000;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+height:256px;
+-webkit-box-pack:center;
+-webkit-justify-content:center;
+-ms-flex-pack:center;
+justify-content:center;
+margin-right:136px;
+overflow:hidden;
+-webkit-box-ordinal-group:3;
+-webkit-order:2;
+-ms-flex-order:2;
+order:2;
+position:relative;
+width:256px
+}
+.post-outer .thumbnail-empty{
+background:0 0
+}
+.post-outer .snippet-thumbnail-img{
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+width:100%;
+height:100%
+}
+.post-outer .snippet-thumbnail img{
+max-height:100%
+}
+.post-title-container{
+margin-bottom:16px
+}
+.post-bottom{
+-webkit-box-align:baseline;
+-webkit-align-items:baseline;
+-ms-flex-align:baseline;
+align-items:baseline;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-pack:justify;
+-webkit-justify-content:space-between;
+-ms-flex-pack:justify;
+justify-content:space-between
+}
+.post-share-buttons-bottom{
+float:left
+}
+.footer{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+margin:auto auto 0 auto;
+padding-bottom:32px;
+width:auto
+}
+.post-header-container{
+margin-bottom:12px
+}
+.post-header-container .post-share-buttons-top{
+float:right
+}
+.post-header-container .post-header{
+float:left
+}
+.byline{
+display:inline-block;
+margin-bottom:8px
+}
+.byline,.byline a,.flat-button{
+color:#3367D6;
+font:normal 600 14px Roboto
+}
+.flat-button.ripple .splash{
+background-color:rgba(51,103,214,.4)
+}
+.flat-button.ripple:hover{
+background-color:rgba(51,103,214,.12)
+}
+.post-footer .byline{
+text-transform:uppercase
+}
+.post-comment-link{
+line-height:1
+}
+.blog-pager{
+float:right;
+margin-right:468px;
+margin-top:48px
+}
+.FeaturedPost{
+margin-bottom:56px
+}
+.FeaturedPost h3{
+margin:16px 136px 8px 136px
+}
+.shown-ad{
+margin-bottom:85px;
+margin-top:85px
+}
+.shown-ad .inline-ad{
+display:block;
+max-width:676px
+}
+body.feed-view .shown-ad:last-child{
+display:none
+}
+.post-title,.post-title a{
+color:#25a186;
+font:normal 700 36px Roboto;
+line-height:1.3333333333
+}
+.feed-message{
+color:rgba(0,0,0,0.54);
+font:normal 600 16px Roboto;
+margin-bottom:52px
+}
+.post-header-container .byline,.post-header-container .byline a{
+color:rgba(0,0,0,0.54);
+font:normal 600 16px Roboto
+}
+.post-header-container .byline.post-author:not(:last-child)::after{
+content:"\b7"
+}
+.post-header-container .byline.post-author:not(:last-child){
+margin-right:0
+}
+.post-snippet-container{
+font:normal 400 20px Roboto
+}
+.sharing-button{
+text-transform:uppercase;
+word-break:normal
+}
+.post-outer-container .svg-icon-24{
+fill:#3367D6
+}
+.post-body{
+color:rgba(0,0,0,0.84);
+font:normal 400 20px Roboto;
+line-height:2;
+margin-bottom:24px
+}
+.blog-pager .blog-pager-older-link{
+color:#3367D6;
+float:right;
+font:normal 600 14px Roboto;
+text-transform:uppercase
+}
+.no-posts-message{
+margin:32px
+}
+body.item-view .Blog .post-title-container{
+background-color:transparent;
+box-sizing:border-box;
+margin-bottom:-1px;
+padding-bottom:86px;
+padding-right:290px;
+padding-left:140px;
+padding-top:124px;
+width:100%
+}
+body.item-view .Blog .post-title,body.item-view .Blog .post-title a{
+color:transparent;
+font:normal 600 1px Roboto;
+line-height:1.4166666667;
+margin-bottom:0
+}
+body.item-view .Blog{
+margin:0;
+margin-bottom:85px;
+padding:0
+}
+body.item-view .Blog .post-content{
+margin-right:0;
+max-width:none
+}
+body.item-view .comments,body.item-view .shown-ad,body.item-view .widget.Blog .post-bottom{
+margin-bottom:0;
+margin-right:400px;
+margin-left:140px;
+margin-top:0
+}
+body.item-view .widget.Header header p{
+max-width:740px
+}
+body.item-view .shown-ad{
+margin-bottom:24px;
+margin-top:24px
+}
+body.item-view .Blog .post-header-container{
+padding-left:140px
+}
+body.item-view .Blog .post-header-container .post-author-profile-pic-container{
+background-color:transparent;
+border-top:1px solid transparent;
+float:left;
+height:84px;
+margin-right:24px;
+margin-left:-140px;
+padding-left:140px
+}
+body.item-view .Blog .post-author-profile-pic{
+max-height:100%
+}
+body.item-view .Blog .post-header{
+float:left;
+height:84px
+}
+body.item-view .Blog .post-header>*{
+position:relative;
+top:50%;
+-webkit-transform:translateY(-50%);
+-ms-transform:translateY(-50%);
+transform:translateY(-50%)
+}
+body.item-view .post-body{
+color:#354552;
+font:normal 400 20px Roboto;
+line-height:2
+}
+body.item-view .Blog .post-body-container{
+padding-right:290px;
+position:relative;
+margin-left:140px;
+margin-top:20px;
+margin-bottom:32px
+}
+body.item-view .Blog .post-body{
+margin-bottom:0;
+margin-right:110px
+}
+body.item-view .Blog .post-body::first-letter{
+float:left;
+font-size:80px;
+font-weight:600;
+line-height:1;
+margin-right:16px
+}
+body.item-view .Blog .post-body div[style*="text-align: center"]::first-letter{
+float:none;
+font-size:inherit;
+font-weight:inherit;
+line-height:inherit;
+margin-right:0
+}
+body.item-view .Blog .post-body::first-line{
+color:#a10023
+}
+body.item-view .Blog .post-body-container .post-sidebar{
+right:0;
+position:absolute;
+top:0;
+width:290px
+}
+body.item-view .Blog .post-body-container .post-sidebar .sharing-button{
+display:inline-block
+}
+.widget.Attribution{
+clear:both;
+font:600 14px Open Sans, sans-serif;
+padding-top:2em
+}
+.widget.Attribution .blogger{
+margin:12px
+}
+.widget.Attribution svg{
+fill:rgba(0,0,0,0.54)
+}
+body.item-view .PopularPosts{
+margin-left:140px
+}
+body.item-view .PopularPosts .widget-content>ul{
+padding-left:0
+}
+body.item-view .PopularPosts .widget-content>ul>li{
+display:block
+}
+body.item-view .PopularPosts .post-content{
+margin-right:76px;
+max-width:664px
+}
+body.item-view .PopularPosts .post:not(:last-child){
+margin-bottom:85px
+}
+body.item-view .post-body-container img{
+height:auto;
+max-width:100%
+}
+body.item-view .PopularPosts>.title{
+color:#0023a1;
+font:normal 600 16px Roboto;
+margin-bottom:36px
+}
+body.item-view .post-sidebar .post-labels-sidebar{
+margin-top:48px;
+min-width:150px
+}
+body.item-view .post-sidebar .post-labels-sidebar h3{
+color:#354552;
+font:normal 600 14px Roboto;
+margin-bottom:16px
+}
+body.item-view .post-sidebar .post-labels-sidebar a{
+color:#a10023;
+display:block;
+font:normal 400 14px Roboto;
+font-style:italic;
+line-height:2
+}
+body.item-view blockquote{
+font:italic 600 44px Roboto;
+font-style:italic;
+quotes:"\201c" "\201d" "\2018" "\2019"
+}
+body.item-view blockquote::before{
+content:open-quote
+}
+body.item-view blockquote::after{
+content:close-quote
+}
+body.item-view .post-bottom{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+float:none
+}
+body.item-view .widget.Blog .post-share-buttons-bottom{
+-webkit-box-flex:0;
+-webkit-flex:0 1 auto;
+-ms-flex:0 1 auto;
+flex:0 1 auto;
+-webkit-box-ordinal-group:3;
+-webkit-order:2;
+-ms-flex-order:2;
+order:2
+}
+body.item-view .widget.Blog .post-footer{
+line-height:1;
+margin-right:24px
+}
+.widget.Blog body.item-view .post-bottom{
+margin-right:0;
+margin-bottom:80px
+}
+body.item-view .post-footer .post-labels .byline-label{
+color:#354552;
+font:normal 600 14px Roboto
+}
+body.item-view .post-footer .post-labels a{
+color:#a10023;
+display:inline-block;
+font:normal 400 14px Roboto;
+line-height:2
+}
+body.item-view .post-footer .post-labels a:not(:last-child)::after{
+content:", "
+}
+body.item-view #comments{
+border-top:0;
+padding:0
+}
+body.item-view #comments h3.title{
+color:#0023a1;
+font:normal 600 16px Roboto;
+margin-bottom:48px
+}
+body.item-view #comments .comment-form h4{
+position:absolute;
+clip:rect(1px,1px,1px,1px);
+padding:0;
+border:0;
+height:1px;
+width:1px;
+overflow:hidden
+}
+.heroPost{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+position:relative
+}
+.widget.Blog .heroPost{
+margin-left:-136px
+}
+.heroPost .big-post-title .post-snippet{
+color:#ffffff
+}
+.heroPost.noimage .post-snippet{
+color:#000000
+}
+.heroPost .big-post-image-top{
+display:none;
+background-size:cover;
+background-position:center
+}
+.heroPost .big-post-title{
+background-color:#25a186;
+box-sizing:border-box;
+-webkit-box-flex:1;
+-webkit-flex:1 1 auto;
+-ms-flex:1 1 auto;
+flex:1 1 auto;
+max-width:888px;
+min-width:0;
+padding-bottom:84px;
+padding-right:76px;
+padding-left:136px;
+padding-top:76px
+}
+.heroPost.noimage .big-post-title{
+-webkit-box-flex:1;
+-webkit-flex:1 0 auto;
+-ms-flex:1 0 auto;
+flex:1 0 auto;
+max-width:480px;
+width:480px
+}
+.heroPost .big-post-title h3{
+margin:0 0 24px
+}
+.heroPost .big-post-title h3 a{
+color:#ffffff
+}
+.heroPost .big-post-title .post-body{
+color:#ffffff
+}
+.heroPost .big-post-title .item-byline{
+color:#ffffff;
+margin-bottom:24px
+}
+.heroPost .big-post-title .item-byline .post-timestamp{
+display:block
+}
+.heroPost .big-post-title .item-byline a{
+color:#ffffff
+}
+.heroPost .byline,.heroPost .byline a,.heroPost .flat-button{
+color:#ffffff
+}
+.heroPost .flat-button.ripple .splash{
+background-color:rgba(255,255,255,.4)
+}
+.heroPost .flat-button.ripple:hover{
+background-color:rgba(255,255,255,.12)
+}
+.heroPost .big-post-image{
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+width:392px
+}
+.heroPost .big-post-text{
+background-color:#e5f0ee;
+box-sizing:border-box;
+color:#000000;
+-webkit-box-flex:1;
+-webkit-flex:1 1 auto;
+-ms-flex:1 1 auto;
+flex:1 1 auto;
+min-width:0;
+padding:48px
+}
+.heroPost .big-post-text .post-snippet-fade{
+color:#000000;
+background:-webkit-linear-gradient(right,#e5f0ee,rgba(229, 240, 238, 0));
+background:linear-gradient(to left,#e5f0ee,rgba(229, 240, 238, 0))
+}
+.heroPost .big-post-text .byline,.heroPost .big-post-text .byline a,.heroPost .big-post-text .jump-link,.heroPost .big-post-text .sharing-button{
+color:#25a186
+}
+.heroPost .big-post-text .snippet-item::first-letter{
+color:#25a186;
+float:left;
+font-weight:700;
+margin-right:12px
+}
+.sidebar-container{
+background-color:#ffffff
+}
+body.sidebar-visible .sidebar-container{
+box-shadow:0 0 20px 0 rgba(0,0,0,.7)
+}
+.sidebar-container .svg-icon-24{
+fill:#000000
+}
+.sidebar-container .navigation .sidebar-back{
+float:right
+}
+.sidebar-container .widget{
+padding-right:16px;
+margin-right:0;
+margin-left:38px
+}
+.sidebar-container .widget+.widget{
+border-top:solid 1px #bdbdbd
+}
+.sidebar-container .widget .title{
+font:400 16px Open Sans, sans-serif
+}
+.collapsible{
+width:100%
+}
+.widget.Profile{
+border-top:0;
+margin:0;
+margin-left:38px;
+margin-top:24px;
+padding-right:0
+}
+body.sidebar-visible .widget.Profile{
+margin-left:0
+}
+.widget.Profile h2{
+display:none
+}
+.widget.Profile h3.title{
+color:#000000;
+margin:16px 32px
+}
+.widget.Profile .individual{
+text-align:center
+}
+.widget.Profile .individual .default-avatar-wrapper .avatar-icon{
+margin:auto
+}
+.widget.Profile .team{
+margin-bottom:32px;
+margin-left:32px;
+margin-right:32px
+}
+.widget.Profile ul{
+list-style:none;
+padding:0
+}
+.widget.Profile li{
+margin:10px 0;
+text-align:left
+}
+.widget.Profile .profile-img{
+border-radius:50%;
+float:none
+}
+.widget.Profile .profile-info{
+margin-bottom:12px
+}
+.profile-snippet-fade{
+background:-webkit-linear-gradient(right,#ffffff 0,#ffffff 20%,rgba(255, 255, 255, 0) 100%);
+background:linear-gradient(to left,#ffffff 0,#ffffff 20%,rgba(255, 255, 255, 0) 100%);
+height:1.7em;
+position:absolute;
+right:16px;
+top:11.7em;
+width:96px
+}
+.profile-snippet-fade::after{
+content:"\2026";
+float:right
+}
+.widget.Profile .profile-location{
+color:#000000;
+font-size:16px;
+margin:0;
+opacity:.74
+}
+.widget.Profile .team-member .profile-link::after{
+clear:both;
+content:"";
+display:table
+}
+.widget.Profile .team-member .profile-name{
+word-break:break-word
+}
+.widget.Profile .profile-datablock .profile-link{
+color:#000000;
+font:600 16px Open Sans, sans-serif;
+font-size:24px;
+text-transform:none;
+word-break:break-word
+}
+.widget.Profile .profile-datablock .profile-link+div{
+margin-top:16px!important
+}
+.widget.Profile .profile-link{
+font:600 16px Open Sans, sans-serif;
+font-size:14px
+}
+.widget.Profile .profile-textblock{
+color:#000000;
+font-size:14px;
+line-height:24px;
+margin:0 18px;
+opacity:.74;
+overflow:hidden;
+position:relative;
+word-break:break-word
+}
+.widget.Label .list-label-widget-content li a{
+width:100%;
+word-wrap:break-word
+}
+.extendable .show-less,.extendable .show-more{
+font:600 16px Open Sans, sans-serif;
+font-size:14px;
+margin:0 -8px
+}
+.widget.BlogArchive .post-count{
+color:#354552
+}
+.Label li{
+margin:16px 0
+}
+.Label li:last-child{
+margin-bottom:0
+}
+.post-snippet.snippet-container{
+max-height:160px
+}
+.post-snippet .snippet-item{
+line-height:40px
+}
+.post-snippet .snippet-fade{
+background:-webkit-linear-gradient(left,#ffffff 0,#ffffff 20%,rgba(255, 255, 255, 0) 100%);
+background:linear-gradient(to left,#ffffff 0,#ffffff 20%,rgba(255, 255, 255, 0) 100%);
+color:#354552;
+height:40px
+}
+.hero-post-snippet.snippet-container{
+max-height:160px
+}
+.hero-post-snippet .snippet-item{
+line-height:40px
+}
+.hero-post-snippet .snippet-fade{
+background:-webkit-linear-gradient(left,#25a186 0,#25a186 20%,rgba(37, 161, 134, 0) 100%);
+background:linear-gradient(to left,#25a186 0,#25a186 20%,rgba(37, 161, 134, 0) 100%);
+color:#ffffff;
+height:40px
+}
+.hero-post-snippet a{
+color:#173752
+}
+.hero-post-noimage-snippet.snippet-container{
+max-height:320px
+}
+.hero-post-noimage-snippet .snippet-item{
+line-height:40px
+}
+.hero-post-noimage-snippet .snippet-fade{
+background:-webkit-linear-gradient(left,#e5f0ee 0,#e5f0ee 20%,rgba(229, 240, 238, 0) 100%);
+background:linear-gradient(to left,#e5f0ee 0,#e5f0ee 20%,rgba(229, 240, 238, 0) 100%);
+color:#000000;
+height:40px
+}
+.popular-posts-snippet.snippet-container{
+max-height:160px
+}
+.popular-posts-snippet .snippet-item{
+line-height:40px
+}
+.popular-posts-snippet .snippet-fade{
+background:-webkit-linear-gradient(left,#ffffff 0,#ffffff 20%,rgba(255, 255, 255, 0) 100%);
+background:linear-gradient(to left,#ffffff 0,#ffffff 20%,rgba(255, 255, 255, 0) 100%);
+color:#354552;
+height:40px
+}
+.profile-snippet.snippet-container{
+max-height:192px
+}
+.profile-snippet .snippet-item{
+line-height:24px
+}
+.profile-snippet .snippet-fade{
+background:-webkit-linear-gradient(left,#ffffff 0,#ffffff 20%,rgba(255, 255, 255, 0) 100%);
+background:linear-gradient(to left,#ffffff 0,#ffffff 20%,rgba(255, 255, 255, 0) 100%);
+color:#000000;
+height:24px
+}
+.hero-post-noimage-snippet .snippet-item::first-letter{
+font-size:80px;
+line-height:80px
+}
+#comments a,#comments cite,#comments div{
+font-size:16px;
+line-height:1.4
+}
+#comments .comment .comment-header .user,#comments .comment .comment-header .user a{
+color:#354552;
+font:normal 600 14px Roboto
+}
+#comments .comment .comment-header .datetime a{
+color:#0023a1;
+font:normal 600 14px Roboto
+}
+#comments .comment .comment-header .datetime a::before{
+content:"\b7  "
+}
+#comments .comment .comment-content{
+margin-top:6px
+}
+#comments .comment .comment-actions{
+color:#a10023;
+font:normal 600 14px Roboto
+}
+#comments .continue{
+display:none
+}
+#comments .comment-footer{
+margin-top:8px
+}
+.cmt_iframe_holder{
+margin-left:140px!important
+}
+body.variant-rockpool_deep_orange .centered-top-secondline .PageList .overflow-popup li a{
+color:#000
+}
+body.variant-rockpool_pink .blog-name h1,body.variant-rockpool_pink .blog-name h1 a{
+text-transform:none
+}
+body.variant-rockpool_deep_orange .post-filter-message{
+background-color:#ffffff
+}
+@media screen and (max-width:1619px){
+.page{
+float:none;
+margin:0 auto;
+max-width:none!important
+}
+.page_body{
+max-width:1280px;
+margin:0 auto
+}
+}
+@media screen and (max-width:1280px){
+.heroPost .big-post-image{
+display:table-cell;
+left:auto;
+position:static;
+top:auto
+}
+.heroPost .big-post-title{
+display:table-cell
+}
+}
+@media screen and (max-width:1168px){
+.centered-top-container,.centered-top-placeholder{
+padding:24px 24px 32px 24px
+}
+.sticky{
+padding:0 24px
+}
+.subscribe-section-container{
+margin-left:48px
+}
+.hamburger-section{
+margin-left:48px
+}
+.big-post-text-inner,.big-post-title-inner{
+margin:0 auto;
+max-width:920px
+}
+.centered-top{
+padding:0;
+max-width:920px
+}
+.Blog{
+padding:0
+}
+body.item-view .Blog{
+padding:0 24px;
+margin:0 auto;
+max-width:920px
+}
+.post-filter-description{
+margin-right:36px
+}
+.post-outer{
+display:block
+}
+.post-content{
+max-width:none;
+margin:0
+}
+.post-outer .snippet-thumbnail{
+width:920px;
+height:613.3333333333px;
+margin-bottom:16px
+}
+.post-outer .snippet-thumbnail.thumbnail-empty{
+display:none
+}
+.shown-ad .inline-ad{
+max-width:100%
+}
+body.item-view .Blog{
+padding:0;
+max-width:none
+}
+.post-filter-message{
+margin:24px calc((100% - 920px)/ 2);
+max-width:none
+}
+.FeaturedPost h3,body.feed-view .blog-posts,body.feed-view .feed-message{
+margin-left:calc((100% - 920px)/ 2);
+margin-right:calc((100% - 920px)/ 2)
+}
+body.item-view .Blog .post-title-container{
+padding:62px calc((100% - 920px)/ 2) 24px
+}
+body.item-view .Blog .post-header-container{
+padding-left:calc((100% - 920px)/ 2)
+}
+body.item-view .Blog .post-body-container,body.item-view .comments,body.item-view .post-outer-container>.shown-ad,body.item-view .widget.Blog .post-bottom{
+margin:32px calc((100% - 920px)/ 2);
+padding:0
+}
+body.item-view .cmt_iframe_holder{
+margin:32px 24px!important
+}
+.blog-pager{
+margin-left:calc((100% - 920px)/ 2);
+margin-right:calc((100% - 920px)/ 2)
+}
+body.item-view .post-bottom{
+margin:0 auto;
+max-width:968px
+}
+body.item-view .PopularPosts .post-content{
+max-width:100%;
+margin-right:0
+}
+body.item-view .Blog .post-body{
+margin-right:0
+}
+body.item-view .Blog .post-sidebar{
+display:none
+}
+body.item-view .widget.Blog .post-share-buttons-bottom{
+margin-right:24px
+}
+body.item-view .PopularPosts{
+margin:0 auto;
+max-width:920px
+}
+body.item-view .comment-thread-title{
+margin-left:calc((100% - 920px)/ 2)
+}
+.heroPost{
+display:block
+}
+.heroPost .big-post-title{
+display:block;
+max-width:none;
+padding:24px
+}
+.heroPost .big-post-image{
+display:none
+}
+.heroPost .big-post-image-top{
+display:block;
+height:613.3333333333px;
+margin:0 auto;
+max-width:920px
+}
+.heroPost .big-post-image-top-container{
+background-color:#25a186
+}
+.heroPost.noimage .big-post-title{
+max-width:none;
+width:100%
+}
+.heroPost.noimage .big-post-text{
+position:static;
+width:100%
+}
+.heroPost .big-post-text{
+padding:24px
+}
+}
+@media screen and (max-width:968px){
+body{
+font-size:14px
+}
+.post-header-container .byline,.post-header-container .byline a{
+font-size:14px
+}
+.post-title,.post-title a{
+font-size:24px
+}
+.post-outer .snippet-thumbnail{
+width:100%;
+height:calc((100vw - 48px) * 2 / 3)
+}
+body.item-view .Blog .post-title-container{
+padding:62px 24px 24px 24px
+}
+body.item-view .Blog .post-header-container{
+padding-left:24px
+}
+body.item-view .Blog .post-body-container,body.item-view .PopularPosts,body.item-view .comments,body.item-view .post-outer-container>.shown-ad,body.item-view .widget.Blog .post-bottom{
+margin:32px 24px;
+padding:0
+}
+.FeaturedPost h3,body.feed-view .blog-posts,body.feed-view .feed-message{
+margin-left:24px;
+margin-right:24px
+}
+.post-filter-message{
+margin:24px 24px 48px 24px
+}
+body.item-view blockquote{
+font-size:18px
+}
+body.item-view .Blog .post-title{
+font-size:0.5px
+}
+body.item-view .Blog .post-body{
+font-size:14px
+}
+body.item-view .Blog .post-body::first-letter{
+font-size:56px;
+line-height:56px
+}
+.main_header_elements{
+position:relative;
+display:block
+}
+.search.focused .section{
+margin-right:0;
+width:100%
+}
+html[dir=ltr] .search form{
+margin-right:0
+}
+.hamburger-section{
+margin-left:24px
+}
+.search-expand-icon{
+display:block;
+float:left;
+height:24px;
+margin-top:-12px
+}
+.search-expand-text{
+display:none
+}
+.subscribe-section-container{
+margin-top:12px
+}
+.subscribe-section-container{
+float:left;
+margin-left:0
+}
+.search-expand{
+position:absolute;
+right:0;
+top:0
+}
+html[dir=ltr] .search-expand{
+margin-left:24px
+}
+.centered-top.search-focused .subscribe-section-container{
+opacity:0
+}
+.blog-name{
+float:none
+}
+.blog-name{
+margin-right:36px
+}
+.centered-top-secondline .PageList li{
+margin-right:24px
+}
+.centered-top.search-focused .subscribe-button,.centered-top.search-focused .subscribe-section-container{
+opacity:1
+}
+body.item-view .comment-thread-title{
+margin-left:24px
+}
+.blog-pager{
+margin-left:24px;
+margin-right:24px
+}
+.heroPost .big-post-image-top{
+width:100%;
+height:calc(100vw * 2 / 3)
+}
+.popular-posts-snippet.snippet-container,.post-snippet.snippet-container{
+font-size:14px;
+max-height:112px
+}
+.popular-posts-snippet .snippet-item,.post-snippet .snippet-item{
+line-height:2
+}
+.popular-posts-snippet .snippet-fade,.post-snippet .snippet-fade{
+height:28px
+}
+.hero-post-snippet.snippet-container{
+font-size:14px;
+max-height:112px
+}
+.hero-post-snippet .snippet-item{
+line-height:2
+}
+.hero-post-snippet .snippet-fade{
+height:28px
+}
+.hero-post-noimage-snippet.snippet-container{
+font-size:14px;
+line-height:2;
+max-height:224px
+}
+.hero-post-noimage-snippet .snippet-item{
+line-height:2
+}
+.hero-post-noimage-snippet .snippet-fade{
+height:28px
+}
+.hero-post-noimage-snippet .snippet-item::first-letter{
+font-size:56px;
+line-height:normal
+}
+body.item-view .post-body-container .separator[style*="text-align: center"] a[imageanchor="1"]{
+margin-left:-24px!important;
+margin-right:-24px!important
+}
+body.item-view .post-body-container .separator[style*="text-align: center"] a[imageanchor="1"][style*="float: left;"],body.item-view .post-body-container .separator[style*="text-align: center"] a[imageanchor="1"][style*="float: right;"]{
+margin-left:0!important;
+margin-right:0!important
+}
+body.item-view .post-body-container .separator[style*="text-align: center"] a[imageanchor="1"][style*="float: left;"] img,body.item-view .post-body-container .separator[style*="text-align: center"] a[imageanchor="1"][style*="float: right;"] img{
+max-width:100%
+}
+}
+@media screen and (min-width:1620px){
+.page{
+float:left
+}
+.centered-top{
+max-width:1600px;
+padding:44px 456px 32px 136px
+}
+.sidebar-container{
+box-shadow:none;
+float:right;
+max-width:320px;
+z-index:32
+}
+.sidebar-container .navigation{
+display:none
+}
+.hamburger-section,.sticky .hamburger-section{
+display:none
+}
+.search.focused .section{
+margin-right:0;
+width:100%
+}
+#footer{
+padding-right:320px
+}
+}
+/* Quitar letra capital en todas las entradas */
+.post-body p:first-child:first-letter {
+font-size: inherit !important;
+line-height: inherit !important;
+font-weight: inherit !important;
+color: inherit !important;
+float: none !important;
+margin: 0 !important;
+padding: 0 !important;
+}/* ELIMINAR LETRA CAPITAL EN EL TÍTULO DEL PORTAL */
+.portal-header h1::first-letter,
+.portal-header h1:first-letter {
+all: unset !important;
+font-size: 2.2em !important; /* Mantiene el tamaño original del H1 */
+color: #ffffff !important;   /* Cambia la 'G' a Blanco */
+float: none !important;
+display: inline !important;
+margin: 0 !important;
+padding: 0 !important;
+}
+/* AJUSTE DE TONO Y CONTRASTE */
+.portal-header h1 {
+color: #ffffff !important;   /* Todo el título en Blanco para máxima legibilidad */
+text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Sombra suave para dar profundidad */
+}
+.portal-header p {
+color: #e3f2fd !important;   /* Tagline en un azul muy claro, casi blanco */
+opacity: 1 !important;
+font-weight: 500;
+}
+--></style>
+<style id='template-skin-1' type='text/css'><!--
+body#layout .hidden,
+body#layout .invisible {
+display: inherit;
+}
+body#layout .navigation {
+display: none;
+}
+body#layout .page {
+display: inline-block;
+vertical-align: top;
+width: 55%;
+}
+body#layout .sidebar-container {
+display: inline-block;
+float: right;
+width: 40%;
+}
+body#layout .hamburger-menu,
+body#layout .search {
+display: none;
+}
+--></style>
+<script async='async' src='https://www.gstatic.com/external_hosted/clipboardjs/clipboard.min.js'></script>
+<link href='https://draft.blogger.com/dyncss/2510862522957832303/authorization.css?zx=68974a82-7efc-431a-920d-72ebf4300519' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://draft.blogger.com/dyncss/2510862522957832303/authorization.css?zx=68974a82-7efc-431a-920d-72ebf4300519' rel='stylesheet'/></noscript>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&family=Roboto"></head>
+<body class='container item-view version-1-3-3'>
+<a class='skip-navigation' href='#main' tabindex='0'>
+Ir al contenido principal
+</a>
+<div class='all-container'>
+<div class='centered-top-placeholder'></div>
+<header class='centered-top-container' role='banner'>
+<div class='centered-top'>
+<div class='centered-top-firstline container'>
+<div class='main_header_elements container'>
+<!-- Blog name and header -->
+<div class='blog-name'>
+<div class='section' id='header' name='Cabecera'><div class='widget Header' data-version='2' id='Header1'>
+<div class='header-widget'>
+<a class='header-image-wrapper' href='https://infotransportenlima.blogspot.com/'>
+<img alt='Transporte urbano en Lima y Callao' class='header-widget-img-shrink-to-fit' data-original-height='26' data-original-width='150' src='https://blogger.googleusercontent.com/img/a/AVvXsEhNa9g8xWchANYrckCd7TUSD6FFNHNdT_IRyTy-JOCYSNUxqX9XPX3So-8MM8Ygy0gkDCo1HD9QyfkWF83bb_0wLjb4hHsFTLKehPn2Q-K4m-CGXTg674ECLeskaLeZfRrFDRRDyrFVCPWgAydnKQxc1CjwNwNAqWkncz3HMTQ89ClxIYci-yaDceTd3Ho=s150' srcset='https://blogger.googleusercontent.com/img/a/AVvXsEhNa9g8xWchANYrckCd7TUSD6FFNHNdT_IRyTy-JOCYSNUxqX9XPX3So-8MM8Ygy0gkDCo1HD9QyfkWF83bb_0wLjb4hHsFTLKehPn2Q-K4m-CGXTg674ECLeskaLeZfRrFDRRDyrFVCPWgAydnKQxc1CjwNwNAqWkncz3HMTQ89ClxIYci-yaDceTd3Ho=w120 120w, https://blogger.googleusercontent.com/img/a/AVvXsEhNa9g8xWchANYrckCd7TUSD6FFNHNdT_IRyTy-JOCYSNUxqX9XPX3So-8MM8Ygy0gkDCo1HD9QyfkWF83bb_0wLjb4hHsFTLKehPn2Q-K4m-CGXTg674ECLeskaLeZfRrFDRRDyrFVCPWgAydnKQxc1CjwNwNAqWkncz3HMTQ89ClxIYci-yaDceTd3Ho=w240 240w, https://blogger.googleusercontent.com/img/a/AVvXsEhNa9g8xWchANYrckCd7TUSD6FFNHNdT_IRyTy-JOCYSNUxqX9XPX3So-8MM8Ygy0gkDCo1HD9QyfkWF83bb_0wLjb4hHsFTLKehPn2Q-K4m-CGXTg674ECLeskaLeZfRrFDRRDyrFVCPWgAydnKQxc1CjwNwNAqWkncz3HMTQ89ClxIYci-yaDceTd3Ho=w480 480w, https://blogger.googleusercontent.com/img/a/AVvXsEhNa9g8xWchANYrckCd7TUSD6FFNHNdT_IRyTy-JOCYSNUxqX9XPX3So-8MM8Ygy0gkDCo1HD9QyfkWF83bb_0wLjb4hHsFTLKehPn2Q-K4m-CGXTg674ECLeskaLeZfRrFDRRDyrFVCPWgAydnKQxc1CjwNwNAqWkncz3HMTQ89ClxIYci-yaDceTd3Ho=w640 640w, https://blogger.googleusercontent.com/img/a/AVvXsEhNa9g8xWchANYrckCd7TUSD6FFNHNdT_IRyTy-JOCYSNUxqX9XPX3So-8MM8Ygy0gkDCo1HD9QyfkWF83bb_0wLjb4hHsFTLKehPn2Q-K4m-CGXTg674ECLeskaLeZfRrFDRRDyrFVCPWgAydnKQxc1CjwNwNAqWkncz3HMTQ89ClxIYci-yaDceTd3Ho=w800 800w'/>
+</a>
+<div class='replaced'>
+<h1>
+<a href='https://infotransportenlima.blogspot.com/'>
+Transporte urbano en Lima y Callao
+</a>
+</h1>
+</div>
+<style type='text/css'>
+      .header-widget-img-shrink-to-fit {
+        max-width: 100%;
+        height: auto;
+        object-fit: scale-down;
+      }
+    </style>
+</div>
+</div></div>
+</div>
+<!-- End blog name and header -->
+<!-- Search -->
+<div class='search'>
+<button aria-label='Buscar' class='flat-button search-expand touch-icon-button'>
+<div class='search-expand-text'>Buscar</div>
+<div class='search-expand-icon flat-icon-button'>
+<svg class='svg-icon-24'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_search_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</div>
+</button>
+<div class='section' id='search_top' name='Search (Top)'><div class='widget BlogSearch' data-version='2' id='BlogSearch1'>
+<h3 class='title'>
+Buscar este blog
+</h3>
+<div class='widget-content' role='search'>
+<form action='https://infotransportenlima.blogspot.com/search' target='_top'>
+<div class='search-input'>
+<input aria-label='Buscar este blog' autocomplete='off' name='q' placeholder='Buscar este blog' value=''/>
+</div>
+<label class='search-submit'>
+<input type='submit'/>
+<div class='flat-icon-button ripple'>
+<svg class='svg-icon-24 search-icon'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_search_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</div>
+</label>
+</form>
+</div>
+</div></div>
+</div>
+</div>
+<!-- Hamburger menu -->
+<div class='hamburger-section container'>
+<button class='svg-icon-24-button hamburger-menu flat-icon-button ripple'>
+<svg class='svg-icon-24'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_menu_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</button>
+</div>
+<!-- End hamburger menu -->
+</div>
+<nav role='navigation'>
+<div class='centered-top-secondline section' id='page_list_top' name='Lista de páginas (arriba)'><div class='widget HTML' data-version='2' id='HTML1'>
+<h3 class='title'>
+ÚLTIMAS NOTICIAS
+</h3>
+<div class='widget-content'>
+<script>
+//Secify scroller contents
+var line=new Array()
+line[1]="INCREMENTO DEL PRECIO DE PASAJES ENOJA A USUARIOS"
+line[2]="CRISIS DE INSEGURIDAD EN EL TRANSPORTE POR EXTORSIONES"
+line[3]="AVANCE DE LA LÍNEA 2 DEL METRO ALCANZA 80%"
+line[4]="OBRAS EN VÍA EXPRESA GRAU ALCANZAN GRAN AVANCE"
+line[5]="ACTUALIZACIÓN DEL BLOG EN CURSO. MÁS ENTRADAS PRONTO"
+
+//Specify font size for scoller
+var ts_fontsize="13px"
+
+//--Don't edit below this line
+
+var longestmessage=1
+for (i=2;i<line.length;i++){
+if (line[i].length>line[longestmessage].length)
+longestmessage=i
+}
+
+//Auto set scroller width
+var tscroller_width=line[longestmessage].length
+
+lines=line.length-1 //--Number of lines
+
+//if IE 4+ or NS6
+if (document.all||document.getElementById){
+document.write('<form name="bannerform">')
+document.write('<input type="text" name="banner" size="'+tscroller_width+'"')
+document.write(' style="background-color: '+document.bgColor+'; color:#333333; font-family: arial; font-size: '+ts_fontsize+'; font-weight:bold; border: medium none" onfocus="blur()">')
+document.write('</form>')
+}
+
+temp=""
+nextchar=-1;
+nextline=1;
+cursor="]"
+function animate(){
+if (temp==line[nextline] & temp.length==line[nextline].length & nextline!=lines){
+nextline++;
+nextchar=-1;
+document.bannerform.banner.value=temp;
+temp="";
+setTimeout("nextstep()",5000)}
+else if (nextline==lines & temp==line[nextline] & temp.length==line[nextline].length){
+nextline=1;
+nextchar=-1;
+document.bannerform.banner.value=temp;
+temp="";
+setTimeout("nextstep()",1000)}
+else{
+nextstep()}}
+
+function nextstep(){
+
+if (cursor=="\\"){
+cursor="|"}
+else if (cursor=="|"){
+cursor="/"}
+else if (cursor=="/"){
+cursor="-"}
+else if (cursor=="-"){
+cursor="\\"}
+
+
+nextchar++;
+temp+=line[nextline].charAt(nextchar);
+document.bannerform.banner.value=temp+cursor
+setTimeout("animate()",25)}
+
+//if IE 4+ or NS6
+if (document.all||document.getElementById)
+window.onload=animate
+</script>
+</div>
+</div><div class='widget HTML' data-version='2' id='HTML2'>
+<div class='widget-content'>
+<style>
+    /* Estilo del Botón de Acceso Maestro 2026 */
+    .contenedor-boton-guia {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .btn-guia-maestra {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #0d47a1 0%, #1565c0 100%);
+        color: #ffffff !important;
+        padding: 15px 25px;
+        border-radius: 50px; /* Estilo píldora, muy contemporáneo */
+        text-decoration: none !important;
+        font-family: 'Segoe UI', Roboto, sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        box-shadow: 0 4px 15px rgba(13, 71, 161, 0.3);
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Icono de Mapa (SVG integrado para que no dependa de librerías externas) */
+    .icon-map {
+        margin-right: 12px;
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+    }
+
+    /* Efecto Hover (Interacción) */
+    .btn-guia-maestra:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(13, 71, 161, 0.4);
+        background: linear-gradient(135deg, #1565c0 0%, #1e88e5 100%);
+        color: #ffffff;
+    }
+
+    .btn-guia-maestra:active {
+        transform: translateY(-1px);
+    }
+
+    /* Subtexto del botón */
+    .btn-subtitle {
+        display: block;
+        font-size: 10px;
+        font-weight: 400;
+        text-transform: uppercase;
+        opacity: 0.8;
+        margin-top: -2px;
+    }
+</style>
+
+<div class="contenedor-boton-guia">
+    <a href="https://infotransportenlima.blogspot.com/2015/07/guia-de-rutas-de-transporte-publico-en.html?m=0" class="btn-guia-maestra">
+        <svg class="icon-map" viewbox="0 0 24 24">
+            <path d="M20.5,3l-0.16,0.03L15,5.1L9,3L3.36,4.9c-0.21,0.07-0.36,0.25-0.36,0.48V20.5c0,0.28,0.22,0.5,0.5,0.5l0.16-0.03L9,18.9l6,2.1l5.64-1.9c0.21-0.07,0.36-0.25,0.36-0.48V3.5C21,3.22,20.78,3,20.5,3z M15,19l-6-2.11V5l6,2.11V19z"/>
+        </path></svg>
+        <span>
+            GUÍA DE RUTAS Y MODALIDADES DE TRANSPORTE
+            <span class="btn-subtitle">DIRECTORIO ACTUALIZADO CON MAPAS EN 4K</span>
+        </span>
+    </a>
+</div>
+</div>
+</div><div class='widget HTML' data-version='2' id='HTML3'>
+<div class='widget-content'>
+<style>
+    /* Estilo del Botón de Glosario Técnico 2026 */
+    .contenedor-boton-abreviaturas {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .btn-glosario-tecnico {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #37474f 0%, #546e7a 100%);
+        color: #ffffff !important;
+        padding: 15px 25px;
+        border-radius: 50px;
+        text-decoration: none !important;
+        font-family: 'Segoe UI', Roboto, sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        box-shadow: 0 4px 15px rgba(55, 71, 79, 0.3);
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Icono de Información / Lista */
+    .icon-list {
+        margin-right: 12px;
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+    }
+
+    /* Interacción */
+    .btn-glosario-tecnico:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(55, 71, 79, 0.4);
+        background: linear-gradient(135deg, #455a64 0%, #607d8b 100%);
+        color: #ffffff;
+    }
+
+    .btn-glosario-tecnico:active {
+        transform: translateY(-1px);
+    }
+
+    .btn-subtitle-tecnico {
+        display: block;
+        font-size: 10px;
+        font-weight: 400;
+        text-transform: uppercase;
+        opacity: 0.8;
+        margin-top: -2px;
+    }
+</style>
+
+<div class="contenedor-boton-abreviaturas">
+    <a href="https://infotransportenlima.blogspot.com/2025/03/abreviaturassimbolostransportepublico.html" class="btn-glosario-tecnico">
+        <svg class="icon-list" viewbox="0 0 24 24">
+            <path d="M3,13h2v-2H3V13z M3,17h2v-2H3V17z M3,9h2V7H3V9z M7,13h14v-2H7V13z M7,17h14v-2H7V17z M7,9h14V7H7V9z"/>
+        </path></svg>
+        <span>
+            ABREVIATURAS, SÍMBOLOS E HITOS URBANOS
+            <span class="btn-subtitle-tecnico">Glosario de transporte</span>
+        </span>
+    </a>
+</div>
+</div>
+</div>
+<div class='widget HTML' data-version='2' id='HTML4'>
+<div class='widget-content'>
+<style>
+    /* Buscador Estilo Info Transporte 2026 */
+    .buscador-container {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 12px;
+        border: 2px solid #e3f2fd;
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: 'Segoe UI', Roboto, sans-serif;
+    }
+    .buscador-titulo {
+        font-size: 0.9em;
+        font-weight: bold;
+        color: #0d47a1;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        display: block;
+        letter-spacing: 1px;
+    }
+    .search-wrapper {
+        display: flex;
+        gap: 8px;
+    }
+    .input-ruta {
+        flex-grow: 1;
+        padding: 12px;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        outline: none;
+        font-size: 1em;
+        transition: 0.3s;
+    }
+    .input-ruta:focus {
+        border-color: #0d47a1;
+        box-shadow: 0 0 8px rgba(13, 71, 161, 0.1);
+    }
+    .btn-buscar {
+        background: #0d47a1;
+        color: white;
+        border: none;
+        padding: 0 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    .btn-buscar:hover {
+        background: #1565c0;
+        transform: translateY(-2px);
+    }
+</style>
+
+<div class="buscador-container">
+    <span class="buscador-titulo">🔍 Buscar por Número de Ruta</span>
+    <form action="/search" method="get" class="search-wrapper">
+        <input type="text" name="q" class="input-ruta" placeholder="Ej: 1001, 1002..." required/>
+        <button type="submit" class="btn-buscar">IR</button>
+    </form>
+    <div style="margin-top: 10px; font-size: 0.75em; color: #999;">
+        Accede al Directorio Maestro de Lima y Callao
+    </div>
+</div>
+</div>
+</div></div>
+</nav>
+</div>
+</header>
+<div class='main_content_container clearfix'>
+<div class='page'>
+<div class='page_body'>
+<div class='centered'>
+<main class='centered-bottom' id='main' role='main' tabindex='-1'>
+<div class='main section' id='page_body' name='Cuerpo de la página'>
+<div class='widget Blog' data-version='2' id='Blog1'>
+<div class='blog-posts hfeed container'>
+<article class='post-outer-container'>
+<div class='post-outer'>
+<div class='post-content container'>
+<div class='post-title-container'>
+<a name='8024452524504041186'></a>
+<h3 class='post-title entry-title'>
+RUTAS REGULARES AUTORIZADAS POR LA ATU 
+</h3>
+</div>
+<div class='post-header-container container'>
+</div>
+<div class='post-body-container'>
+<div class='post-body entry-content float-container' id='post-body-8024452524504041186'>
+<style>
+    /* 1. RESET "BUNKER" CONTRA EL TEMA NOTABLE */
+    .regular-master-container, .regular-master-container * { --text-color: inherit; }
+    .regular-master-container *::first-letter {
+        all: unset !important; color: inherit !important; font-size: inherit !important;
+        font-weight: inherit !important; float: none !important; display: inline !important;
+        margin: 0 !important; padding: 0 !important; text-transform: none !important;
+    }
+
+    .regular-master-container {
+        font-family: 'Segoe UI', Roboto, sans-serif; color: #333; max-width: 1000px;
+        margin: auto; line-height: 1.6;
+    }
+
+    /* 2. CABECERA TÉCNICA (CELESTE - TRANSPORTE REGULAR) */
+    .regular-header {
+        background: linear-gradient(135deg, #29b6f6 0%, #4fc3f7 100%);
+        color: white !important; padding: 45px 25px; border-radius: 15px; text-align: center;
+        margin-bottom: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .regular-header h1 { color: white !important; margin: 0; font-size: 1.8em; text-transform: uppercase; letter-spacing: 1px; }
+
+    /* 3. STATUS BAR */
+    .status-bar-tech {
+        display: flex; justify-content: space-between; align-items: center;
+        margin-bottom: 30px; padding: 10px 15px; background: #f8f9fa;
+        border-radius: 8px; border: 1px solid #eee; flex-wrap: wrap; gap: 10px;
+    }
+    .leyenda-item { font-size: 0.7em; font-weight: 800; display: flex; align-items: center; gap: 6px; color: #666; text-transform: uppercase; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; }
+
+    /* 4. GRILLA DE BOTONES (RUTAS 1001 - 1500) */
+    .ruta-grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); 
+        gap: 12px; margin-top: 15px; 
+    }
+
+    .btn-ruta {
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        padding: 15px 10px; border-radius: 10px; text-decoration: none !important;
+        background: #fff; border: 2px solid #4fc3f7;
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .btn-ruta:hover { 
+        transform: translateY(-3px); background: #f1faff; border-color: #039be5;
+        box-shadow: 0 8px 15px rgba(79,195,247,0.2); 
+    }
+    .ruta-number { font-weight: 900; font-size: 1.3em; color: #0288d1 !important; }
+    .ruta-name { font-size: 0.7em; font-weight: 700; color: #546e7a; text-transform: uppercase; margin-top: 5px; text-align: center; }
+
+    /* 5. MODELO PROYECTO PMU Y ARCHIVO */
+    .box-pmu {
+        border: 2px dashed #0288d1 !important; background: #e1f5fe !important;
+        color: #0288d1 !important; display: flex; justify-content: space-between;
+        align-items: center; padding: 14px 20px; border-radius: 10px;
+    }
+    .box-inactive {
+        border: 1.5px solid #ddd !important; background: #f9f9f9 !important;
+        display: flex; justify-content: space-between; align-items: center;
+        padding: 14px 20px; border-radius: 10px; opacity: 0.8; pointer-events: none;
+    }
+    .box-inactive span { font-weight: 700; text-decoration: line-through !important; text-decoration-color: #aaa !important; }
+
+    /* 6. GRÁFICO DE AVANCE CSS */
+    .stats-container {
+        background: #fff; border: 1px solid #eee; border-radius: 12px;
+        padding: 25px; margin-top: 40px; display: flex; align-items: center;
+        gap: 30px; flex-wrap: wrap; justify-content: center;
+    }
+    .pie-chart {
+        width: 100px; height: 100px; border-radius: 50%;
+        background: conic-gradient(#0288d1 0% 15%, #4fc3f7 15% 45%, #e1f5fe 45% 100%);
+        position: relative;
+    }
+    .pie-chart::before {
+        content: "82%"; position: absolute; top: 50%; left: 50%;
+        transform: translate(-50%, -50%); background: white;
+        width: 45px; height: 45px; border-radius: 50%;
+        display: flex; align-items: center; justify-content: center;
+        font-weight: 900; color: #0288d1; font-size: 0.8em;
+    }
+
+    /* 7. ELEMENTOS ADICIONALES */
+    .section-label { 
+        font-size: 0.85em; font-weight: 800; color: #546e7a; text-transform: uppercase; 
+        letter-spacing: 2px; margin: 45px 0 15px; border-left: 5px solid #4fc3f7; padding-left: 12px; 
+    }
+    .btn-tech {
+        display: inline-block; background: #0288d1; color: white !important;
+        padding: 14px 30px; border-radius: 35px; font-weight: 900;
+        text-decoration: none !important; text-transform: uppercase;
+        margin-top: 15px; transition: 0.3s; font-size: 0.9em; box-shadow: 0 4px 10px rgba(2,136,209,0.3);
+    }
+    .tech-badge { font-size: 0.65em; font-weight: 900; padding: 2px 6px; border-radius: 4px; border: 1px solid; color: inherit !important; }
+</style>
+
+<div class="regular-master-container">
+
+    <div class="regular-header">
+        <h1><span style="color: #f3f3f3;">Rutas Regulares Autorizadas AL 2026</span></h1>
+        <p style="color: #e1f5fe; font-weight: 500; margin-top: 10px;">Sistema Integrado de Transporte Convencional (ATU)</p>
+    </div>
+
+    <div class="status-bar-tech">
+        <div class="leyenda-portal">
+            <div class="leyenda-item"><span class="dot" style="background: rgb(79, 195, 247);"></span> Vigente</div>
+            <div class="leyenda-item"><span class="dot" style="background: rgb(204, 204, 204);"></span> Inactiva</div>
+            <div class="leyenda-item"><span class="dot" style="border: 2px dashed rgb(2, 136, 209);"></span> Plan PMU</div>
+        </div>
+        <div style="color: #0288d1; font-size: 0.7em; font-weight: bold;">Actualizado: Marzo 2026</div>
+    </div>
+
+  <style>
+    /* RESET BUNKER PARA EL BOTÓN */
+    .cta-master-container, .cta-master-container * { --text-color: inherit; }
+    .cta-master-container *::first-letter {
+        all: unset !important; color: inherit !important; font-size: inherit !important;
+        font-weight: inherit !important; float: none !important; display: inline !important;
+        margin: 0 !important; padding: 0 !important; text-transform: none !important;
+    }
+
+    .cta-master-container {
+        text-align: center;
+        margin: 40px 0;
+        padding: 30px;
+        background: #fdfdfd;
+        border: 1px solid #eee;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    }
+
+    .btn-archive-master {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 45px;
+        background: #595757;
+        border: 2.5px solid #546e7a;
+        border-radius: 15px;
+        text-decoration: none !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 4px 10px rgba(84, 110, 122, 0.15);
+        gap: 20px; /* Espacio para el icono */
+    }
+
+    .btn-archive-master:hover {
+        transform: translateY(-4px);
+        background: #f1f5f9;
+        box-shadow: 0 10px 25px rgba(84, 110, 122, 0.25);
+        border-color: #37474f;
+    }
+
+    .btn-icon-map {
+        width: 50px; /* Tamaño del icono */
+        height: 50px;
+        flex-shrink: 0;
+    }
+
+    .btn-text-block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .btn-archive-title {
+        color: #ffffff !important;
+        font-weight: 900;
+        font-size: 1.1em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .btn-archive-subtitle {
+        color: #ccdee6 !important;
+        font-size: 0.7em;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 5px;
+        letter-spacing: 1px;
+    }
+</style>
+
+<div class="cta-master-container">
+    <a class="btn-archive-master" href="https://infotransportenlima.blogspot.com/2015/07/archivo-maestro-rutas-tradicionales-Lima.html">
+        <img alt="Icono Mapa de Tránsito" class="btn-icon-map" src="https://cdn-icons-png.flaticon.com/512/1912/1912510.png" />
+        
+        <div class="btn-text-block">
+            <span class="btn-archive-title">Archivo histórico de rutas</span>
+            <span class="btn-archive-subtitle">100 años de Rutas de buses en Lima</span>
+        </div>
+    </a>
+</div>
+  
+    <div class="section-label">Directorio de Rutas Vigentes:</div>
+    <div class="ruta-grid">
+        <a class="btn-ruta" href="https://infotransportenlima.blogspot.com/2025/02/rutas-regulares-1001.html"><span class="ruta-number">1001</span><span class="ruta-name">-------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1002</span><span class="ruta-name">-------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1003</span><span class="ruta-name">La 9 (Santa Rosa de las Américas)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1004</span><span class="ruta-name">Las amarillas / La San Ignacio (etrasilsa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1005</span><span class="ruta-name">La 13 (Santa Cruz)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1006</span><span class="ruta-name">La C / La celeste (Impulsa Progreso)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1007</span><span class="ruta-name">La La 87B / La 87-B / La Amancaes (Etamsa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1008</span><span class="ruta-name">La 3 (Grupo Express / Realidad Express del Perú 03)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1009</span><span class="ruta-name">La 6 / La Punchauca (Etcipsa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1010</span><span class="ruta-name">La 46B / 46-B / La Ramón Castilla (ETMRCSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1011</span><span class="ruta-name">La 47 (Translima)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1012</span><span class="ruta-name">La B (La Estunsac)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1013</span><span class="ruta-name">La 18 (Translima)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1014</span><span class="ruta-name">La 14 de junio</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1015</span><span class="ruta-name">La MG / La M-G (Etmigrasa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1016</span><span class="ruta-name">El Anconero (La buena estrella)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1017</span><span class="ruta-name">El Anconero (Novobus)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1018</span><span class="ruta-name">Emptonsa</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1019</span><span class="ruta-name">La P (Palmari)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1020</span><span class="ruta-name">La C (Santa Luzmila)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1021</span><span class="ruta-name">La F (EL Rápido)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1022</span><span class="ruta-name">Norcom</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1023</span><span class="ruta-name">La B (Nueva América)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1024</span><span class="ruta-name">La A (Norlima)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1025</span><span class="ruta-name">La 73B / La 73-B (Etupsa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1026</span><span class="ruta-name">La S2 / La S-2 (Emtessa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1027</span><span class="ruta-name">La 60C / La 60-C</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1028</span><span class="ruta-name">La B (Etraserpisa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1029</span><span class="ruta-name">La Alipio</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1030</span><span class="ruta-name">La San Diego</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1031</span><span class="ruta-name">La 29 (Translima)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1032</span><span class="ruta-name">La A (Translicsa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1033</span><span class="ruta-name">La C (Deluxe)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1034</span><span class="ruta-name">La 36 (Eitsa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1035</span><span class="ruta-name">La Bala</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1036</span><span class="ruta-name">El Bajopontino</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1037</span><span class="ruta-name">La B (Translicsa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1038</span><span class="ruta-name">La 28 / La 504</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1039</span><span class="ruta-name">La 117</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1040</span><span class="ruta-name">La SC / La S-C (San Ignacio)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1041</span><span class="ruta-name">La 41 (Santa Rosa Jicamarca)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1042</span><span class="ruta-name">La 75A / La 75-A (Las Águilas)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1043</span><span class="ruta-name">La 40 (Cuarenta Integrada)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1044</span><span class="ruta-name">La 104</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1045</span><span class="ruta-name">La 52C / La 52-C (Etusa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1046</span><span class="ruta-name">La SB / LaS-B</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1047</span><span class="ruta-name">La 10A / La 10-A (Etrascpsa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1048</span><span class="ruta-name">Etdesa</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1049</span><span class="ruta-name">Etcisa</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1050</span><span class="ruta-name">La RI / La R-I (Lobito)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1051</span><span class="ruta-name">La 52J / La 52-J (Etusa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1052</span><span class="ruta-name">La HA / La H-A (Huáscar)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1053</span><span class="ruta-name">La H (Sur Lima)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1054</span><span class="ruta-name">La E (Etul4sa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1055</span><span class="ruta-name">La 31</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1056</span><span class="ruta-name">La P (Arco iris)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1057</span><span class="ruta-name">La 23C / La 23-C (Santa Catalina)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1058</span><span class="ruta-name">La R28 / La R-28 (Huáscar)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1059</span><span class="ruta-name">La 23B / La 23-B (Santa Catalina)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1060</span><span class="ruta-name">La 8 (Etsosa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1061</span><span class="ruta-name">La M1 / La M-1 (Preferencial M1)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1062</span><span class="ruta-name">La M1 / La M-1 (Cuatro SUyos)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1063</span><span class="ruta-name">La M (LOs Magníficos)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1064</span><span class="ruta-name">La 49 (Santa Rosa Jicamarca)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1065</span><span class="ruta-name">La 91 (Nuevo Horizonte)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1066</span><span class="ruta-name">La HCT (Huaycanero)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1067</span><span class="ruta-name">Peralitos</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1068</span><span class="ruta-name">La HGK (Huaycanero)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1069</span><span class="ruta-name">Chosicano azul (Ricardo Palma)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1070</span><span class="ruta-name">Etbronsa</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1071</span><span class="ruta-name">La IC / La I-C (Copacabana)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1072</span><span class="ruta-name">ETuSMPsa</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1073</span><span class="ruta-name">La B (Sagrado Corazón)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1074</span><span class="ruta-name">La B / La 112 (Miraflores-Monterrico)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1075</span><span class="ruta-name">La 51 (San Juan Bautista)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1076</span><span class="ruta-name">La 14 de mayo / Los Leones (Huaycanero)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1077</span><span class="ruta-name">La H (Huaycanero)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1078</span><span class="ruta-name">La 63</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1079</span><span class="ruta-name">ETuSMPsa (Huaycanero)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1080</span><span class="ruta-name">La HCT (Turismo Huaycán)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1081</span><span class="ruta-name">Huaycanero rojo (Urbano Huaycán)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1082</span><span class="ruta-name">La B (Angamos)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1083</span><span class="ruta-name">Huaycanero naranja (Sin Fronteras)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1084</span><span class="ruta-name">La 91 (Santo Cristo)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1085</span><span class="ruta-name">Chosicano verde (Santa Eulalia)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1086</span><span class="ruta-name">Etramsmsa</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1087</span><span class="ruta-name">La 52T / La 52-T (Etusa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1088</span><span class="ruta-name">La renacimiento</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1089</span><span class="ruta-name">La 24 (ATCR)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1090</span><span class="ruta-name">La C (Chama)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1091</span><span class="ruta-name">La 160</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1092</span><span class="ruta-name">La San Genaro</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1093</span><span class="ruta-name">La I (1 de junio)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1094</span><span class="ruta-name">La Etusa</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1095</span><span class="ruta-name">La 57 (La Norteamerica)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1096</span><span class="ruta-name">La B / La Banchero (Lubarsa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1097</span><span class="ruta-name">La 10-E (Etrascpsa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1098</span><span class="ruta-name">La 8 / La L (Etul4sa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1099</span><span class="ruta-name">La 9 / La Banchero (Lubarsa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1100</span><span class="ruta-name">La P (Etul4sa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1101</span><span class="ruta-name">--------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1102</span><span class="ruta-name">--------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1103</span><span class="ruta-name">--------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1104</span><span class="ruta-name">--------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1105</span><span class="ruta-name">--------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1106</span><span class="ruta-name">--------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1107</span><span class="ruta-name">La C / Etmosac (Transportes Montenegro)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1108</span><span class="ruta-name">La 23A / 23-A (Santa Catalina)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1109</span><span class="ruta-name">La 25 (Eteusa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1110</span><span class="ruta-name">La G (Chama)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1111</span><span class="ruta-name">La 73A / 73-A (Etupsa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1112</span><span class="ruta-name">Red Lima Móvil</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1113</span><span class="ruta-name">Translima</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1114</span><span class="ruta-name">La D2 / D-2 (Etrapersac)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1115</span><span class="ruta-name">La A (Etepsa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1116</span><span class="ruta-name">La A (Etersac)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1117</span><span class="ruta-name">La Tablada</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1118</span><span class="ruta-name">La U (Urano Tours)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1119</span><span class="ruta-name">La D (ATCR)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1120</span><span class="ruta-name">La 190 (Real Star)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1121</span><span class="ruta-name">La A (Línea 3)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1122</span><span class="ruta-name">La 6 (Lapso)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1123</span><span class="ruta-name">La A (Chama)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1124</span><span class="ruta-name">Expreso Tablada</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1125</span><span class="ruta-name">La Cora Cora</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1126</span><span class="ruta-name">Villa Alejandro</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1127</span><span class="ruta-name">La Zevallos</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1128</span><span class="ruta-name">La G / La 65</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1129</span><span class="ruta-name">La San Juan de Dios (Etsajudsa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1130</span><span class="ruta-name">Emptonsa</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1131</span><span class="ruta-name">La D (Vipusa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1132</span><span class="ruta-name">El urbanito</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1133</span><span class="ruta-name">La Etmarsa</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1134</span><span class="ruta-name">La A (Etsesac)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1135</span><span class="ruta-name">La 105 (Mariscal Castilla)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1136</span><span class="ruta-name">La 120 (Nueva Unión)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1137</span><span class="ruta-name">La San Antonio</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1138</span><span class="ruta-name">La Chim Pum Callao / La Pequeña Lulú</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1139</span><span class="ruta-name">La Uvita</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1140</span><span class="ruta-name">Combi Lima-Callao (Emiscasa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1141</span><span class="ruta-name">La Etfocamsa</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1142</span><span class="ruta-name">La Proyecto 7</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1143</span><span class="ruta-name">La 524 (Gruplan)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1144</span><span class="ruta-name">La NG / La N-G / La Gambetta</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1145</span><span class="ruta-name">La Transcallao</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1146</span><span class="ruta-name">La San Benito de Palermo / Lima - La Punta (Etsabepsa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1147</span><span class="ruta-name">La COlonial</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1148</span><span class="ruta-name">Combi Lma-Callao (Waylluy)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1149</span><span class="ruta-name">Combi Perto Nuevo (Waylluy)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1150</span><span class="ruta-name">La 102</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1151</span><span class="ruta-name">La Etpevesa</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1152</span><span class="ruta-name">La Liventur</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1153</span><span class="ruta-name">La Etrasilsa</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1154</span><span class="ruta-name">La COnsorcio Briza</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1155</span><span class="ruta-name">La Holrex / La Orión</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1156</span><span class="ruta-name">La Reynoso</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1157</span><span class="ruta-name">La Sol y Mar</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1158</span><span class="ruta-name">Combi Lima - Ventanilla (SIT)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1159</span><span class="ruta-name">La 21 (Translima)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1160</span><span class="ruta-name">La OP / La O-P (Chim Pum Callao)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1161</span><span class="ruta-name">La 89</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1162</span><span class="ruta-name">La Consorcio Briza</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1163</span><span class="ruta-name">La SV / La S-V (Consorcio Avagon)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1164</span><span class="ruta-name">La CTCJ (Corazón de Jesús)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1165</span><span class="ruta-name">La COnsorcio Briza / La Orión</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1166</span><span class="ruta-name">La VB / La V-B (Vía Bus)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1167</span><span class="ruta-name">La Consorcio Briza</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1168</span><span class="ruta-name">El Anconero / La Nueva Estrella</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1169</span><span class="ruta-name">La JV / La J-V (Mar y Tierra / ETCIMATISA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1170</span><span class="ruta-name">La 93 (La PASA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1171</span><span class="ruta-name">La DC / La D-C / La SB / La S-B (El Álamo / La Cosbasa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1172</span><span class="ruta-name">La B (Etunijesa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1173</span><span class="ruta-name">La 9V / La 9-V (Santa Rosa de Lima)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1174</span><span class="ruta-name">La D1 / La D-1 (La CILAP)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1175</span><span class="ruta-name">La P (Pegaso Express)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1176</span><span class="ruta-name">La 6 / La 6-M / La Collique (La Evipusa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1177</span><span class="ruta-name">La 2 (Cruz del Centro)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1178</span><span class="ruta-name">La E (La Encantada)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1179</span><span class="ruta-name">El Anconero / La SESOSA</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1180</span><span class="ruta-name">La A (Nueva América)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1181</span><span class="ruta-name">La 70</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1182</span><span class="ruta-name">La V</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1183</span><span class="ruta-name">La A (Urano Tours)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1184</span><span class="ruta-name">La B39 / La B-39 / La Edilberto Ramos / La C (Etersac)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1185</span><span class="ruta-name">Los Chinos / La A (Los Chinos) / ETUCHISAC</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1186</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1187</span><span class="ruta-name">La Nazareno</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1188</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1189</span><span class="ruta-name">La 35B / La 35-B (Etinsa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1190</span><span class="ruta-name">La azul / La Estirsa (Inversiones El Rápido)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1191</span><span class="ruta-name">La 35A / La 35-A (Excelentes Unidos)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1192</span><span class="ruta-name">La Santa CLara (Etissa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1193</span><span class="ruta-name">La 148 (Etvircosa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1194</span><span class="ruta-name">La B / La Evifasa B (Evifasa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1195</span><span class="ruta-name">La 42 / El Rápido</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1196</span><span class="ruta-name">La A (Cruz del Centro)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1197</span><span class="ruta-name">La 44A / la 44-A (La Etradijusa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1198</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1199</span><span class="ruta-name">La 36</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1200</span><span class="ruta-name">La 9A / La 9-A (17 de noviembre)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1201</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1202</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1203</span><span class="ruta-name">La San Germán / La C / La 128 (TISGSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1204</span><span class="ruta-name">La 2H / LA 2-H (Huancayo City)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1205</span><span class="ruta-name">La E (La Niño Emanuel)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1206</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1207</span><span class="ruta-name">La C1 / La C-1 (La Huayrona)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1208</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1209</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1210</span><span class="ruta-name">La San Felipe Express</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1211</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1212</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1213</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1214</span><span class="ruta-name">La 32A / La 32-A (ETVASA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1215</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1216</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1217</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1218</span><span class="ruta-name">El Chosicano / Chosicano rojo / Lima-Chosica (ETYSLCHSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1219</span><span class="ruta-name">La B (Vargasant)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1220</span><span class="ruta-name">Los Peralitos</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1221</span><span class="ruta-name">La 20</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1222</span><span class="ruta-name">La 19N / La 19-N (Gocarive 19)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1223</span><span class="ruta-name">La 129B / La 129-B (Pesqueros)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1224</span><span class="ruta-name">La 19</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1225</span><span class="ruta-name">La C / La 1 / Los Celestes (Etalexsa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1226</span><span class="ruta-name">La 71B / LA 71-B (Etcapsa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1227</span><span class="ruta-name">La verde (Etsamigsa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1228</span><span class="ruta-name">La H / La Z (Santa Rosa de Lima - Huaycán)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1229</span><span class="ruta-name">La M / La Próceres</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1230</span><span class="ruta-name">La 3 / La Fenix 2000 / La 3 Huascar</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1231</span><span class="ruta-name">La 35 / La Machu Picchu</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1232</span><span class="ruta-name">La A / La Translicsa</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1233</span><span class="ruta-name">La P1 / La P-1 (La San Pedro de Pamplona)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1234</span><span class="ruta-name">La W</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1235</span><span class="ruta-name">La S / La Salamanca Parral (ETSPSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1236</span><span class="ruta-name">La 40 / La roja (ETsafrasa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1237</span><span class="ruta-name">La 5 / El Rápido</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1238</span><span class="ruta-name">La C / Los azules (San Felipe Express)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1239</span><span class="ruta-name">La C / La Celeste / Los Chinos (ETUCHISA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1240</span><span class="ruta-name">La A (Vipusa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1241</span><span class="ruta-name">La C / La Celeste (Roluesa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1242</span><span class="ruta-name">La C / La Celeste (Nuevo Perú)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1243</span><span class="ruta-name">La C / LA Roja (El Rápido)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1244</span><span class="ruta-name">La 73-1 (ETUPSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1245</span><span class="ruta-name">La San Judas Tadeo</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1246</span><span class="ruta-name">La C / La Celeste (ETSIBOSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1247</span><span class="ruta-name">La G (Sur Express)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1248</span><span class="ruta-name">La C / La Celeste (Real Star)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1249</span><span class="ruta-name">La 15C / LA 15-C / La Salvador (ETSSSAC)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1250</span><span class="ruta-name">La L (Lapso)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1251</span><span class="ruta-name">La B / Los Chocolates / La San José (ETSAJOSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1252</span><span class="ruta-name">La San Judas Tadeo</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1253</span><span class="ruta-name">La A / La Guadulfo Silva / La San Bartolo (ETGUSICSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1254</span><span class="ruta-name">La B / La Guadulfo Silva / La Pucusana (ETGUSICSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1255</span><span class="ruta-name">La Etcapesa</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1256</span><span class="ruta-name">La Z1 / La Z-1 (Millenium)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1257</span><span class="ruta-name">La 26 de mayo</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1258</span><span class="ruta-name">La 57 / La A1 / La A-1 (Las Flores)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1259</span><span class="ruta-name">La S2C / la S-2-C (Nueva Estrella)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1260</span><span class="ruta-name">El Lorito (EL Polo)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1261</span><span class="ruta-name">La Covida (La ETFVSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1262</span><span class="ruta-name">La 41</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1263</span><span class="ruta-name">La P (Señor de Pachacamilla / ETMISPSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1264</span><span class="ruta-name">La Monterrico / La ETMIMSA</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1265</span><span class="ruta-name">La S (Hogar Tours)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1266</span><span class="ruta-name">La JV / La J-V (Lima Express)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1267</span><span class="ruta-name">La V (Expreso Santa Anita)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1268</span><span class="ruta-name">Combi Ate - Callao (El Álamo)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1269</span><span class="ruta-name">La X37 / La X-37 (Excelentes Unidos)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1270</span><span class="ruta-name">La S (Consorcio Angamos)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1271</span><span class="ruta-name">La California 2000</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1272</span><span class="ruta-name">La 22</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1273</span><span class="ruta-name">Transportes Ijecorpjyl</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1274</span><span class="ruta-name">Transportes Toro</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1275</span><span class="ruta-name">La R (Grupo Diez)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1276</span><span class="ruta-name">La S (Star Tours)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1277</span><span class="ruta-name">La California Siglo XXI</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1278</span><span class="ruta-name">La 505 (Consorcio Línea 3)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1279</span><span class="ruta-name">La 505 (Trans y Service Canada)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1280</span><span class="ruta-name">Los moraditos / La Génesis (Inversiones Génesis)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1281</span><span class="ruta-name">La 15 (Trans y Service Canadá)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1282</span><span class="ruta-name">La D (Etraserpisa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1283</span><span class="ruta-name">Las Flores 18 / La 18 (Proyecto Las Flores 18 / Grupo Express del Perú - GEP)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1284</span><span class="ruta-name">La 33</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1285</span><span class="ruta-name">La 129A / La 129-A (Transportes Pesqueros)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1286</span><span class="ruta-name">La C (Transportes Huáscar)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1287</span><span class="ruta-name">El Tigrillo</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1288</span><span class="ruta-name">La 19 (ETUVISA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1289</span><span class="ruta-name">La Starlet</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1290</span><span class="ruta-name">La 32B / La 32-B (Etvasa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1291</span><span class="ruta-name">La S / La HRE / La Orión (Holding Real Express)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1292</span><span class="ruta-name">Turismo Californi Siglo XXI</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1293</span><span class="ruta-name">La C / La Orión (Holding Real Express)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1294</span><span class="ruta-name">La S / La Orión (Holding Real Express)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1295</span><span class="ruta-name">La Milán (ETS Turismo Eureks)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1296</span><span class="ruta-name">La C / La Orión (Holding Real Express)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1297</span><span class="ruta-name">La G / La Orión (Holding Real Express)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1298</span><span class="ruta-name">La 30 / La Orión (Holding Real Express)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1299</span><span class="ruta-name">La G (Galilea Express)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1300</span><span class="ruta-name">La B / La Roma B (Roma Internacional)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1301</span><span class="ruta-name">El Chama Blanco (ETRAPERSAC)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1302</span><span class="ruta-name">La 12 (Transportes Huáscar)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1303</span><span class="ruta-name">La V (Nueva Lima)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1304</span><span class="ruta-name">LA CTI / La C-T-I (Corporación de Transportes Interurbano)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1305</span><span class="ruta-name">La 71A / La 71-A (ETCAPSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1306</span><span class="ruta-name">La J (Puente Piedra)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1307</span><span class="ruta-name">Transportes California</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1308</span><span class="ruta-name">La P (Pegaso Express)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1309</span><span class="ruta-name">La S / La Orión (Holding Real Express)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1310</span><span class="ruta-name">La 19B / La 19-B / La Orión (Holding Real Express)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1311</span><span class="ruta-name">La 21 / La Orión (Holding Real Express)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1312</span><span class="ruta-name">La 20 (Etranslamar)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1313</span><span class="ruta-name">Los morados (ETSMARSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1314</span><span class="ruta-name">La 36 (Transcastel)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1315</span><span class="ruta-name">La 37 / La Orión (Holding Real Express)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1316</span><span class="ruta-name">La A / La Roma A (Roma Internacional)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1317</span><span class="ruta-name">LA CTI / La C-T-I (Corporación de Transportes Interurbano)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1318</span><span class="ruta-name">Consorcio Salamanca)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1319</span><span class="ruta-name">El Chosicano (Pachacutec Internacional)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1320</span><span class="ruta-name">La Laderas (Laderas de Chillón)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1321</span><span class="ruta-name">La Santa Rosa de Quives</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1322</span><span class="ruta-name">La L (Manuel Pardo)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1323</span><span class="ruta-name">La Ch / La Z (ETRANSPPISA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1324</span><span class="ruta-name">La Z1 / La Z-1</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1325</span><span class="ruta-name">La Z (Lomas de Zapallal / LODEZA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1326</span><span class="ruta-name">La T (El Rápido Inversiones)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1326-X</span><span class="ruta-name">Aerodirecto Terminal Norte</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1327</span><span class="ruta-name">El Retablo</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1328</span><span class="ruta-name">La Ensenada (ETECHSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1329</span><span class="ruta-name">La 26 (Los Jilgueros)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1330</span><span class="ruta-name">Consorcio Gómez</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1331</span><span class="ruta-name">Ñaña - Vallecito</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1332</span><span class="ruta-name">Pachacutec - Pasamayo</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1333</span><span class="ruta-name">Santa Rosa - Zapallal</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1334</span><span class="ruta-name">Musa - Cieneguilla</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1335</span><span class="ruta-name">La San Felipe / Los Azules (Inveriones San Felipe)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1336</span><span class="ruta-name">La F / La Norlima (ETNOLSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1337</span><span class="ruta-name">La JC / La J-C</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1338</span><span class="ruta-name">La O / La COnsorcio Vïa / La Daewoo</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1339</span><span class="ruta-name">La Etbosa</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1340</span><span class="ruta-name">La Triunfo (Etsutrisa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1341</span><span class="ruta-name">La 41 (Santa Rosa de Jicamarca)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1342</span><span class="ruta-name">La A1 / La A-1 (Vara)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1343</span><span class="ruta-name">La D (Negociaciones Santa Anita)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1344</span><span class="ruta-name">La C (Negociaciones Santa Anita)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1345</span><span class="ruta-name">La C / La 5 Estrellas (ETRACESA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1346</span><span class="ruta-name">La ZA / La Z-A (Nuevo San Juan)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1347</span><span class="ruta-name">La 102 </span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1348</span><span class="ruta-name">La Jerrbus (ETJBSAC</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1349</span><span class="ruta-name">La Becami</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1350</span><span class="ruta-name">La Urano Tours</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1351</span><span class="ruta-name">La Varant</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1352</span><span class="ruta-name">La B1 / La B-1 (Nuevo Amanecer)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1353</span><span class="ruta-name">La D / La H2 / ETH-2</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1354</span><span class="ruta-name">La 119 (El Triunfo)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1355</span><span class="ruta-name">La verde / La Cruz de Nazareno</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1356</span><span class="ruta-name">La N (Premier El Nazareno)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1357</span><span class="ruta-name">La A1 / La A-1 (Etranscosa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1358</span><span class="ruta-name">La azul / La Molinero Express (ETRUMESA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1359</span><span class="ruta-name">LA C (ATCR)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1360</span><span class="ruta-name">La G / La Musa (Etramusa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1361</span><span class="ruta-name">La B1 / La B-1 (Nuevo Amanecer)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1362</span><span class="ruta-name">La 101 (Rimarz)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1363</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1364</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1365</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1366</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1367</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1368</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1369</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1370</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1371</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1372</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1373</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1374</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1375</span><span class="ruta-name">REZNA (Hermanos Galindo)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1376</span><span class="ruta-name">La 30 (José Olaya)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1377</span><span class="ruta-name">La 8 (Translima)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1378</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1379</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1380</span><span class="ruta-name">La 12 (Emtratasa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1381</span><span class="ruta-name">La 12 / LA A1 / La A-1 (ETUSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1382</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1383</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1384</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1385</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1386</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1387</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1388</span><span class="ruta-name">Los rojitos (San Pedro de Pamplona)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1389</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1390</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1391</span><span class="ruta-name">La 41 / La San Juanito</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1392</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1393</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1394</span><span class="ruta-name">REZNA (Etsdesa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1395</span><span class="ruta-name">La L (Los Laureles de Manchay)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1396</span><span class="ruta-name">La 6B / La 6-B (Turismo Márquez)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1397</span><span class="ruta-name">REZNA (Rshedi)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1398</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1399</span><span class="ruta-name">La J (San Juanito)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1400</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1401</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1402</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1403</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1404</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1405</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1406</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1407</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1408</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1409</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1410</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1411</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1412</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1413</span><span class="ruta-name">La 64 / La Corazón Valiente (Etracovasa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1414</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1415</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1416</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1417</span><span class="ruta-name">REZNA (Transpimesac)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1418</span><span class="ruta-name">REZNA (Tinesa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1419</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1420</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1421</span><span class="ruta-name">La L1 / La L-1 (Latinoamérica)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1422</span><span class="ruta-name">La S (San Antonio)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1423</span><span class="ruta-name">La SJ / LA S-J / Los verdes (San José)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1424</span><span class="ruta-name">La C (Etrosmasac)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1425</span><span class="ruta-name">La Comas Express (Esticosa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1426</span><span class="ruta-name">La Liventur</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1427</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1428</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1429</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1430</span><span class="ruta-name">La 78 (Integración San Felipe)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1431</span><span class="ruta-name">La 4S / La 4-S</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1432</span><span class="ruta-name">La Líder</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1433</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1434</span><span class="ruta-name">La Levtsa</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1435</span><span class="ruta-name">La C (Nueva América)</span></a>      
+        <a class="btn-ruta" href="#"><span class="ruta-number">1435-X</span><span class="ruta-name">Aerodirecto Norte</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1436</span><span class="ruta-name">La Collique / Los azules(Etssacocsac)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1437</span><span class="ruta-name">La Haydée / La Tahuantinsuyo</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1438</span><span class="ruta-name">La JV / La J-V (Sol y Mar)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1439</span><span class="ruta-name">La Ramón Castilla</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1440</span><span class="ruta-name">Consorcio Briza</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1441</span><span class="ruta-name">Consorcio Briza</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1442</span><span class="ruta-name">La P (Avagon)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1443</span><span class="ruta-name">La California</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1444</span><span class="ruta-name">La Uvita</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1445</span><span class="ruta-name">La BG / LA B-G (Avagon)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1446</span><span class="ruta-name">La 87C1 / La 87-C1 / La 87-C-1 (Cruz de Motupe)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1447</span><span class="ruta-name">La B (ETSABEPSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1448</span><span class="ruta-name">La 87C2 / La 87-C2 / La 87-C-2 (Transportes Kilmer)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1449</span><span class="ruta-name">El Lorito / La A / Lorito A (Etrarsac)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1450</span><span class="ruta-name">El Lorito / La B1 / La B-1 (Etrarsac)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1451</span><span class="ruta-name">La Q (La Esperanza)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1452</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1453</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1454</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1455</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1456</span><span class="ruta-name">Los Azules (Vencasa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1457</span><span class="ruta-name">La Aries</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1458</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1459</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1460</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1461</span><span class="ruta-name">La J (Emjupasa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1462</span><span class="ruta-name">La Huandoy / La H / La 27</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1463</span><span class="ruta-name">La L / La 108 (La ETCOSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1464</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1465</span><span class="ruta-name">La 27 / La Guadulfo Silva (ETGUSICSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1466</span><span class="ruta-name">La San Judas Tadeo</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1467</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1468</span><span class="ruta-name">La C (Vipusa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1469</span><span class="ruta-name">La A / La Evifasa A (Evifasa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1470</span><span class="ruta-name">La 49 (RUMISAC)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1471</span><span class="ruta-name">El Triángulo (Lipetsa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1472</span><span class="ruta-name">La A (ETSOSAC)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1473</span><span class="ruta-name">La 80 (ETECSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1474</span><span class="ruta-name">La 48 (Chabaquito)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1475</span><span class="ruta-name">La 94 / La Colonial (ETCOLSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1476</span><span class="ruta-name">La 47 / La Sol de Oro (ETSOSAC)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1477</span><span class="ruta-name">La 505 (Vishenzo Company)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1478</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1479</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1480</span><span class="ruta-name">El Chosicano / Chosicano verde (Etrescovissa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1481</span><span class="ruta-name">La 50 (San Sebastián)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1482</span><span class="ruta-name">La S (Aquarius)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1483</span><span class="ruta-name">La 22 (Unidad de Villa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1484</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1485</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1486</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1487</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1488</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1489</span><span class="ruta-name">---------</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1490</span><span class="ruta-name">La S1 / La S-1 (Emtessa)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1491</span><span class="ruta-name">La S (Consorcio Salamanca)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1492</span><span class="ruta-name">La M (Salvador)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1493</span><span class="ruta-name">La 10A / La 10-A (ETCAPSA)</span></a>
+        <a class="btn-ruta" href="#"><span class="ruta-number">1494</span><span class="ruta-name">La 78 (San Felipe)</span></a>
+    </div>
+
+    <div style="background: rgb(253, 253, 253); border-radius: 15px; border: 2px solid rgb(79, 195, 247); margin: 40px 0px; padding: 30px; text-align: center;">
+        <h3 style="color: #0288d1; margin: 0px;">&#191;Buscas un paradero específico?</h3>
+        <p style="color: #666666; font-size: 0.95em; margin-top: 10px;">Accede al listado completo de paraderos autorizados para las rutas convencionales en Lima y Callao.</p>
+        <a class="btn-tech" href="#directorio-paraderos">Ver Directorio de Paraderos</a>
+    </div>
+
+    <div class="section-label">Reordenamiento Estratégico PMU 2025-2045</div>
+    <div style="display: grid; gap: 12px; margin-top: 15px;">
+        <div class="box-pmu"><span>Retiro de rutas de la Vía Expresa Sur</span><span class="tech-badge">PMU 2030</span></div>
+        <div class="box-pmu"><span>Alimentación de las líneas del Metro</span><span class="tech-badge">PMU 2030</span></div>
+        <div class="box-pmu"><span>Consolidación de Ejes Periféricos Norte/Sur</span><span class="tech-badge">PMU 2045</span></div>
+    </div>
+
+    <div class="stats-container">
+        <div class="pie-chart"></div>
+        <div style="font-size: 0.85em;">
+            <h4 style="color: #37474f; margin: 0px 0px 10px;">Avance del Reordenamiento</h4>
+            <div style="align-items: center; display: flex; gap: 8px; margin-bottom: 5px;"><span class="dot" style="background: rgb(2, 136, 209);"></span> <strong>82%</strong> Unificación Numérica</div>
+            <div style="align-items: center; display: flex; gap: 8px;"><span class="dot" style="background: rgb(79, 195, 247);"></span> <strong>17%</strong> Digitalización ATU</div>
+        </div>
+    </div>
+
+    <div class="section-label">Archivo de Rutas y Códigos Desactivados</div>
+    <div style="display: grid; gap: 12px; margin-top: 15px;">
+        <div class="box-inactive"><span color="#0288d1 !important">Ruta OM-14 (Consorcio Vía)</span><span class="tech-badge">HISTÓRICO</span></div>
+        <div class="box-inactive"><span color="#0288d1 !important">Ruta IO-33 (Etrascpsa)</span><span class="tech-badge">INACTIVA</span></div>
+    </div>
+
+    <div style="background: rgb(38, 50, 56); border-radius: 15px; border-top: 4px solid rgb(79, 195, 247); color: #cfd8dc; font-size: 0.85em; margin-top: 60px; padding: 30px; text-align: justify;">
+        <strong>CONTROL TÉCNICO:</strong> Las rutas se clasifican conforme al Plan Regulador de Rutas publicado por la ATU en 2025, información verificada con la normativa vgente y validada mediante estudio de campo e intercambio de información con usuarios y actores del transporte público. Nuestra premisa es: "el dato mata al mito". 
+        <br /><br />
+        &#169; 2026 Transporte Urbano en Lima | Un proyecto de <strong>The Druk</strong>.
+    </div>
+
+</div>
+</div>
+<div class='post-sidebar invisible'>
+<div class='post-share-buttons post-share-buttons-top'>
+<div class='byline post-share-buttons goog-inline-block'>
+<div aria-owns='sharing-popup-Blog1-normalpostsidebar-8024452524504041186' class='sharing' data-title='RUTAS REGULARES AUTORIZADAS POR LA ATU '>
+<button aria-controls='sharing-popup-Blog1-normalpostsidebar-8024452524504041186' aria-label='Compartir' class='sharing-button touch-icon-button flat-button ripple' id='sharing-button-Blog1-normalpostsidebar-8024452524504041186' role='button'>
+Compartir
+</button>
+<div class='share-buttons-container'>
+<ul aria-hidden='true' aria-label='Compartir' class='share-buttons hidden' id='sharing-popup-Blog1-normalpostsidebar-8024452524504041186' role='menu'>
+<li>
+<span aria-label='Obtener enlace' class='sharing-platform-button sharing-element-link' data-href='https://draft.blogger.com/share-post/2510862522957832303/8024452524504041186?https=true&target=' data-url='https://infotransportenlima.blogspot.com/2025/02/lista-rutas-regulares-2025.html' role='menuitem' tabindex='-1' title='Obtener enlace'>
+<svg class='svg-icon-24 touch-icon sharing-link'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_link_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Obtener enlace</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Facebook' class='sharing-platform-button sharing-element-facebook' data-href='https://draft.blogger.com/share-post/2510862522957832303/8024452524504041186?https=true&target=facebook' data-url='https://infotransportenlima.blogspot.com/2025/02/lista-rutas-regulares-2025.html' role='menuitem' tabindex='-1' title='Compartir en Facebook'>
+<svg class='svg-icon-24 touch-icon sharing-facebook'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_facebook_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Facebook</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en X' class='sharing-platform-button sharing-element-twitter' data-href='https://draft.blogger.com/share-post/2510862522957832303/8024452524504041186?https=true&target=twitter' data-url='https://infotransportenlima.blogspot.com/2025/02/lista-rutas-regulares-2025.html' role='menuitem' tabindex='-1' title='Compartir en X'>
+<svg class='svg-icon-24 touch-icon sharing-twitter'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_twitter_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>X</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Pinterest' class='sharing-platform-button sharing-element-pinterest' data-href='https://draft.blogger.com/share-post/2510862522957832303/8024452524504041186?https=true&target=pinterest' data-url='https://infotransportenlima.blogspot.com/2025/02/lista-rutas-regulares-2025.html' role='menuitem' tabindex='-1' title='Compartir en Pinterest'>
+<svg class='svg-icon-24 touch-icon sharing-pinterest'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_pinterest_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Pinterest</span>
+</span>
+</li>
+<li>
+<span aria-label='Correo electrónico' class='sharing-platform-button sharing-element-email' data-href='https://draft.blogger.com/share-post/2510862522957832303/8024452524504041186?https=true&target=email' data-url='https://infotransportenlima.blogspot.com/2025/02/lista-rutas-regulares-2025.html' role='menuitem' tabindex='-1' title='Correo electrónico'>
+<svg class='svg-icon-24 touch-icon sharing-email'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_email_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Correo electrónico</span>
+</span>
+</li>
+<li aria-hidden='true' class='hidden'>
+<span aria-label='Compartir en otras aplicaciones' class='sharing-platform-button sharing-element-other' data-url='https://infotransportenlima.blogspot.com/2025/02/lista-rutas-regulares-2025.html' role='menuitem' tabindex='-1' title='Compartir en otras aplicaciones'>
+<svg class='svg-icon-24 touch-icon sharing-sharingOther'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_more_horiz_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Otras aplicaciones</span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='post-labels-sidebar'>
+<h3>Etiquetas</h3>
+<span class='byline post-labels'>
+<span class='byline-label'><!--Can't find substitution for tag [byline.label]--></span>
+<a href='https://infotransportenlima.blogspot.com/search/label/RUTAS%20CIRCULARES' rel='tag'>
+RUTAS CIRCULARES
+</a>
+<a href='https://infotransportenlima.blogspot.com/search/label/RUTAS%20DIAMETRALES' rel='tag'>
+RUTAS DIAMETRALES
+</a>
+<a href='https://infotransportenlima.blogspot.com/search/label/RUTAS%20PERIF%C3%89RICAS' rel='tag'>
+RUTAS PERIFÉRICAS
+</a>
+<a href='https://infotransportenlima.blogspot.com/search/label/RUTAS%20RADIALES' rel='tag'>
+RUTAS RADIALES
+</a>
+<a href='https://infotransportenlima.blogspot.com/search/label/TRANSPORTE%20REGULAR' rel='tag'>
+TRANSPORTE REGULAR
+</a>
+<a href='https://infotransportenlima.blogspot.com/search/label/TRANSPORTE%20URBANO%20DE%20LIMA' rel='tag'>
+TRANSPORTE URBANO DE LIMA
+</a>
+</span>
+</div>
+</div>
+</div>
+<div class='post-bottom'>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='byline post-labels'>
+<span class='byline-label'>Labels:</span>
+<a href='https://infotransportenlima.blogspot.com/search/label/RUTAS%20CIRCULARES' rel='tag'>
+RUTAS CIRCULARES
+</a>
+<a href='https://infotransportenlima.blogspot.com/search/label/RUTAS%20DIAMETRALES' rel='tag'>
+RUTAS DIAMETRALES
+</a>
+<a href='https://infotransportenlima.blogspot.com/search/label/RUTAS%20PERIF%C3%89RICAS' rel='tag'>
+RUTAS PERIFÉRICAS
+</a>
+<a href='https://infotransportenlima.blogspot.com/search/label/RUTAS%20RADIALES' rel='tag'>
+RUTAS RADIALES
+</a>
+<a href='https://infotransportenlima.blogspot.com/search/label/TRANSPORTE%20REGULAR' rel='tag'>
+TRANSPORTE REGULAR
+</a>
+<a href='https://infotransportenlima.blogspot.com/search/label/TRANSPORTE%20URBANO%20DE%20LIMA' rel='tag'>
+TRANSPORTE URBANO DE LIMA
+</a>
+</span>
+<span class='byline post-icons'>
+<span class='item-action'>
+<a href='https://draft.blogger.com/email-post/2510862522957832303/8024452524504041186' title='Enviar entrada por correo electrónico'>
+<svg class='svg-icon-24 touch-icon sharing-icon'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_email_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</a>
+</span>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='byline post-location'>
+Location:
+<a href='https://maps.google.com/maps?q=Av.+Cusco+164,+Lima+15001,+Per%C3%BA@-12.0494588,-77.0327411&z=10' target='_blank'>Av. Cusco 164, Lima 15001, Perú</a>
+</span>
+</div>
+</div>
+<div class='post-share-buttons post-share-buttons-bottom'>
+<div class='byline post-share-buttons goog-inline-block'>
+<div aria-owns='sharing-popup-Blog1-byline-8024452524504041186' class='sharing' data-title='RUTAS REGULARES AUTORIZADAS POR LA ATU '>
+<button aria-controls='sharing-popup-Blog1-byline-8024452524504041186' aria-label='Compartir' class='sharing-button touch-icon-button flat-button ripple' id='sharing-button-Blog1-byline-8024452524504041186' role='button'>
+Compartir
+</button>
+<div class='share-buttons-container'>
+<ul aria-hidden='true' aria-label='Compartir' class='share-buttons hidden' id='sharing-popup-Blog1-byline-8024452524504041186' role='menu'>
+<li>
+<span aria-label='Obtener enlace' class='sharing-platform-button sharing-element-link' data-href='https://draft.blogger.com/share-post/2510862522957832303/8024452524504041186?https=true&target=' data-url='https://infotransportenlima.blogspot.com/2025/02/lista-rutas-regulares-2025.html' role='menuitem' tabindex='-1' title='Obtener enlace'>
+<svg class='svg-icon-24 touch-icon sharing-link'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_link_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Obtener enlace</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Facebook' class='sharing-platform-button sharing-element-facebook' data-href='https://draft.blogger.com/share-post/2510862522957832303/8024452524504041186?https=true&target=facebook' data-url='https://infotransportenlima.blogspot.com/2025/02/lista-rutas-regulares-2025.html' role='menuitem' tabindex='-1' title='Compartir en Facebook'>
+<svg class='svg-icon-24 touch-icon sharing-facebook'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_facebook_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Facebook</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en X' class='sharing-platform-button sharing-element-twitter' data-href='https://draft.blogger.com/share-post/2510862522957832303/8024452524504041186?https=true&target=twitter' data-url='https://infotransportenlima.blogspot.com/2025/02/lista-rutas-regulares-2025.html' role='menuitem' tabindex='-1' title='Compartir en X'>
+<svg class='svg-icon-24 touch-icon sharing-twitter'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_twitter_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>X</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Pinterest' class='sharing-platform-button sharing-element-pinterest' data-href='https://draft.blogger.com/share-post/2510862522957832303/8024452524504041186?https=true&target=pinterest' data-url='https://infotransportenlima.blogspot.com/2025/02/lista-rutas-regulares-2025.html' role='menuitem' tabindex='-1' title='Compartir en Pinterest'>
+<svg class='svg-icon-24 touch-icon sharing-pinterest'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_pinterest_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Pinterest</span>
+</span>
+</li>
+<li>
+<span aria-label='Correo electrónico' class='sharing-platform-button sharing-element-email' data-href='https://draft.blogger.com/share-post/2510862522957832303/8024452524504041186?https=true&target=email' data-url='https://infotransportenlima.blogspot.com/2025/02/lista-rutas-regulares-2025.html' role='menuitem' tabindex='-1' title='Correo electrónico'>
+<svg class='svg-icon-24 touch-icon sharing-email'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_email_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Correo electrónico</span>
+</span>
+</li>
+<li aria-hidden='true' class='hidden'>
+<span aria-label='Compartir en otras aplicaciones' class='sharing-platform-button sharing-element-other' data-url='https://infotransportenlima.blogspot.com/2025/02/lista-rutas-regulares-2025.html' role='menuitem' tabindex='-1' title='Compartir en otras aplicaciones'>
+<svg class='svg-icon-24 touch-icon sharing-sharingOther'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_more_horiz_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Otras aplicaciones</span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class='comments embed' data-num-comments='0' id='comments'>
+<a name='comments'></a>
+<h3 class='title'>Comentarios</h3>
+<div id='Blog1_comments-block-wrapper'>
+</div>
+<div class='footer'>
+<div class='comment-form'>
+<a name='comment-form'></a>
+<h4 id='comment-post-message'>Publicar un comentario</h4>
+<p>LOS COMENTARIOS SERÁN MODERADOS, POR FAVOR, EVITE EL LENGUAJE INAPROPIADO O EL SPAM.</p>
+<a href='https://draft.blogger.com/comment/frame/2510862522957832303?po=8024452524504041186&hl=es&saa=85391&origin=https://infotransportenlima.blogspot.com&skin=notable' id='comment-editor-src'></a>
+<iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410px' id='comment-editor' name='comment-editor' src='' width='100%'></iframe>
+<script src='https://www.blogger.com/static/v1/jsbin/2403658450-comment_from_post_iframe.js' type='text/javascript'></script>
+<script type='text/javascript'>
+      BLOG_CMT_createIframe('https://draft.blogger.com/rpc_relay.html');
+    </script>
+</div>
+</div>
+</section>
+</article>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+<aside class='sidebar-container sidebar-invisible' role='complementary'>
+<div class='navigation container'>
+<button class='svg-icon-24-button sidebar-back flat-icon-button ripple'>
+<svg class='svg-icon-24'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_arrow_forward_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</button>
+</div>
+<div class='sidebar section' id='sidebar' name='Barra lateral'>
+<div class='widget BlogArchive' data-version='2' id='BlogArchive1'>
+<details class='collapsible extendable'>
+<summary>
+<div class='collapsible-title'>
+<h3 class='title'>
+ARCHIVO DEL BLOG:
+</h3>
+<svg class='svg-icon-24 chevron-down'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_expand_more_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<svg class='svg-icon-24 chevron-up'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_expand_less_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</div>
+</summary>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<div class='first-items'>
+<ul class='flat'>
+<li class='archivedate'>
+<a href='https://infotransportenlima.blogspot.com/2025/02/'>febrero 2025<span class='post-count'>3</span></a>
+</li>
+<li class='archivedate'>
+<a href='https://infotransportenlima.blogspot.com/2021/05/'>mayo 2021<span class='post-count'>1</span></a>
+</li>
+<li class='archivedate'>
+<a href='https://infotransportenlima.blogspot.com/2018/09/'>septiembre 2018<span class='post-count'>1</span></a>
+</li>
+<li class='archivedate'>
+<a href='https://infotransportenlima.blogspot.com/2018/06/'>junio 2018<span class='post-count'>1</span></a>
+</li>
+<li class='archivedate'>
+<a href='https://infotransportenlima.blogspot.com/2018/03/'>marzo 2018<span class='post-count'>1</span></a>
+</li>
+<li class='archivedate'>
+<a href='https://infotransportenlima.blogspot.com/2018/02/'>febrero 2018<span class='post-count'>2</span></a>
+</li>
+<li class='archivedate'>
+<a href='https://infotransportenlima.blogspot.com/2015/07/'>julio 2015<span class='post-count'>7</span></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</details>
+</div><div class='widget Label' data-version='2' id='Label1'>
+<details class='collapsible extendable'>
+<summary>
+<div class='collapsible-title'>
+<h3 class='title'>
+Etiquetas
+</h3>
+<svg class='svg-icon-24 chevron-down'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_expand_more_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<svg class='svg-icon-24 chevron-up'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_expand_less_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</div>
+</summary>
+<div class='widget-content list-label-widget-content'>
+<div class='first-items'>
+<ul>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/APTL'>APTL</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/ATU'>ATU</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/BUS%20INTERPROVINCIAL'>BUS INTERPROVINCIAL</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/CICLOV%C3%8DA'>CICLOVÍA</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/CODIGO%20ALFANUM%C3%89RICO'>CODIGO ALFANUMÉRICO</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/CODIGO%20ANTIGUO'>CODIGO ANTIGUO</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/CODIGO%20NUMERICO'>CODIGO NUMERICO</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/COOPERATIVAS'>COOPERATIVAS</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/CORREDOR%20AZUL'>CORREDOR AZUL</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/CORREDOR%20METROPOLITANO'>CORREDOR METROPOLITANO</a></li>
+</ul>
+</div>
+<div class='remaining-items'>
+<ul>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/CORREDOR%20MORADO'>CORREDOR MORADO</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/CORREDOR%20ROJO'>CORREDOR ROJO</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/CORREDOR%20VERDE'>CORREDOR VERDE</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/CORREDORES%20COMPLEMENTARIOS'>CORREDORES COMPLEMENTARIOS</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/CRREDOR%20AMARILLO'>CRREDOR AMARILLO</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/ENATRU'>ENATRU</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/HOJA%20DE%20RUTA'>HOJA DE RUTA</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/L%C3%8DNEA%201'>LÍNEA 1</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/L%C3%8DNEA%202'>LÍNEA 2</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/L%C3%8DNEA%203'>LÍNEA 3</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/L%C3%8DNEA%204'>LÍNEA 4</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/L%C3%8DNEA%205'>LÍNEA 5</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/L%C3%8DNEA%206'>LÍNEA 6</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/L%C3%8DNEA%207'>LÍNEA 7</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/L%C3%8DNEA%208'>LÍNEA 8</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/L%C3%8DNEA%209'>LÍNEA 9</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/METRO%20DE%20LIMA'>METRO DE LIMA</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/NORMAS%20LEGALES'>NORMAS LEGALES</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/NORMATIVA%20DE%20TRANSPORTE'>NORMATIVA DE TRANSPORTE</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/ORGANIZACI%C3%93N'>ORGANIZACIÓN</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/PROPUESTAS%20DE%20CICLOV%C3%8DAS'>PROPUESTAS DE CICLOVÍAS</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/PROPUESTAS%20DE%20CORREDORES%20DE%20BUSES'>PROPUESTAS DE CORREDORES DE BUSES</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/PROPUESTAS%20DEL%20METRO%20DE%20LIMA'>PROPUESTAS DEL METRO DE LIMA</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/PROPUESTAS%20DEL%20METROPOLITANO'>PROPUESTAS DEL METROPOLITANO</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/RUTA%20INFORMAL'>RUTA INFORMAL</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/RUTAS%20CIRCULARES'>RUTAS CIRCULARES</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/RUTAS%20DIAMETRALES'>RUTAS DIAMETRALES</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/RUTAS%20PERIF%C3%89RICAS'>RUTAS PERIFÉRICAS</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/RUTAS%20RADIALES'>RUTAS RADIALES</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/RUTAS%20TRADICIONALES'>RUTAS TRADICIONALES</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/SIT'>SIT</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/SMT'>SMT</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/SPTC'>SPTC</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/TAXI'>TAXI</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/TLMEPS'>TLMEPS</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/TRANSPORTE%20ANTIGUO'>TRANSPORTE ANTIGUO</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/TRANSPORTE%20REGULAR'>TRANSPORTE REGULAR</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/TRANSPORTE%20TUR%C3%8DSTICO'>TRANSPORTE TURÍSTICO</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/TRANSPORTE%20URBANO%20DE%20LIMA'>TRANSPORTE URBANO DE LIMA</a></li>
+<li><a class='label-name' href='https://infotransportenlima.blogspot.com/search/label/TRANV%C3%8DA'>TRANVÍA</a></li>
+</ul>
+</div>
+<span class='show-more flat-button'>Mostrar más</span>
+<span class='show-less hidden flat-button'>Mostrar menos</span>
+</div>
+</details>
+</div><div class='widget HTML' data-version='2' id='HTML6'>
+<div class='widget-content'>
+<div style="text-align:center;padding:1em 0;"> <h3><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/es/city/3936456"><span style="color:gray;">Hora local en</span><br />Lima, Perú</a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=America%2FLima" width="100%" height="115" frameborder="0" seamless></iframe> </div>
+</div>
+</div>
+<div class='widget HTML' data-version='2' id='HTML5'>
+<h3 class='title'>
+NOS LEEN DESDE:
+</h3>
+<div class='widget-content'>
+<a href="https://info.flagcounter.com/SPdt"><img src="https://s01.flagcounter.com/count2/SPdt/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_250/viewers_3/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0" /></a>
+</div>
+</div><div class='widget Followers' data-version='2' id='Followers1'>
+<h2 class='title'>NOS SIGUEN:</h2>
+<div class='widget-content'>
+<div id='Followers1-wrapper'>
+<div style='margin-right:2px;'>
+<div><script type="text/javascript" src="https://apis.google.com/js/platform.js"></script>
+<div id="followers-iframe-container"></div>
+<script type="text/javascript">
+    window.followersIframe = null;
+    function followersIframeOpen(url) {
+      gapi.load("gapi.iframes", function() {
+        if (gapi.iframes && gapi.iframes.getContext) {
+          window.followersIframe = gapi.iframes.getContext().openChild({
+            url: url,
+            where: document.getElementById("followers-iframe-container"),
+            messageHandlersFilter: gapi.iframes.CROSS_ORIGIN_IFRAMES_FILTER,
+            messageHandlers: {
+              '_ready': function(obj) {
+                window.followersIframe.getIframeEl().height = obj.height;
+              },
+              'reset': function() {
+                window.followersIframe.close();
+                followersIframeOpen("https://draft.blogger.com/followers/frame/2510862522957832303?colors\x3dCgt0cmFuc3BhcmVudBILdHJhbnNwYXJlbnQaByMzNTQ1NTIiByMzMzY3RDYqByNmZmZmZmYyByMwMDAwMDA6ByMzNTQ1NTJCByMzMzY3RDZKByMwMDAwMDBSByNGRkZGRkZaC3RyYW5zcGFyZW50\x26pageSize\x3d21\x26hl\x3des\x26origin\x3dhttps://infotransportenlima.blogspot.com");
+              },
+              'open': function(url) {
+                window.followersIframe.close();
+                followersIframeOpen(url);
+              }
+            }
+          });
+        }
+      });
+    }
+    followersIframeOpen("https://draft.blogger.com/followers/frame/2510862522957832303?colors\x3dCgt0cmFuc3BhcmVudBILdHJhbnNwYXJlbnQaByMzNTQ1NTIiByMzMzY3RDYqByNmZmZmZmYyByMwMDAwMDA6ByMzNTQ1NTJCByMzMzY3RDZKByMwMDAwMDBSByNGRkZGRkZaC3RyYW5zcGFyZW50\x26pageSize\x3d21\x26hl\x3des\x26origin\x3dhttps://infotransportenlima.blogspot.com");
+  </script></div>
+</div>
+</div>
+<div class='clear'></div>
+</div>
+</div><div class='widget Stats' data-version='2' id='Stats1'>
+<h3 class='title'>
+TOTAL DE VISITAS:
+</h3>
+<div class='widget-content'>
+<div id='Stats1_content' style='display: none;'>
+<script src='https://www.gstatic.com/charts/loader.js' type='text/javascript'></script>
+<span id='Stats1_sparklinespan' style='display:inline-block; width:75px; height:30px'></span>
+<span class='counter-wrapper text-counter-wrapper' id='Stats1_totalCount'>
+</span>
+</div>
+</div>
+</div></div>
+</aside>
+</div>
+<footer class='footer section' id='footer' name='Pie de página'><div class='widget Attribution' data-version='2' id='Attribution1'>
+<div class='widget-content'>
+<div class='blogger'>
+<a href='https://draft.blogger.com' rel='nofollow'>
+<svg class='svg-icon-24'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_post_blogger_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+Con la tecnología de Blogger
+</a>
+</div>
+<div class='copyright'>&#169; 2021 Algunos derechos reservados</div>
+</div>
+</div></footer>
+</div>
+<script type="text/javascript" src="https://resources.blogblog.com/blogblog/data/res/556268364-rockpool_compiled.js" async="true"></script>
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/2650890479-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AKZvMzt1C19gEvGr80EcHF_ZTRWk:1794077299243';_WidgetManager._Init('//draft.blogger.com/rearrange?blogID\x3d2510862522957832303','//infotransportenlima.blogspot.com/2025/02/lista-rutas-regulares-2025.html','2510862522957832303');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '2510862522957832303', 'title': 'Transporte urbano en Lima y Callao', 'url': 'https://infotransportenlima.blogspot.com/2025/02/lista-rutas-regulares-2025.html', 'canonicalUrl': 'https://infotransportenlima.blogspot.com/2025/02/lista-rutas-regulares-2025.html', 'homepageUrl': 'https://infotransportenlima.blogspot.com/', 'searchUrl': 'https://infotransportenlima.blogspot.com/search', 'canonicalHomepageUrl': 'https://infotransportenlima.blogspot.com/', 'blogspotFaviconUrl': 'https://infotransportenlima.blogspot.com/favicon.ico', 'bloggerUrl': 'https://draft.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'es', 'localeUnderscoreDelimited': 'es', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Transporte urbano en Lima y Callao - Atom\x22 href\x3d\x22https://infotransportenlima.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Transporte urbano en Lima y Callao - RSS\x22 href\x3d\x22https://infotransportenlima.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Transporte urbano en Lima y Callao - Atom\x22 href\x3d\x22https://draft.blogger.com/feeds/2510862522957832303/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Transporte urbano en Lima y Callao - Atom\x22 href\x3d\x22https://infotransportenlima.blogspot.com/feeds/8024452524504041186/comments/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'boqCommentIframeForm': true, 'loginRedirectParam': '', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/bc04e140f0b1968d', 'plusOneApiSrc': 'https://apis.google.com/js/platform.js', 'disableGComments': true, 'interstitialAccepted': false, 'sharing': {'platforms': [{'name': 'Obtener enlace', 'key': 'link', 'shareMessage': 'Obtener enlace', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Compartir en Facebook', 'target': 'facebook'}, {'name': 'Escribe un blog', 'key': 'blogThis', 'shareMessage': 'Escribe un blog', 'target': 'blog'}, {'name': 'X', 'key': 'twitter', 'shareMessage': 'Compartir en X', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Compartir en Pinterest', 'target': 'pinterest'}, {'name': 'Correo electr\xf3nico', 'key': 'email', 'shareMessage': 'Correo electr\xf3nico', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27es\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': true, 'jumpLinkMessage': 'LEER TODO \xbb', 'pageType': 'item', 'postId': '8024452524504041186', 'postImageUrl': 'https://cdn-icons-png.flaticon.com/512/1912/1912510.png', 'pageName': 'RUTAS REGULARES AUTORIZADAS POR LA ATU ', 'pageTitle': 'Transporte urbano en Lima y Callao: RUTAS REGULARES AUTORIZADAS POR LA ATU ', 'metaDescription': 'Esta es la lista completa de las rutas de transporte p\xfablico autorizadas en Lima y Callao'}}, {'name': 'features', 'data': {}}, {'name': 'messages', 'data': {'edit': 'Editar', 'linkCopiedToClipboard': 'El enlace se ha copiado en el Portapapeles.', 'ok': 'Aceptar', 'postLink': 'Enlace de la entrada'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Personalizado', 'isResponsive': true, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'RUTAS REGULARES AUTORIZADAS POR LA ATU ', 'description': 'Esta es la lista completa de las rutas de transporte p\xfablico autorizadas en Lima y Callao', 'featuredImage': 'https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_vZRNwDXAb4xV9qVDSwIcgSndaEGhOwS1NhdL7RsoijUEwOgQcetwsVbtspeJ6OcgKB1RO7TfORYXnx3gqKO97Oh5JLguU0Tkf-eudEf8go7lupS9OXXdlvWuo', 'url': 'https://infotransportenlima.blogspot.com/2025/02/lista-rutas-regulares-2025.html', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'postId': 8024452524504041186}}, {'name': 'widgets', 'data': [{'title': 'Transporte urbano en Lima y Callao (cabecera)', 'type': 'Header', 'sectionId': 'header', 'id': 'Header1'}, {'title': 'Buscar este blog', 'type': 'BlogSearch', 'sectionId': 'search_top', 'id': 'BlogSearch1'}, {'title': '\xdaLTIMAS NOTICIAS', 'type': 'HTML', 'sectionId': 'page_list_top', 'id': 'HTML1'}, {'title': '', 'type': 'HTML', 'sectionId': 'page_list_top', 'id': 'HTML2'}, {'title': '', 'type': 'HTML', 'sectionId': 'page_list_top', 'id': 'HTML3'}, {'title': '', 'type': 'HTML', 'sectionId': 'page_list_top', 'id': 'HTML4'}, {'title': 'Entradas del blog', 'type': 'Blog', 'sectionId': 'page_body', 'id': 'Blog1', 'posts': [{'id': '8024452524504041186', 'title': 'RUTAS REGULARES AUTORIZADAS POR LA ATU ', 'featuredImage': 'https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_vZRNwDXAb4xV9qVDSwIcgSndaEGhOwS1NhdL7RsoijUEwOgQcetwsVbtspeJ6OcgKB1RO7TfORYXnx3gqKO97Oh5JLguU0Tkf-eudEf8go7lupS9OXXdlvWuo', 'showInlineAds': false}], 'footerBylines': [{'regionName': 'footer1', 'items': [{'name': 'share', 'label': ''}, {'name': 'comments', 'label': 'comments'}, {'name': 'labels', 'label': 'Labels:'}, {'name': 'icons', 'label': ''}]}, {'regionName': 'footer3', 'items': [{'name': 'location', 'label': 'Location:'}]}], 'allBylineItems': [{'name': 'share', 'label': ''}, {'name': 'comments', 'label': 'comments'}, {'name': 'labels', 'label': 'Labels:'}, {'name': 'icons', 'label': ''}, {'name': 'location', 'label': 'Location:'}]}, {'title': 'ARCHIVO DEL BLOG:', 'type': 'BlogArchive', 'sectionId': 'sidebar', 'id': 'BlogArchive1'}, {'title': 'Etiquetas', 'type': 'Label', 'sectionId': 'sidebar', 'id': 'Label1'}, {'title': '', 'type': 'HTML', 'sectionId': 'sidebar', 'id': 'HTML6'}, {'title': 'NOS LEEN DESDE:', 'type': 'HTML', 'sectionId': 'sidebar', 'id': 'HTML5'}, {'title': 'NOS SIGUEN:', 'type': 'Followers', 'sectionId': 'sidebar', 'id': 'Followers1'}, {'title': 'TOTAL DE VISITAS:', 'type': 'Stats', 'sectionId': 'sidebar', 'id': 'Stats1'}, {'type': 'Attribution', 'sectionId': 'footer', 'id': 'Attribution1'}]}]);
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogSearchView', new _WidgetInfo('BlogSearch1', 'search_top', document.getElementById('BlogSearch1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'page_list_top', document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'page_list_top', document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'page_list_top', document.getElementById('HTML3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML4', 'page_list_top', document.getElementById('HTML4'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'page_body', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/4046562013-lbx__es.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/828616780-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar', document.getElementById('BlogArchive1'), {'languageDirection': 'ltr', 'loadingMessage': 'Cargando\x26hellip;'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar', document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML6', 'sidebar', document.getElementById('HTML6'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML5', 'sidebar', document.getElementById('HTML5'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_FollowersView', new _WidgetInfo('Followers1', 'sidebar', document.getElementById('Followers1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_StatsView', new _WidgetInfo('Stats1', 'sidebar', document.getElementById('Stats1'), {'title': 'TOTAL DE VISITAS:', 'showGraphicalCounter': false, 'showAnimatedCounter': false, 'showSparkline': true, 'statsUrl': '//infotransportenlima.blogspot.com/b/stats?style\x3dBLACK_TRANSPARENT\x26timeRange\x3dALL_TIME\x26token\x3dANakCksKiBJpizw0PzJMTyvyyMWIwRzHgqitdXXRwgNXZQI6FnvytlkOSAxG8ARbhrUim7Gnd_ZfEUReZrfiHbY'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer', document.getElementById('Attribution1'), {}, 'displayModeFull'));
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+# Entorno local
+.venv
+__pycache__/
+*.pyc
+.DS_Store
+
+# Nunca subir cargos ni documentos con datos personales
+solicitudes/cargo*
+*cargo*.pdf

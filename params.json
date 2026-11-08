@@ -1,0 +1,8 @@
+{
+  "consultas": {
+    "q1_victima": "(chofer OR cobrador OR conductor) (bus OR combi OR cúster OR colectivo OR \"transporte público\") (asesinado OR asesinan OR baleado OR balean OR herido OR disparan) (Lima OR Callao)",
+    "q2_unidad": "(bus OR combi OR cúster OR \"unidad de transporte\") (balacera OR \"a balazos\" OR explosivo OR atentado OR atacan) (Lima OR Callao)",
+    "q3_empresa": "\"empresa de transportes\" (atentado OR sicarios OR extorsionadores OR balean) (Lima OR Callao)"
+  },
+  "pausa_segundos": 1.5
+}

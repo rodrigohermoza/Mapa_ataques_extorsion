@@ -1,0 +1,64 @@
+# Registro de decisiones
+
+Cada entrada: qué se decidió, qué alternativas había, por qué esta, y qué haría cambiar de opinión.
+
+---
+
+## D-01 — La base de ataques se arma desde noticias
+**Fecha:** 2026-11-07 · **Estado:** propuesta, falta visto bueno de Rodrigo
+
+No se encontró ninguna base abierta con ataques por línea. Las cifras oficiales están agregadas por zona y el SIDPOL es reservado. Las notas de prensa sí nombran la empresa o línea. Las cifras oficiales sirven para validar la cobertura.
+
+**Alternativas:** solicitud de acceso a la información al Ministerio Público (puede tardar semanas y no garantiza el desglose); ACLED (por confirmar si cubre estos hechos).
+
+**Qué lo cambiaría:** que el Ministerio Público o la ATU entreguen una tabla por línea.
+
+---
+
+## D-02 — Rutas desde OpenStreetMap
+**Fecha:** 2026-11-07 · **Estado:** propuesta
+
+Es la única fuente abierta con trazados descargables (672 rutas). Se completa con las resoluciones de la ATU para saber qué empresa opera cada código.
+
+**Qué lo cambiaría:** acceso al GTFS de Plaza Cívica / ATU.
+
+---
+
+## D-03 — Seguir solo si se puede automatizar
+**Fecha:** 2026-11-07 · **Estado:** decidido por Rodrigo
+
+Mantener una base a mano es tedioso; el proyecto vale la pena solo si la recolección es automática. La prueba con Google Noticias RSS indica que sí se puede: los titulares traen empresa y distrito, y el histórico se puede recuperar por semanas (ver `04-datos-fuentes.md`, D).
+
+**Qué lo cambiaría:** que el RSS se corte o que la extracción sin IA falle en muchos casos (entonces evaluar IA con costo controlado o abandonar).
+
+**Resultado (2026-11-07):** la automatización funciona: 71% de cobertura frente a las cifras oficiales sin mototaxis (R-01).
+
+---
+
+## D-04 — Comparar solo ataques con víctimas y sin mototaxis
+**Fecha:** 2026-11-07 · **Estado:** propuesta
+
+El Ministerio Público cuenta solo ataques con fallecidos o lesionados, e incluye 45 a mototaxis y 5 a taxis. Las consultas de este proyecto buscan buses, combis, cústeres y colectivos, así que la comparación justa es 117 contra 164. Los ataques sin víctimas se guardan igual (columna `con_victimas`).
+
+---
+
+## D-05 — Notas sin distrito ni empresa no forman un hecho propio
+**Fecha:** 2026-11-07 · **Estado:** propuesta
+
+Casi siempre son otra versión de un hecho ya contado ("Nuevo atentado contra empresa de transportes en..."). Si no se puede unir a un hecho existente, se descarta. Sin esta regla la base contaba el 163% de lo oficial.
+
+---
+
+## D-06 — La actualización se corre a mano
+**Fecha:** 2026-11-07 · **Estado:** decidido por Rodrigo
+
+`make diario` no se programa: Rodrigo lo corre a mano **los fines de semana**. Por eso `--diario` ya no mira solo 3 días: retoma desde la última nota bajada (menos 3 días de margen), sin importar cuánto tiempo haya pasado. Las notas repetidas se descartan.
+
+---
+
+## D-07 — Pedir las fichas técnicas a la ATU por transparencia
+**Fecha:** 2026-11-07 · **Estado:** decidido por Rodrigo
+
+Las fichas técnicas del Plan Regulador (recorrido, longitud y flota por ruta) están en un SharePoint de la ATU que pide inicio de sesión, y gob.pe bloquea la página de las copias públicas. Se piden por la Ley 27806 en el formulario SAIP (https://soluciones.atu.gob.pe/saip_portal). También se piden trazados digitales (shapefile/KML/GTFS) y la relación de rutas vigentes. Borrador en `solicitudes/2026-11-ATU-fichas-tecnicas.md`.
+
+**Mientras tanto:** se puede usar OSM para las ~53 rutas que existen (cruce por código antiguo ↔ `old_ref`).
