@@ -78,3 +78,4 @@
 - Revisión previa: sin datos personales de Rodrigo en `solicitudes/` ni en el PDF de sustento.
 - Hallazgo: el repositorio es **público** y los titulares de las noticias nombran a víctimas (D-08). Rodrigo decide si se vuelve privado o se limpian esos archivos.
 - Agentes: ninguno.
+- Decisión: los nombres de víctimas en los titulares se quedan (noticias públicas). Regla de `CLAUDE.md` ajustada.

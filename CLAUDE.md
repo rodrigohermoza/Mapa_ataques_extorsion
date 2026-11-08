@@ -40,7 +40,7 @@ Todo con Python estándar, salvo `scripts/rutas_atu.py`, que usa `pypdf` del ven
 - Commits sin coautoría de Claude: nunca agregar `Co-Authored-By` ni menciones a Claude en mensajes de commit o PR.
 - No modificar otros proyectos (solo leer).
 - Presentar el plan antes de cambios grandes.
-- Datos sensibles: son víctimas reales. No publicar nombres de víctimas; el análisis es por línea/empresa/zona.
+- Datos sensibles: son víctimas reales. El análisis es por línea/empresa/zona. Los titulares de noticias públicas pueden quedar tal cual en el repositorio aunque nombren a víctimas (D-08); no agregar nombres por cuenta propia en resultados ni mapas.
 
 ## Proyectos relacionados (solo leer)
 - `../../Personal/Pokemon_Filogenetico/` y `../../Personal/Peptidos-antimicrobianos/` — modelo de estructura de docs y tubería reproducible (Makefile, params.yaml, uv).

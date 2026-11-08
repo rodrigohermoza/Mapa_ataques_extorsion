@@ -64,8 +64,8 @@ Las fichas técnicas del Plan Regulador (recorrido, longitud y flota por ruta) e
 **Mientras tanto:** se puede usar OSM para las ~53 rutas que existen (cruce por código antiguo ↔ `old_ref`).
 
 ## D-08 — Subir el proyecto a GitHub
-**Fecha:** 2026-11-08 · **Estado:** decidido por Rodrigo (pendiente: qué datos quedan públicos)
+**Fecha:** 2026-11-08 · **Estado:** decidido por Rodrigo
 
 Todo el proyecto va a https://github.com/rodrigohermoza/Mapa_ataques_extorsion (rama `main`), con commits solo a nombre de Rodrigo y sin coautoría de Claude. El `.gitignore` excluye `.venv`, `__pycache__`, `.DS_Store` y cualquier cargo (`*cargo*.pdf`). Se revisó que `solicitudes/` no tenga datos personales: solo el número de expediente.
 
-**Pendiente:** el repositorio es público y los titulares de las noticias (`data/raw/noticias.jsonl`, `data/processed/notas_clasificadas.csv`, columna `titular` de `ataques.csv`) incluyen nombres de víctimas. Opciones: volver privado el repositorio, o sacar esos archivos del historial y publicar solo datos agregados por línea, empresa y zona.
+**Nombres de víctimas:** el repositorio es público y algunos titulares (`data/raw/noticias.jsonl`, `data/processed/notas_clasificadas.csv`, columna `titular` de `ataques.csv`) nombran a víctimas. Rodrigo decidió dejarlos: son noticias públicas en internet. Los resultados y el mapa siguen siendo por línea, empresa y zona.
