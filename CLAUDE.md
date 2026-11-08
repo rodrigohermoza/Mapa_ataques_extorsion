@@ -15,6 +15,7 @@ Recopilar los ataques (balaceras, explosivos, asesinatos) contra cobradores, cho
 ## Estructura
 | Ruta | Qué es |
 |---|---|
+| GitHub | https://github.com/rodrigohermoza/Mapa_ataques_extorsion (**público**), rama `main`. Commits solo a nombre de Rodrigo, sin `Co-Authored-By`. |
 | `docs/` | Cuaderno del proyecto. Índice en `docs/README.md`. |
 | `BITACORA.md` | Log por sesión: qué se hizo y cómo retomar. |
 | `params.json` | Consultas a Google Noticias y pausa entre peticiones. Cambiar aquí, no en el código. |
@@ -36,7 +37,7 @@ Todo con Python estándar, salvo `scripts/rutas_atu.py`, que usa `pypdf` del ven
 - **No instalar ni descargar** datasets ni paquetes sin aprobación, indicando qué es y cuánto pesa.
 - Entornos fuera de iCloud: venv en `~/.venvs/Mapa-crimen` con `.venv` como enlace simbólico (ver `../../Personal/Información y manejo/LEEME.md`).
 - Si se usan agentes, reportar función, qué hizo, tokens y tiempo (`docs/08-agentes.md`).
-- Commits sin coautoría de Claude.
+- Commits sin coautoría de Claude: nunca agregar `Co-Authored-By` ni menciones a Claude en mensajes de commit o PR.
 - No modificar otros proyectos (solo leer).
 - Presentar el plan antes de cambios grandes.
 - Datos sensibles: son víctimas reales. No publicar nombres de víctimas; el análisis es por línea/empresa/zona.

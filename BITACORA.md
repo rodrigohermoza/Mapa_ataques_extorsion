@@ -72,3 +72,9 @@
 - Plazos: se tiene por presentada el lun 9-nov; **vence el lun 23-nov-2026**; si no responden, apelar ante el Tribunal de Transparencia en 15 días hábiles (~16-dic).
 - El cargo con datos personales queda en Descargas; en el proyecto solo se anota el número de expediente.
 - `docs/00-retomar.md` reescrito como resumen completo para retomar.
+
+## 2026-11-08 · Sesión 3: subida a GitHub
+- `git init` (rama `main`), `.gitignore` (venv, caché, cargos) y primer commit con 34 archivos (~13 MB), solo a nombre de Rodrigo. Push a https://github.com/rodrigohermoza/Mapa_ataques_extorsion.
+- Revisión previa: sin datos personales de Rodrigo en `solicitudes/` ni en el PDF de sustento.
+- Hallazgo: el repositorio es **público** y los titulares de las noticias nombran a víctimas (D-08). Rodrigo decide si se vuelve privado o se limpian esos archivos.
+- Agentes: ninguno.
