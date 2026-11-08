@@ -4,5 +4,7 @@
     "q2_unidad": "(bus OR combi OR cúster OR \"unidad de transporte\") (balacera OR \"a balazos\" OR explosivo OR atentado OR atacan) (Lima OR Callao)",
     "q3_empresa": "\"empresa de transportes\" (atentado OR sicarios OR extorsionadores OR balean) (Lima OR Callao)"
   },
-  "pausa_segundos": 1.5
+  "pausa_segundos": 1.5,
+  "pausa_google_segundos": 8,
+  "pausa_wayback_segundos": 6
 }

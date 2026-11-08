@@ -86,3 +86,4 @@
 - Prueba con 10 medios: enlace 10/10, texto 7/10, Wayback 9/10, ~5 KB por texto. Wayback tarda ~30-50 s por nota → va aparte (`make wayback`).
 - `make diario` ahora incluye `archivar.py`. Pasada de texto de las 1 890 notas restantes lanzada en segundo plano.
 - Agentes: ninguno.
+- La pasada completa se detuvo: Google respondió 429 tras ~30 notas (P-08). `archivar.py` ahora espera 8 s entre consultas y se detiene solo ante un 429. 44 notas archivadas; el resto se retoma con `make archivar`.

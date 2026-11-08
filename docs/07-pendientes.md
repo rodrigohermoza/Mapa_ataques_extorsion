@@ -21,7 +21,7 @@
 - [ ] Revisar la Bandeja de Observados del SAIP hasta el 11-nov (subsanación en 2 días hábiles).
 - [ ] **23-nov-2026: vence el plazo de la ATU.** Si no hay respuesta: apelar ante el Tribunal de Transparencia (hasta ~16-dic). Ver la solicitud.
 - [ ] Procesar la respuesta de la ATU (fichas técnicas / trazados / Excel).
-- [x] Archivar el texto de todas las notas (`make archivar`, D-09): pasada completa lanzada el 2026-11-08.
+- [ ] Archivar el texto de todas las notas (`make archivar`, D-09): 44 de 1 902 hechas; la primera pasada se detuvo por el límite de Google (P-08). Volver a correr dejando pasar unas horas (~6 h con pausa de 8 s; se puede cortar y retomar).
 - [ ] Copias en Internet Archive de todo el histórico (`make wayback`, ~20 h; correr por partes).
 - [ ] Ver si se puede sacar el texto de La República (página armada con JavaScript); por ahora solo Wayback.
 - [ ] Opcional: trazados de OSM para las ~53 rutas que existen.

@@ -72,3 +72,10 @@ Bitácora de lo que falló de verdad. Formato: síntoma, causa, resolución, lec
 **Resolución:** script propio con biblioteca estándar (`zlib` + regex sobre los operadores de texto). Funciona para el boletín del Observatorio; el Boletín Oficial N.º 6 usa fuentes con códigos (sale texto parcial). Cuidado: aplicar la regex a flujos de imagen grandes cuelga el script (se filtra por `BT` y tamaño).
 
 **Lección:** si se van a leer muchos PDF, pedir aprobación para `poppler` (brew).
+
+## P-08 — Google limita el decodificado de enlaces (429)
+**Fecha:** 2026-11-08
+
+En la pasada completa de `archivar.py`, tras ~30 notas a ~2 s entre consultas, Google respondió 429 y redirigió a `google.com/sorry` (página de "tráfico inusual" con CAPTCHA). Las 300 notas siguientes quedaron como "sin enlace real". El RSS siguió respondiendo (200).
+
+**Solución:** no se intenta saltar el bloqueo. `archivar.py` espera `pausa_google_segundos` (8 s, en `params.json`) entre consultas, se **detiene** al primer 429 y reintenta solo esas notas en la próxima corrida. Se borraron del registro las 302 notas marcadas por el bloqueo. Si vuelve a pasar con 8 s, subir la pausa o correr el histórico por partes (`--limite 200`).

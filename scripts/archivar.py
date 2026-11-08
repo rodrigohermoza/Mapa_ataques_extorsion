@@ -32,6 +32,7 @@ TEXTOS = RAIZ / "data" / "raw" / "articulos"
 PARAMS = json.loads((RAIZ / "params.json").read_text(encoding="utf-8"))
 PAUSA = PARAMS.get("pausa_segundos", 1.5)
 PAUSA_WAYBACK = PARAMS.get("pausa_wayback_segundos", 6)
+PAUSA_GOOGLE = PARAMS.get("pausa_google_segundos", 8)  # más rápido → Google bloquea (429) tras ~30 notas
 UA = "Mozilla/5.0 (Macintosh) mapa-crimen/0.1"
 MAX_HTML = 5_000_000  # no leer páginas de más de 5 MB
 
@@ -54,10 +55,16 @@ def curl(url, datos=None, max_s=30):
         return 0, "", b""
 
 
+class Bloqueo(Exception):
+    """Google respondió 429 / página de 'tráfico inusual': parar y reintentar otro día."""
+
+
 def enlace_real(url_google):
     """Google Noticias ya no deja el enlace en el id: hay que pedir firma y hora y llamar a batchexecute."""
     gid = urllib.parse.urlparse(url_google).path.rstrip("/").split("/")[-1]
-    cod, _, cuerpo = curl(f"https://news.google.com/articles/{gid}?hl=es-419&gl=PE&ceid=PE:es-419")
+    cod, final, cuerpo = curl(f"https://news.google.com/articles/{gid}?hl=es-419&gl=PE&ceid=PE:es-419")
+    if cod == 429 or "/sorry/" in final:
+        raise Bloqueo
     t = cuerpo.decode("utf-8", "replace")
     firma = re.search(r'data-n-a-sg="([^"]+)"', t)
     hora = re.search(r'data-n-a-ts="([^"]+)"', t)
@@ -67,7 +74,10 @@ def enlace_real(url_google):
                         f'null,null,0,1],"X","X",1,[1,1,1],1,1,null,0,0,null,0],"{gid}",{hora.group(1)},'
                         f'"{firma.group(1)}"]']
     datos = "f.req=" + urllib.parse.quote(json.dumps([[pedido]]))
-    cod, _, cuerpo = curl("https://news.google.com/_/DotsSplashUi/data/batchexecute", datos)
+    time.sleep(PAUSA_GOOGLE / 2)
+    cod, final, cuerpo = curl("https://news.google.com/_/DotsSplashUi/data/batchexecute", datos)
+    if cod == 429 or "/sorry/" in final:
+        raise Bloqueo
     try:
         bloque = json.loads(cuerpo.decode("utf-8").split("\n\n", 1)[1])
         return json.loads(bloque[0][2])[1]
@@ -156,7 +166,7 @@ def archivar_texto(n, hechos):
     e["archivado"] = dt.date.today().isoformat()
     if not e["url_real"]:
         e["url_real"] = enlace_real(n["url"]) or ""
-        time.sleep(PAUSA)
+        time.sleep(PAUSA_GOOGLE / 2)
     if not e["url_real"]:
         e["texto"] = "sin enlace real"
         return e
@@ -189,6 +199,7 @@ def main():
                       and not hechos[n["guid"]]["wayback"]]
     else:
         pendientes = [n for n in notas if n["guid"] not in hechos
+                      or hechos[n["guid"]]["texto"] == "sin enlace real"
                       or (a.reintentar and hechos[n["guid"]]["texto"] != "ok")]
     pendientes.sort(key=lambda n: n["fecha"], reverse=True)  # lo más reciente primero
     if a.limite:
@@ -202,7 +213,12 @@ def main():
             e = hechos[n["guid"]]
             e["wayback"], e["wayback_estado"] = wayback(e["url_real"])
         else:
-            e = archivar_texto(n, hechos)
+            try:
+                e = archivar_texto(n, hechos)
+            except Bloqueo:
+                print(f"Google limitó las consultas (429) en la nota {i}. Se detiene; lo pendiente se "
+                      "retoma en la próxima corrida (esperar unas horas).")
+                break
         hechos[n["guid"]] = e
         guardar_estado(hechos)  # se guarda tras cada nota: se puede cortar con Ctrl+C sin perder nada
         print(f"[{i}/{len(pendientes)}] {n['medio'][:18]:18} texto={e['texto']:<15} {e['chars']:>6} car. "
