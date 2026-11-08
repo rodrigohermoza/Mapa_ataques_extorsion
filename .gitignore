@@ -7,3 +7,7 @@ __pycache__/
 # Nunca subir cargos ni documentos con datos personales
 solicitudes/cargo*
 *cargo*.pdf
+
+# Textos de artículos: derechos de autor, solo en disco local
+data/raw/articulos/
+data/raw/archivo_texto.log

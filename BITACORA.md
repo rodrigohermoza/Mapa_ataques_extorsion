@@ -79,3 +79,10 @@
 - Hallazgo: el repositorio es **público** y los titulares de las noticias nombran a víctimas (D-08). Rodrigo decide si se vuelve privado o se limpian esos archivos.
 - Agentes: ninguno.
 - Decisión: los nombres de víctimas en los titulares se quedan (noticias públicas). Regla de `CLAUDE.md` ajustada.
+
+## 2026-11-08 · Sesión 3b: archivo de noticias
+- Problema: solo guardábamos titular y enlace de Google; si el medio borra la nota, se pierde. Rodrigo aprobó archivar (D-09).
+- `scripts/archivar.py`: enlace real del medio, texto en `data/raw/articulos/` (fuera de git, derechos de autor) y copia en Internet Archive. Registro público en `data/raw/archivo.jsonl`.
+- Prueba con 10 medios: enlace 10/10, texto 7/10, Wayback 9/10, ~5 KB por texto. Wayback tarda ~30-50 s por nota → va aparte (`make wayback`).
+- `make diario` ahora incluye `archivar.py`. Pasada de texto de las 1 890 notas restantes lanzada en segundo plano.
+- Agentes: ninguno.

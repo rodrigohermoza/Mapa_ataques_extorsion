@@ -19,8 +19,9 @@ Recopilar los ataques (balaceras, explosivos, asesinatos) contra cobradores, cho
 | `docs/` | Cuaderno del proyecto. Índice en `docs/README.md`. |
 | `BITACORA.md` | Log por sesión: qué se hizo y cómo retomar. |
 | `params.json` | Consultas a Google Noticias y pausa entre peticiones. Cambiar aquí, no en el código. |
-| `Makefile` | `make diario` (lo corre Rodrigo los fines de semana; retoma desde la última nota y procesa, ~20–60 s), `make procesar`, `make historico` (~70 min). |
+| `Makefile` | `make diario` (lo corre Rodrigo los fines de semana; retoma desde la última nota, archiva el texto de las nuevas y procesa, ~1–5 min), `make procesar`, `make historico` (~70 min). |
 | `scripts/recolectar.py` | Google Noticias RSS → `data/raw/noticias.jsonl` (solo se agregan notas nuevas, nunca se borra). Usa `curl` (P-05). |
+| `scripts/archivar.py` | Para que las notas no se pierdan: enlace real del medio + texto → `data/raw/articulos/` (**solo en disco**, fuera de git por derechos de autor) y copia en Internet Archive. Registro en `data/raw/archivo.jsonl` (sí va a git). `make archivar`, `make wayback` (D-09). |
 | `scripts/extraer.py` | Titulares → filtro → distrito, empresa, rol, víctimas → agrupa notas del mismo hecho → `data/processed/ataques.csv` y `notas_clasificadas.csv`. Sin IA. |
 | `scripts/validar.py` | Compara con el Ministerio Público → `results/validacion.md` (cobertura y ranking de empresas). |
 | `scripts/lineas.py` | Directorio de rutas (blog infotransportenlima) → `data/processed/lineas.csv`: código ATU, sobrenombres, empresa. También `buscar()`, que usa `extraer.py` para llenar `codigos_ruta` y `cruce_ruta` en `ataques.csv`. |

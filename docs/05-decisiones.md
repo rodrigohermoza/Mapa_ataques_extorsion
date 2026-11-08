@@ -69,3 +69,15 @@ Las fichas técnicas del Plan Regulador (recorrido, longitud y flota por ruta) e
 Todo el proyecto va a https://github.com/rodrigohermoza/Mapa_ataques_extorsion (rama `main`), con commits solo a nombre de Rodrigo y sin coautoría de Claude. El `.gitignore` excluye `.venv`, `__pycache__`, `.DS_Store` y cualquier cargo (`*cargo*.pdf`). Se revisó que `solicitudes/` no tenga datos personales: solo el número de expediente.
 
 **Nombres de víctimas:** el repositorio es público y algunos titulares (`data/raw/noticias.jsonl`, `data/processed/notas_clasificadas.csv`, columna `titular` de `ataques.csv`) nombran a víctimas. Rodrigo decidió dejarlos: son noticias públicas en internet. Los resultados y el mapa siguen siendo por línea, empresa y zona.
+
+## D-09 — Archivar cada noticia (texto local + Internet Archive)
+**Fecha:** 2026-11-08 · **Estado:** decidido por Rodrigo
+
+Los medios pueden borrar las notas, y `noticias.jsonl` solo guarda titular, medio, fecha y el enlace de Google Noticias (que redirige al medio). `scripts/archivar.py`:
+1. Decodifica el enlace de Google Noticias al enlace real (página del artículo → firma y hora → `batchexecute`).
+2. Guarda solo el texto (título, fecha, cuerpo; JSON-LD `articleBody` o los `<p>`) en `data/raw/articulos/<id>.json`. **Fuera de git**: los textos tienen derechos de autor y el repositorio es público.
+3. Pide una copia a Internet Archive (Save Page Now) o usa la que ya exista; el enlace queda en el registro público `data/raw/archivo.jsonl`.
+
+Prueba con 10 notas de distintos medios (2026-11-08): enlace real 10/10, texto 6/10 → 7/10 tras mejorar la extracción, Wayback 9/10, ~5 KB por texto. Sin texto: Facebook (videos), La República (se arma con JavaScript), Perú 21 (403). Para esos queda la copia de Wayback.
+
+Wayback es lento (~30-50 s por nota → ~20 h para todo el histórico), así que va aparte: `make wayback`, que se puede cortar y retomar.

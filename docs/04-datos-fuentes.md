@@ -84,6 +84,11 @@ Vías para recopilar (todas gratis):
 - Histórico: con `after:AAAA-MM-DD before:AAAA-MM-DD` funciona hacia atrás (probado sep-2024 y ago-2025: Vipusa en Ancón, TransLima en SMP, Huandoy en Carabayllo, El Chino…), pero **devuelve solo 10 notas por rango antiguo**: hay que pedir ventanas cortas (semana o día) y varias consultas.
 - Riesgo: Google puede cambiar o limitar el RSS sin aviso. No es una API oficial.
 
+### D1b. Archivo de cada nota (2026-11-08, D-09)
+- Enlace real: los enlaces de Google Noticias (`/rss/articles/CBMi…`) ya no llevan la URL codificada. Se abre `news.google.com/articles/<id>`, se leen `data-n-a-sg` (firma) y `data-n-a-ts` (hora) y se llama a `/_/DotsSplashUi/data/batchexecute` (`Fbv4je`/`garturlreq`). Funcionó 10/10 en la prueba. Puede romperse si Google lo cambia.
+- Texto: JSON-LD `articleBody` o los `<p>` (lo más largo). Sin texto: Facebook, La República (JavaScript), Perú 21 (403).
+- Internet Archive: `archive.org/wayback/available?url=` (¿ya existe copia?) y `web.archive.org/save/<url>` (pedir copia). Gratis, sin cuenta, ~30-50 s por nota.
+
 ### D2. GDELT DOC API — funciona pero limita
 - Responde "una petición cada 5 segundos". Útil como segunda fuente y para el histórico; por probar con calma.
 

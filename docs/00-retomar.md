@@ -26,6 +26,7 @@ Base automática de ataques al transporte de Lima y Callao armada desde Google N
 - `make procesar` = lineas → rutas_atu → extraer → validar. `make diario` = recolectar + procesar.
 
 ## Próximos pasos
+- **Archivo de noticias (D-09):** `make diario` ahora guarda el texto de cada nota nueva en `data/raw/articulos/` (solo local). Falta la copia en Internet Archive del histórico: `make wayback` (~20 h; se puede cortar y retomar).
 1. **Cuando llegue la respuesta de la ATU:** guardar los archivos en `data/raw/rutas/atu/`, ver el formato (PDF de fichas, shapefile, KML, Excel) y escribir el lector. Unir por código de ruta (1001–1462) con `rutas_atu.csv`.
 2. **Mientras tanto (opcional):** bajar los trazados de OSM de las rutas que existan (cruce `codigo_antiguo` ↔ `old_ref` / `ref`). Medir el tamaño antes de descargar y pedir aprobación.
 3. Revisar a mano los cruces "aproximado" y "oficial" dudosos (p. ej. "estrella" → 4 rutas) y los sobrenombres ambiguos ("La 41" → 4 códigos). Con los recorridos se desambiguan por distrito.

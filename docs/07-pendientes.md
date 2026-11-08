@@ -6,7 +6,7 @@
 3. ~~Recopilación~~ → automática con Google Noticias RSS + reglas (D-03). Hecho el 2026-11-07.
 6. ~~¿Programar `make diario`?~~ → Rodrigo lo corre a mano los fines de semana (D-06).
 4. **Solicitud de acceso a la información:** ¿quieres pedir al Ministerio Público la tabla por empresa/línea y a la ATU el GTFS? (lo envías tú; yo preparo el texto).
-5. ¿Repositorio en GitHub público o privado?
+5. ~~¿Repositorio en GitHub público o privado?~~ → público, titulares incluidos (D-08).
 
 ## Tareas
 - [x] Boletines del Ministerio Público revisados: sin desglose por línea (2026-11-07).
@@ -21,4 +21,7 @@
 - [ ] Revisar la Bandeja de Observados del SAIP hasta el 11-nov (subsanación en 2 días hábiles).
 - [ ] **23-nov-2026: vence el plazo de la ATU.** Si no hay respuesta: apelar ante el Tribunal de Transparencia (hasta ~16-dic). Ver la solicitud.
 - [ ] Procesar la respuesta de la ATU (fichas técnicas / trazados / Excel).
+- [x] Archivar el texto de todas las notas (`make archivar`, D-09): pasada completa lanzada el 2026-11-08.
+- [ ] Copias en Internet Archive de todo el histórico (`make wayback`, ~20 h; correr por partes).
+- [ ] Ver si se puede sacar el texto de La República (página armada con JavaScript); por ahora solo Wayback.
 - [ ] Opcional: trazados de OSM para las ~53 rutas que existen.
