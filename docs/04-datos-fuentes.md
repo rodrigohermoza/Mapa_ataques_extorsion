@@ -72,6 +72,10 @@ Vías para recopilar (todas gratis):
 - Datos públicos en `data/raw/atu/` (10 MB, en git): `rutas_autorizadas_2026-11-05_shp.zip`, `fichas_prr_1.zip`, `fichas_prr_2.zip` (originales) y `relacion_rutas_2026.csv` (contenido del Excel; el `.xlsx` queda fuera de git por sus metadatos). La carta y el memorando, solo en disco (`data/ATU/`). Detalle en `../solicitudes/2026-11-ATU-fichas-tecnicas.md`.
 - Procesado: `trazados_atu.py` → `rutas_trazados.geojson` + `rutas_oficiales.csv`; `fichas_atu.py` → `fichas_atu.csv`; `cruce_rutas.py` → `ataques_por_ruta.csv`, `ataques_por_empresa.csv`, `results/rutas_atu.md`. Problemas en P-09.
 
+### B2c. Límites distritales y geocodificación (2026-11-28)
+- `data/raw/limites/peru_distrital_simple.geojson` (1.9 MB): https://github.com/juaneladio/peru-geojson (MPL-2.0; polígonos simplificados del INEI). Se usan los 49 de Lima y Callao (P-11).
+- Nominatim (https://nominatim.openstreetmap.org, datos © OpenStreetMap, ODbL): búsqueda de los lugares nombrados en las noticias. Política: ≤1 consulta/s, sin uso masivo; se respeta con pausa de 1.1 s, tope de 400 consultas por corrida y caché.
+
 ### B3. GTFS de Plaza Cívica (con ATU, Ualabee, Google)
 - https://plazacivica-web.pages.dev/en/casos/digitalizacion-de-datos-de-transporte-urbano-en-lima-y-callao
 - Digitalizaron las rutas de Lima y Callao a GTFS (lo usa Google Maps). **No hay enlace de descarga, ni licencia, ni número de rutas.** Se podría escribir para pedirlo.

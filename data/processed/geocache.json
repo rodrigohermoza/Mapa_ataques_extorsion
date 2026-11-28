@@ -1,0 +1,416 @@
+{
+"Asentamiento humano Nueva Caledonia, Chorrillos, Lima, Perú": [],
+"Avenida Agustín La, San Juan de Miraflores, Lima, Perú": [
+{
+"lat": -12.1494922,
+"lon": -76.968441,
+"nombre": "Avenida Defensores de Lima, El Arenal, Pamplona, San Juan de Miraflores, Lima, Lima Metropolitana, Lima, 15804, Perú"
+}
+],
+"Avenida Alfredo Mendiola, Independencia, Lima, Perú": [
+{
+"lat": -12.0068727,
+"lon": -77.0590782,
+"nombre": "Antar Retail Perú, 1400, Avenida Alfredo Mendiola, Urbanización Mesa Redonda, San Martín de Porres, Lima, Lima Metropoli"
+}
+],
+"Avenida Angamos, Surquillo, Lima, Perú": [
+{
+"lat": -12.1118776,
+"lon": -77.001352,
+"nombre": "Avenida Angamos Este, Trabajadores Telefónicos, Surquillo, Lima, Lima Metropolitana, Lima, 15038, Perú"
+},
+{
+"lat": -12.1117963,
+"lon": -77.0001751,
+"nombre": "Avenida Angamos Este, Urb. Vipep, Surquillo, Lima, Lima Metropolitana, Lima, 15038, Perú"
+},
+{
+"lat": -12.1118115,
+"lon": -77.0003803,
+"nombre": "Avenida Angamos Este, La Calera de la Merced, Surquillo, Lima, Lima Metropolitana, Lima, 15038, Perú"
+}
+],
+"Avenida Argentina, Callao, Lima, Perú": [
+{
+"lat": -12.047159,
+"lon": -77.0844852,
+"nombre": "Avenida República de Argentina, Villa Señor De Los Milagros, Carmen de la Legua Reynoso, Carmen de La Legua-Reynoso, Cal"
+},
+{
+"lat": -12.0465624,
+"lon": -77.0767325,
+"nombre": "Avenida República de Argentina, Callao, Lima, Lima Metropolitana, Lima, 15081, Perú"
+}
+],
+"Avenida Bolívar, Pueblo Libre, Lima, Perú": [
+{
+"lat": -12.0713508,
+"lon": -77.0737897,
+"nombre": "Avenida Simón Bolivar, Pueblo Libre, Lima, Lima Metropolitana, Lima, 15084, Perú"
+},
+{
+"lat": -12.0751297,
+"lon": -77.0537599,
+"nombre": "Avenida Simón Bolivar, Oyague, Jesús María, Lima, Lima Metropolitana, Lima, 15072, Perú"
+}
+],
+"Avenida Canadá, La Victoria, Lima, Perú": [
+{
+"lat": -12.0827116,
+"lon": -77.0157074,
+"nombre": "Avenida Canadá, Urbanización Santa Catalina, La Victoria, Lima, Lima Metropolitana, Lima, 15034, Perú"
+},
+{
+"lat": -12.0816306,
+"lon": -77.0182074,
+"nombre": "Avenida Canadá, Urbanización Monte Carmelo, La Victoria, Lima, Lima Metropolitana, Lima, 15034, Perú"
+},
+{
+"lat": -12.0818958,
+"lon": -77.0170589,
+"nombre": "Avenida Canadá, La Pólvora, La Victoria, Lima, Lima Metropolitana, Lima, 15034, Perú"
+}
+],
+"Avenida Canadá, Lima, Perú": [
+{
+"lat": -12.0793807,
+"lon": -76.9911655,
+"nombre": "Avenida Canadá, San Luis, Lima, Lima Metropolitana, Lima, 15022, Perú"
+},
+{
+"lat": -12.0334598,
+"lon": -77.0650888,
+"nombre": "Avenida Canadá, Perú 1ra Zona, San Martín de Porres, Lima, Lima Metropolitana, Lima, 15101, Perú"
+},
+{
+"lat": -12.0809099,
+"lon": -76.9936403,
+"nombre": "Avenida Canadá, San Luis, Lima, Lima Metropolitana, Lima, 15041, Perú"
+}
+],
+"Avenida Canta Callao, Callao, Lima, Perú": [
+{
+"lat": -11.9940893,
+"lon": -77.1099105,
+"nombre": "Avenida Canta Callao, San Remo, San Martín de Porres, Lima, Lima Metropolitana, Lima, 15112, Perú"
+},
+{
+"lat": -11.9955164,
+"lon": -77.1113725,
+"nombre": "Avenida Canta Callao, Praderas del Sol, Callao, Lima Metropolitana, Callao, 15112, Perú"
+},
+{
+"lat": -11.997559,
+"lon": -77.1137821,
+"nombre": "Avenida Canta Callao, Alameda Portuaria, Taboada, Callao, Lima Metropolitana, Callao, 15112, Perú"
+}
+],
+"Avenida Circunvalación, Callao, Lima, Perú": [
+{
+"lat": -12.043,
+"lon": -77.1090613,
+"nombre": "Avenida Circunvalación, Santa Rosa, Callao, Lima Metropolitana, Callao, 07026, Perú"
+},
+{
+"lat": -12.0448199,
+"lon": -77.109529,
+"nombre": "Avenida Circunvalación, Santa Rosa, Callao, Lima Metropolitana, Callao, 07026, Perú"
+}
+],
+"Avenida Colonial, Callao, Lima, Perú": [
+{
+"lat": -12.0500352,
+"lon": -77.0783723,
+"nombre": "Avenida Óscar Raimundo Benavides, Callao, Lima Metropolitana, Callao, 15081, Perú"
+},
+{
+"lat": -12.049888,
+"lon": -77.0781497,
+"nombre": "Avenida Óscar Raimundo Benavides, Callao, Lima Metropolitana, Callao, 15081, Perú"
+},
+{
+"lat": -12.0517128,
+"lon": -77.0873252,
+"nombre": "Avenida Óscar Raimundo Benavides, Lima, Lima Metropolitana, Lima, 15081, Perú"
+}
+],
+"Avenida Colonial, Cercado de Lima, Lima, Perú": [],
+"Avenida Comandante Pérez Salmón, Callao, Lima, Perú": [
+{
+"lat": -12.0536973,
+"lon": -77.1166521,
+"nombre": "Avenida Comandante Pérez Salmón, Condominio Villanova 2, Callao, Lima Metropolitana, Callao, 07001, Perú"
+},
+{
+"lat": -12.0534704,
+"lon": -77.1150702,
+"nombre": "Avenida Comandante Pérez Salmón, Condominio Villanova 2, Callao, Lima Metropolitana, Callao, 07011, Perú"
+}
+],
+"Avenida Guardia Civil, Chorrillos, Lima, Perú": [
+{
+"lat": -12.1837469,
+"lon": -77.001887,
+"nombre": "Avenida Guardia Civil, Sarita Colonia, Chorrillos, Lima, Lima Metropolitana, Lima, 15067, Perú"
+},
+{
+"lat": -12.1761305,
+"lon": -76.9946297,
+"nombre": "Avenida Guardia Civil, Chorrillos, Lima, Lima Metropolitana, Lima, 15054, Perú"
+},
+{
+"lat": -12.1820091,
+"lon": -76.9991581,
+"nombre": "Avenida Guardia Civil, Chorrillos, Lima, Lima Metropolitana, Lima, 15067, Perú"
+}
+],
+"Avenida Izaguirre, Los Olivos, Lima, Perú": [
+{
+"lat": -11.9916745,
+"lon": -77.0725566,
+"nombre": "BBVA Perú, Avenida Carlos Alberto Izaguirre, Urbanización Villa los Ángeles, Los Olivos, Lima, Lima Metropolitana, Lima,"
+}
+],
+"Avenida José Granda, Callao, Lima, Perú": [],
+"Avenida José Gá, Callao, Lima, Perú": [
+{
+"lat": -12.0666415,
+"lon": -77.1261622,
+"nombre": "Avenida José Gálvez, La Huaca, La Perla, Callao, Lima Metropolitana, Callao, 07016, Perú"
+},
+{
+"lat": -11.9392319,
+"lon": -77.1330801,
+"nombre": "Avenida Malecón José Olaya, Marquez, Callao, Lima Metropolitana, Callao, 15113, Perú"
+},
+{
+"lat": -11.9418878,
+"lon": -77.1341604,
+"nombre": "Avenida José Carlos Mariátegui, Marquez, Callao, Lima Metropolitana, Callao, 15113, Perú"
+}
+],
+"Avenida La Marina, La Perla, Lima, Perú": [
+{
+"lat": -12.0714721,
+"lon": -77.1074006,
+"nombre": "Avenida de La Marina, La Perla, Callao, Lima Metropolitana, Callao, 07011, Perú"
+}
+],
+"Avenida Las Torres, Lurigancho-Chosica, Lima, Perú": [],
+"Avenida Latinoamérica, Villa María del Triunfo, Lima, Perú": [
+{
+"lat": -12.1483921,
+"lon": -76.9467813,
+"nombre": "Avenida Latinoamerica, Vallecito, Villa María del Triunfo, Lima, Lima Metropolitana, Lima, 15088, Perú"
+},
+{
+"lat": -12.1476712,
+"lon": -76.9508736,
+"nombre": "Avenida Latinoamerica, Vallecito, Villa María del Triunfo, Lima, Lima Metropolitana, Lima, 15811, Perú"
+}
+],
+"Avenida Los Héroes, San Juan de Miraflores, Lima, Perú": [
+{
+"lat": -12.1533372,
+"lon": -76.9742424,
+"nombre": "Avenida Los Héroes, Ciudad de Dios, San Juan de Miraflores, Lima, Lima Metropolitana, Lima, 15801, Perú"
+},
+{
+"lat": -12.1545776,
+"lon": -76.9697662,
+"nombre": "Avenida Los Héroes, Ciudad de Dios, San Juan de Miraflores, Lima, Lima Metropolitana, Lima, 15801, Perú"
+},
+{
+"lat": -12.1552374,
+"lon": -76.9691736,
+"nombre": "Avenida Los Héroes, Ciudad de Dios, San Juan de Miraflores, Lima, Lima Metropolitana, Lima, 15801, Perú"
+}
+],
+"Avenida Néstor Gambetta, Callao, Lima, Perú": [
+{
+"lat": -12.0446881,
+"lon": -77.126409,
+"nombre": "Avenida Coronel Néstor Gambetta, Ramon Castilla, Callao, Lima Metropolitana, Callao, 07001, Perú"
+},
+{
+"lat": -12.0445896,
+"lon": -77.1264182,
+"nombre": "Avenida Coronel Nestor Gambetta, Ramon Castilla, Callao, Lima Metropolitana, Callao, 07001, Perú"
+},
+{
+"lat": -11.8864623,
+"lon": -77.126308,
+"nombre": "Autopista Ventanilla, Asentamiento Humano Susana Higushi, Angamos, Ventanilla, Callao, Lima Metropolitana, Callao, 07051"
+}
+],
+"Avenida Perú, Callao, Lima, Perú": [
+{
+"lat": -12.0298965,
+"lon": -77.094156,
+"nombre": "Avenida Perú, Callao, Lima Metropolitana, Callao, 51131, Perú"
+},
+{
+"lat": -12.0300603,
+"lon": -77.0944936,
+"nombre": "Avenida Perú, Perú 4ta Zona, San Martín de Porres, Lima, Lima Metropolitana, Lima, 51131, Perú"
+}
+],
+"Avenida Pérez Salom, Callao, Lima, Perú": [],
+"Avenida Revolución, Comas, Lima, Perú": [
+{
+"lat": -11.9150977,
+"lon": -77.0334199,
+"nombre": "Avenida Revolución, Collique Zona 2, Collique, Comas, Lima, Lima Metropolitana, Lima, 15313, Perú"
+},
+{
+"lat": -11.9128709,
+"lon": -77.0032109,
+"nombre": "Avenida Revolución, Santa Rosa de Collique, Comas, Lima, Lima Metropolitana, Lima, 15324, Perú"
+},
+{
+"lat": -11.9168168,
+"lon": -77.038562,
+"nombre": "Avenida Revolución, Collique Zona 1, Año Nuevo, Comas, Lima, Lima Metropolitana, Lima, 15313, Perú"
+}
+],
+"Avenida Sebastián Lorente, Cercado de Lima, Lima, Perú": [],
+"Avenida Universitaria, Cercado de Lima, Lima, Perú": [],
+"Avenida Venezuela, Callao, Lima, Perú": [
+{
+"lat": -12.063007,
+"lon": -77.1013205,
+"nombre": "Avenida República de Venezuela, Bellavista, Callao, Lima Metropolitana, Callao, 06011, Perú"
+},
+{
+"lat": -12.0631012,
+"lon": -77.1012511,
+"nombre": "Auxiliar Avenida República de Venezuela, Bellavista, Callao, Lima Metropolitana, Callao, 06011, Perú"
+},
+{
+"lat": -12.0615599,
+"lon": -77.0876056,
+"nombre": "Avenida República de Venezuela, San Miguel, Lima, Lima Metropolitana, Lima, 15081, Perú"
+}
+],
+"Avenida Venezuela, San Miguel, Lima, Perú": [
+{
+"lat": -12.0630879,
+"lon": -77.0975248,
+"nombre": "Auxiliar Avenida República de Venezuela, Villalba, San Miguel, Lima, Lima Metropolitana, Lima, 06011, Perú"
+},
+{
+"lat": -12.0626076,
+"lon": -77.0976475,
+"nombre": "Avenida República de Venezuela, Villalba, San Miguel, Lima, Lima Metropolitana, Lima, 06011, Perú"
+},
+{
+"lat": -12.063007,
+"lon": -77.1013205,
+"nombre": "Avenida República de Venezuela, Bellavista, Callao, Lima Metropolitana, Callao, 06011, Perú"
+}
+],
+"Avenida Venezuela.Luego, Callao, Lima, Perú": [],
+"Avenida Zarumilla, Lurín, Lima, Perú": [],
+"Calle Baca Flor, Callao, Lima, Perú": [
+{
+"lat": -12.0647093,
+"lon": -77.1120583,
+"nombre": "Calle Baca Flor, La Perla, Callao, Lima Metropolitana, Callao, 07011, Perú"
+}
+],
+"Calle Elías Chunga Zapata, Callao, Lima, Perú": [
+{
+"lat": -12.0641506,
+"lon": -77.1044803,
+"nombre": "Calle Elías Chunga Zapata, La Perla, Callao, Lima Metropolitana, Callao, 07011, Perú"
+}
+],
+"Distrito de La Punta, Lima, Perú": [],
+"Distrito de Santa Anita, Lima, Perú": [],
+"Mercado Sarita Colonia, Callao, Lima, Perú": [
+{
+"lat": -12.0526371,
+"lon": -77.1208538,
+"nombre": "Mercado Sarita Colonia, Calle Los Cactus, Jose Boterin, Callao, Lima Metropolitana, Callao, 07001, Perú"
+}
+],
+"Paradero Materiales, Cercado de Lima, Lima, Perú": [],
+"Paradero Soyuz, Santiago de Surco, Lima, Perú": [],
+"Paradero de Acho, Rímac, Lima, Perú": [],
+"Paradero de Comas, Comas, Lima, Perú": [
+{
+"lat": -11.901301,
+"lon": -77.0399465,
+"nombre": "Paradero San Felipe, Avenida Universitaria, San Felipe 2, Comas, Lima, Lima Metropolitana, Lima, 15316, Perú"
+},
+{
+"lat": -11.9037331,
+"lon": -77.0523124,
+"nombre": "Paradero Alameda del Pinar, Avenida Chillón Trapiche, Comas, Lima, Lima Metropolitana, Lima, 15313, Perú"
+},
+{
+"lat": -11.9338842,
+"lon": -77.0466677,
+"nombre": "Paradero La Pascana, Avenida Túpac Amaru, Repartición, El Carmen, Comas, Lima, Lima Metropolitana, Lima, 15326, Perú"
+}
+],
+"Plaza Italia, Lima, Perú": [
+{
+"lat": -12.0507239,
+"lon": -77.0228008,
+"nombre": "Plaza Italia, Quinta Las Nieves, Urbanización Barrios Altos, Lima, Lima Metropolitana, Lima, Perú"
+}
+],
+"Plaza Norte, San Martín de Porres, Lima, Perú": [
+{
+"lat": -12.0062548,
+"lon": -77.0587668,
+"nombre": "Plaza Norte, San Martín de Porres, Lima, Lima Metropolitana, Lima, 15311, Perú"
+},
+{
+"lat": -12.006267,
+"lon": -77.0588136,
+"nombre": "Plaza Norte, 1400, Avenida Tomás Valle, Fiori, Independencia, Lima, Lima Metropolitana, Lima, 15333, Perú"
+},
+{
+"lat": -12.0069068,
+"lon": -77.0613197,
+"nombre": "Plaza Norte, Avenida Alfredo Mendiola, Urbanización Mesa Redonda, San Martín de Porres, Lima, Lima Metropolitana, Lima, "
+}
+],
+"Puente Acho, Rímac, Lima, Perú": [
+{
+"lat": -12.0426123,
+"lon": -77.0229483,
+"nombre": "Puente De Acho, Rímac, Lima, Lima Metropolitana, Lima, 15093, Perú"
+}
+],
+"Puente Atocongo, San Juan de Miraflores, Lima, Perú": [],
+"Puente Nuevo, Lima, Perú": [
+{
+"lat": -12.0298581,
+"lon": -76.9998979,
+"nombre": "Puente Nuevo, Vía de Evitamiento, Urbanización Residencial Primavera, El Agustino, Lima, Lima Metropolitana, Lima, 15401"
+},
+{
+"lat": -12.0297256,
+"lon": -76.9998897,
+"nombre": "Puente Nuevo, Vía de Evitamiento, Urbanización Residencial Primavera, El Agustino, Lima, Lima Metropolitana, Lima, 15401"
+}
+],
+"Urbanización La Capitana, Lurigancho-Chosica, Lima, Perú": [],
+"Óvalo Chepén, Lurín, Lima, Perú": [],
+"Óvalo La Perla, La Perla, Lima, Perú": [
+{
+"lat": -12.0650644,
+"lon": -77.1180824,
+"nombre": "Óvalo La Perla, Avenida República de Venezuela, Bellavista, La Perla, Callao, Lima Metropolitana, Callao, 07016, Perú"
+},
+{
+"lat": -12.0673038,
+"lon": -77.1163598,
+"nombre": "Óvalo La Perla, Avenida de La Marina, La Huaca, La Perla, Callao, Lima Metropolitana, Callao, 07016, Perú"
+}
+]
+}

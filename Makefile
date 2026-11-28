@@ -19,6 +19,7 @@ procesar:
 	$(PY) scripts/extraer.py
 	$(PY) scripts/validar.py > /dev/null
 	$(PY) scripts/cruce_rutas.py
+	$(PY) scripts/ubicar.py
 	$(PY) scripts/mapa.py
 	@echo "Listo: ataques.csv, ataques_por_ruta.csv, results/validacion.md, results/rutas_atu.md y results/mapa.html"
 
@@ -28,7 +29,7 @@ historico:
 
 # Guarda enlace real + texto de cada nota nueva (~5 s por nota; textos solo en disco, D-09)
 archivar:
-	$(PY) scripts/archivar.py --reintentar
+	$(PY) scripts/archivar.py --reintentar --primero-ataques
 
 # Copias en Internet Archive de lo archivado (~30-50 s por nota). Se puede cortar con Ctrl+C y retomar.
 wayback:

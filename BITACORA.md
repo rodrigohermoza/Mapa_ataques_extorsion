@@ -122,3 +122,11 @@
 - Se quitaron: el nombre del autor en la documentación (ahora "el autor"), el número de expediente de la solicitud a la ATU y los números de la carta y el memorando (permitían ubicar el trámite).
 - El nombre y el correo reales iban en los metadatos de los 11 commits. Decisión del autor (D-11): repositorio borrado y creado de nuevo con un solo commit, autor **Mapa-crimen** y correo privado de GitHub. El historial anterior queda solo en una copia local fuera del proyecto.
 - Sin agentes. Nada instalado.
+
+## 2026-11-28 · Sesión 6c: ubicar ataques y filtro por fecha
+- El autor pidió ubicar los ataques y filtrar por mes/año. Plan aprobado completo: límites distritales, Nominatim y `make archivar` antes.
+- `make archivar --primero-ataques` (opción nueva): Google cortó otra vez tras 28 notas (P-11). Quedan ~60 textos archivados.
+- Límites: `peru_distrital_simple.geojson` (1.9 MB, MPL-2.0). Santa Anita y La Punta sin polígono (P-11).
+- `scripts/ubicar.py`: extrae lugares del titular y del texto, consulta Nominatim (48 consultas, caché en `geocache.json`), acepta solo dentro del distrito y cerca de la ruta (D-12). Resultado: 27 con lugar, 262 solo distrito, 53 sin ubicar. Una avenida ubicada a 17 km de su ruta se descartó con la regla de ≤1 km.
+- `scripts/mapa.py` rehecho: puntos (relleno = con muerte), círculos por distrito, rutas recalculadas para el periodo, histograma mensual arrastrable, botones por año, ▶ avance, tablas de distritos/rutas/empresas del periodo, detalle con enlaces a las notas (sin titulares). Probado en el navegador integrado: escritorio, celular, claro y oscuro.
+- Sin agentes. Descargas: solo los límites (1.9 MB), aprobadas.

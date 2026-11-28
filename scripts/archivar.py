@@ -10,6 +10,7 @@ El estado queda en data/raw/archivo.jsonl (una línea por nota; sí va a git: en
 Uso:
     python3 -I scripts/archivar.py                 # enlace real + texto de las notas nuevas (~5 s por nota)
     python3 -I scripts/archivar.py --reintentar    # además reintenta las que fallaron
+    python3 -I scripts/archivar.py --primero-ataques  # empieza por las notas de ataques.csv (para ubicarlos)
     python3 -I scripts/archivar.py --wayback       # copias en Internet Archive (~30-50 s por nota)
     --limite N procesa solo N notas. Se puede cortar con Ctrl+C: el registro se guarda tras cada nota.
 """
@@ -191,6 +192,8 @@ def main():
                     help="pedir copias a Internet Archive de lo ya archivado (lento, ~30-50 s por nota)")
     ap.add_argument("--limite", type=int, default=0, help="procesar solo N notas")
     ap.add_argument("--reintentar", action="store_true", help="volver a intentar el texto de las que fallaron")
+    ap.add_argument("--primero-ataques", action="store_true",
+                    help="archivar primero las notas de data/processed/ataques.csv (sirven para ubicar los ataques)")
     a = ap.parse_args()
     hechos = cargar_estado()
     notas = [json.loads(l) for l in NOTICIAS.open(encoding="utf-8")]
@@ -202,6 +205,11 @@ def main():
                       or hechos[n["guid"]]["texto"] == "sin enlace real"
                       or (a.reintentar and hechos[n["guid"]]["texto"] != "ok")]
     pendientes.sort(key=lambda n: n["fecha"], reverse=True)  # lo más reciente primero
+    if a.primero_ataques:
+        import csv
+        with (RAIZ / "data" / "processed" / "ataques.csv").open(encoding="utf-8") as f:
+            de_ataques = {u for r in csv.DictReader(f) for u in r["urls"].split()}
+        pendientes.sort(key=lambda n: n["url"] not in de_ataques)  # estable: mantiene el orden por fecha
     if a.limite:
         pendientes = pendientes[:a.limite]
     TEXTOS.mkdir(parents=True, exist_ok=True)

@@ -100,3 +100,11 @@ Además: el GeoJSON simplificado y los datos públicos de la ATU van a git (`dat
 - En los documentos: "el autor", sin nombre. Sin número de expediente, de carta ni de memorando. La carta, el memorando y los cargos quedan fuera de git (`data/ATU/`, Descargas).
 - El historial con nombre y correo reales se eliminó borrando y recreando el repositorio en GitHub (así GitHub no guarda los commits viejos).
 - El usuario de GitHub sigue en la dirección del repositorio y del mapa; se puede mover a una cuenta u organización neutra más adelante.
+
+## D-12 — Ubicar los ataques con dos niveles de precisión
+**Fecha:** 2026-11-28 · **Estado:** decidido por el autor (aprobó bajar los límites distritales, usar Nominatim y correr `make archivar` antes)
+
+- **Lugar (aproximado):** vía o lugar nombrado en el titular o en el inicio del texto archivado (avenida, jirón, paradero, óvalo, mercado, AA. HH.…), geocodificado con Nominatim (OpenStreetMap; 1 consulta/s; solo se envía el lugar y el distrito). Se acepta solo si cae dentro del distrito del ataque y, si el ataque tiene rutas candidatas, a ≤1 km de alguna. Sin distrito, solo a ≤500 m de una ruta candidata. Para una avenida el punto es un tramo dentro del distrito: error de hasta ~1-2 km. Se descartan vías de muchos km sin más detalle (Panamericana, Carretera Central, Vía Expresa, Ramiro Prialé).
+- **Distrito:** si no hay lugar, el ataque va al centro del distrito y en el mapa se dibuja como círculo agregado, nunca como punto exacto.
+- Caché de consultas en `data/processed/geocache.json` (va a git): cada lugar se consulta una vez.
+- En el mapa no se muestran titulares (pueden nombrar a víctimas); sí fecha, distrito, rol, empresa, lugar y enlaces a las notas.

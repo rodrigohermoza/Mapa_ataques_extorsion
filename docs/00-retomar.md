@@ -1,6 +1,6 @@
 # Retomar
 
-**Última actualización:** 2026-11-28 (sesión 6: datos de la ATU procesados y primer mapa). Leer primero `../CLAUDE.md`.
+**Última actualización:** 2026-11-28 (sesión 6: datos de la ATU, mapa con ataques ubicados y filtro por fecha). Leer primero `../CLAUDE.md`.
 
 ## En una frase
 Base automática de ataques al transporte de Lima y Callao armada desde Google Noticias (342 hechos; 71% de cobertura frente al Ministerio Público), con código de ruta ATU para el 82% de los ataques que mencionan empresa. **Los trazados oficiales de la ATU (445 rutas) ya están en GeoJSON y cruzados con los ataques** (`results/rutas_atu.md`). **Primer mapa listo: `results/mapa.html`.**
@@ -27,11 +27,11 @@ Base automática de ataques al transporte de Lima y Callao armada desde Google N
 
 **Entorno**
 - Python estándar para todo, salvo `rutas_atu.py` y `fichas_atu.py` (pypdf 7.0.0 en `~/.venvs/Mapa-crimen`; `.venv` es un enlace).
-- `make procesar` (~18 s) = lineas → rutas_atu → trazados_atu → fichas_atu → extraer → validar → cruce_rutas → mapa. `make diario` = recolectar + procesar.
+- `make procesar` (~20 s + consultas nuevas a Nominatim) = lineas → rutas_atu → trazados_atu → fichas_atu → extraer → validar → cruce_rutas → ubicar → mapa. `make diario` = recolectar + procesar.
 
 ## Próximos pasos
 - **Archivo de noticias (D-09):** `make diario` ahora guarda el texto de cada nota nueva en `data/raw/articulos/` (solo local). Histórico: 44 de 1 902 notas archivadas; Google bloqueó por exceso de consultas (P-08), retomar con `make archivar` tras unas horas. Falta la copia en Internet Archive del histórico: `make wayback` (~20 h; se puede cortar y retomar).
-1. **Mapa** (`results/mapa.html`, hecho el 28-nov): rutas coloreadas por ataques repartidos / posibles / seguros, buscador, detalle por ruta y ranking de rutas y empresas; funciona en celular y en modo oscuro. **Publicado en https://rodrigohermoza.github.io/Mapa_ataques_extorsion/** (GitHub Pages; se actualiza solo al hacer push de un mapa nuevo). Siguientes ideas: capa de distritos y línea de tiempo.
+1. **Mapa** (`results/mapa.html`, publicado en https://rodrigohermoza.github.io/Mapa_ataques_extorsion/): ataques como puntos (lugar aproximado) o círculos por distrito, rutas coloreadas por los ataques del periodo, histograma mensual para elegir el periodo, botones por año y ▶ avance mes a mes. **Más puntos exactos:** depende de archivar textos (Google corta tras ~28 notas por corrida, P-11); cada `make diario` suma algunos.
 2. **Ataques sin código (166):** proponer rutas con las vías de `fichas_atu.csv` y el distrito del ataque.
 3. Revisar a mano los cruces "aproximado" y "oficial" dudosos (p. ej. "estrella" → 4 rutas) y los sobrenombres ambiguos ("La 41" → 4 códigos). Con los recorridos se desambiguan por distrito.
 4. Mejorar la cobertura de Lima Este y Lima Noroeste (consultas con nombres de distritos).

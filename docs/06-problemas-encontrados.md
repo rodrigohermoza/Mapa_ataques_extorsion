@@ -92,3 +92,9 @@ En la pasada completa de `archivar.py`, tras ~30 notas a ~2 s entre consultas, G
 **Fecha:** 2026-11-28
 
 Las teselas `basemaps.cartocdn.com` respondieron con "API KEY REQUIRED". Se cambió a las teselas estándar de OpenStreetMap con un filtro CSS gris (y uno invertido en modo oscuro), con su atribución. Su política de uso permite el tráfico bajo de un proyecto así; si el mapa se vuelve popular habrá que buscar otro proveedor gratuito.
+
+## P-11 — Límites sin polígono y nuevo bloqueo de Google
+**Fecha:** 2026-11-28
+
+1. En `peru_distrital_simple.geojson`, **Santa Anita y La Punta** no tienen geometría (y Mi Perú no existe: la fuente es anterior a 2014). Para esos dos, el centro se pide a Nominatim y "dentro del distrito" se aproxima como ≤3 km del centro; no se dibuja su límite.
+2. `make archivar` volvió a recibir 429 de Google tras 28 notas (pausa de 8 s). Se agregó `--primero-ataques` para que lo poco que se archive en cada corrida sea lo que sirve para ubicar ataques. Con solo ~60 textos archivados, la mayoría de los lugares sale del titular: 27 ataques con lugar, 262 solo con distrito, 53 sin ubicación. Cada `make diario` archivará unas 25 notas más y `ubicar.py` las aprovechará.
