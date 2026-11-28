@@ -3,7 +3,7 @@
 **Última actualización:** 2026-11-28 (sesión 6: datos de la ATU, mapa con ataques ubicados y filtro por fecha). Leer primero `../CLAUDE.md`.
 
 ## En una frase
-Base automática de ataques al transporte de Lima y Callao armada desde Google Noticias (342 hechos; 71% de cobertura frente al Ministerio Público), con código de ruta ATU para el 82% de los ataques que mencionan empresa. **Los trazados oficiales de la ATU (445 rutas) ya están en GeoJSON y cruzados con los ataques** (`results/rutas_atu.md`). **Primer mapa listo: `results/mapa.html`.**
+Base automática de ataques al transporte de Lima y Callao armada desde Google Noticias (342 hechos; 71% de cobertura frente al Ministerio Público), con código de ruta ATU para el 82% de los ataques que mencionan empresa. **Los trazados oficiales de la ATU (445 rutas) ya están en GeoJSON y cruzados con los ataques** (`results/rutas_atu.md`). **Mapa publicado** (https://rodrigohermoza.github.io/Mapa_ataques_extorsion/): ataques ubicados (27 con lugar aproximado, 262 por distrito, 53 sin ubicar; D-12), rutas coloreadas por ataques del periodo y filtro por mes/año con ▶ avance. Sin datos personales del autor en lo público (D-11).
 
 ## Estado
 **Repositorio:** https://github.com/rodrigohermoza/Mapa_ataques_extorsion (público, rama `main`). Commits con seudónimo (Mapa-crimen). Los titulares de noticias, aunque nombren a víctimas, se quedan públicos (D-08).
