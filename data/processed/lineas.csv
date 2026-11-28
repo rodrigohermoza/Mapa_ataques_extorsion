@@ -1,0 +1,411 @@
+codigo,texto,apodos,empresas,claves
+1003,La 9 (Santa Rosa de las Américas),La 9,Santa Rosa de las Américas,9 | la 9 | linea 9 | santa rosa de las americas
+1004,Las amarillas / La San Ignacio (etrasilsa),Las amarillas | La San Ignacio,etrasilsa,amarillas | etrasilsa | la san ignacio | las amarillas | san ignacio
+1005,La 13 (Santa Cruz),La 13,Santa Cruz,13 | la 13 | linea 13 | santa cruz
+1006,La C / La celeste (Impulsa Progreso),La C | La celeste,Impulsa Progreso,c | celeste | impulsa progreso | la c | la celeste | linea c
+1007,La La 87B / La 87-B / La Amancaes (Etamsa),La La 87B | La 87-B | La Amancaes,Etamsa,87-b | 87b | amancaes | etamsa | la 87-b | la 87b | la amancaes | linea 87b
+1008,La 3 (Grupo Express / Realidad Express del Perú 03),La 3,Grupo Express / Realidad Express del Perú 03,3 | grupo express / realidad express del peru 03 | la 3 | linea 3
+1009,La 6 / La Punchauca (Etcipsa),La 6 | La Punchauca,Etcipsa,6 | etcipsa | la 6 | la punchauca | linea 6 | punchauca
+1010,La 46B / 46-B / La Ramón Castilla (ETMRCSA),La 46B | 46-B | La Ramón Castilla,ETMRCSA,46-b | 46b | etmrcsa | la 46b | la ramon castilla | linea 46b | ramon castilla
+1011,La 47 (Translima),La 47,Translima,47 | la 47 | linea 47 | translima
+1012,La B (La Estunsac),La B,La Estunsac,b | estunsac | la b | la estunsac | linea b
+1013,La 18 (Translima),La 18,Translima,18 | la 18 | linea 18 | translima
+1014,La 14 de junio,La 14 de junio,,14 de junio | la 14 de junio
+1015,La MG / La M-G (Etmigrasa),La MG | La M-G,Etmigrasa,etmigrasa | la m-g | la mg | linea mg | m-g | mg
+1016,El Anconero (La buena estrella),El Anconero,La buena estrella,anconero | buena estrella | el anconero | la buena estrella
+1017,El Anconero (Novobus),El Anconero,Novobus,anconero | el anconero | novobus
+1018,Emptonsa,Emptonsa,,emptonsa
+1019,La P (Palmari),La P,Palmari,la p | linea p | p | palmari
+1020,La C (Santa Luzmila),La C,Santa Luzmila,c | la c | linea c | santa luzmila
+1021,La F (EL Rápido),La F,EL Rápido,el rapido | f | la f | linea f | rapido
+1022,Norcom,Norcom,,norcom
+1023,La B (Nueva América),La B,Nueva América,b | la b | linea b | nueva america
+1024,La A (Norlima),La A,Norlima,a | la a | linea a | norlima
+1025,La 73B / La 73-B (Etupsa),La 73B | La 73-B,Etupsa,73-b | 73b | etupsa | la 73-b | la 73b | linea 73b
+1026,La S2 / La S-2 (Emtessa),La S2 | La S-2,Emtessa,emtessa | la s-2 | la s2 | linea s2 | s-2 | s2
+1027,La 60C / La 60-C,La 60C | La 60-C,,60-c | 60c | la 60-c | la 60c | linea 60c
+1028,La B (Etraserpisa),La B,Etraserpisa,b | etraserpisa | la b | linea b
+1029,La Alipio,La Alipio,,alipio | la alipio
+1030,La San Diego,La San Diego,,la san diego | san diego
+1031,La 29 (Translima),La 29,Translima,29 | la 29 | linea 29 | translima
+1032,La A (Translicsa),La A,Translicsa,a | la a | linea a | translicsa
+1033,La C (Deluxe),La C,Deluxe,c | deluxe | la c | linea c
+1034,La 36 (Eitsa),La 36,Eitsa,36 | eitsa | la 36 | linea 36
+1035,La Bala,La Bala,,bala | la bala | linea bala
+1036,El Bajopontino,El Bajopontino,,bajopontino | el bajopontino
+1037,La B (Translicsa),La B,Translicsa,b | la b | linea b | translicsa
+1038,La 28 / La 504,La 28 | La 504,,28 | 504 | la 28 | la 504 | linea 28 | linea 504
+1039,La 117,La 117,,117 | la 117 | linea 117
+1040,La SC / La S-C (San Ignacio),La SC | La S-C,San Ignacio,la s-c | la sc | linea sc | s-c | san ignacio | sc
+1041,La 41 (Santa Rosa Jicamarca),La 41,Santa Rosa Jicamarca,41 | la 41 | linea 41 | santa rosa jicamarca
+1042,La 75A / La 75-A (Las Águilas),La 75A | La 75-A,Las Águilas,75-a | 75a | aguilas | la 75-a | la 75a | las aguilas | linea 75a
+1043,La 40 (Cuarenta Integrada),La 40,Cuarenta Integrada,40 | cuarenta integrada | la 40 | linea 40
+1044,La 104,La 104,,104 | la 104 | linea 104
+1045,La 52C / La 52-C (Etusa),La 52C | La 52-C,Etusa,52-c | 52c | etusa | la 52-c | la 52c | linea 52c
+1046,La SB / LaS-B,La SB | LaS-B,,la sb | las-b | linea sb | sb
+1047,La 10A / La 10-A (Etrascpsa),La 10A | La 10-A,Etrascpsa,10-a | 10a | etrascpsa | la 10-a | la 10a | linea 10a
+1048,Etdesa,Etdesa,,etdesa
+1049,Etcisa,Etcisa,,etcisa
+1050,La RI / La R-I (Lobito),La RI | La R-I,Lobito,la r-i | la ri | linea ri | lobito | r-i | ri
+1051,La 52J / La 52-J (Etusa),La 52J | La 52-J,Etusa,52-j | 52j | etusa | la 52-j | la 52j | linea 52j
+1052,La HA / La H-A (Huáscar),La HA | La H-A,Huáscar,h-a | ha | huascar | la h-a | la ha | linea ha
+1053,La H (Sur Lima),La H,Sur Lima,h | la h | linea h | sur lima
+1054,La E (Etul4sa),La E,Etul4sa,e | etul4sa | la e | linea e
+1055,La 31,La 31,,31 | la 31 | linea 31
+1056,La P (Arco iris),La P,Arco iris,arco iris | la p | linea p | p
+1057,La 23C / La 23-C (Santa Catalina),La 23C | La 23-C,Santa Catalina,23-c | 23c | la 23-c | la 23c | linea 23c | santa catalina
+1058,La R28 / La R-28 (Huáscar),La R28 | La R-28,Huáscar,huascar | la r-28 | la r28 | linea r28 | r-28 | r28
+1059,La 23B / La 23-B (Santa Catalina),La 23B | La 23-B,Santa Catalina,23-b | 23b | la 23-b | la 23b | linea 23b | santa catalina
+1060,La 8 (Etsosa),La 8,Etsosa,8 | etsosa | la 8 | linea 8
+1061,La M1 / La M-1 (Preferencial M1),La M1 | La M-1,Preferencial M1,la m-1 | la m1 | linea m1 | m-1 | m1 | preferencial m1
+1062,La M1 / La M-1 (Cuatro SUyos),La M1 | La M-1,Cuatro SUyos,cuatro suyos | la m-1 | la m1 | linea m1 | m-1 | m1
+1063,La M (LOs Magníficos),La M,LOs Magníficos,la m | linea m | los magnificos | m | magnificos
+1064,La 49 (Santa Rosa Jicamarca),La 49,Santa Rosa Jicamarca,49 | la 49 | linea 49 | santa rosa jicamarca
+1065,La 91 (Nuevo Horizonte),La 91,Nuevo Horizonte,91 | la 91 | linea 91 | nuevo horizonte
+1066,La HCT (Huaycanero),La HCT,Huaycanero,hct | huaycanero | la hct | linea hct
+1067,Peralitos,Peralitos,,peralitos
+1068,La HGK (Huaycanero),La HGK,Huaycanero,hgk | huaycanero | la hgk | linea hgk
+1069,Chosicano azul (Ricardo Palma),Chosicano azul,Ricardo Palma,chosicano azul | ricardo palma
+1070,Etbronsa,Etbronsa,,etbronsa
+1071,La IC / La I-C (Copacabana),La IC | La I-C,Copacabana,copacabana | i-c | ic | la i-c | la ic | linea ic
+1072,ETuSMPsa,ETuSMPsa,,etusmpsa
+1073,La B (Sagrado Corazón),La B,Sagrado Corazón,b | la b | linea b | sagrado corazon
+1074,La B / La 112 (Miraflores-Monterrico),La B | La 112,Miraflores-Monterrico,112 | b | la 112 | la b | linea 112 | linea b | miraflores-monterrico
+1075,La 51 (San Juan Bautista),La 51,San Juan Bautista,51 | la 51 | linea 51 | san juan bautista
+1076,La 14 de mayo / Los Leones (Huaycanero),La 14 de mayo | Los Leones,Huaycanero,14 de mayo | huaycanero | la 14 de mayo | leones | los leones
+1077,La H (Huaycanero),La H,Huaycanero,h | huaycanero | la h | linea h
+1078,La 63,La 63,,63 | la 63 | linea 63
+1079,ETuSMPsa (Huaycanero),ETuSMPsa,Huaycanero,etusmpsa | huaycanero
+1080,La HCT (Turismo Huaycán),La HCT,Turismo Huaycán,hct | la hct | linea hct | turismo huaycan
+1081,Huaycanero rojo (Urbano Huaycán),Huaycanero rojo,Urbano Huaycán,huaycanero rojo | urbano huaycan
+1082,La B (Angamos),La B,Angamos,angamos | b | la b | linea b
+1083,Huaycanero naranja (Sin Fronteras),Huaycanero naranja,Sin Fronteras,huaycanero naranja | sin fronteras
+1084,La 91 (Santo Cristo),La 91,Santo Cristo,91 | la 91 | linea 91 | santo cristo
+1085,Chosicano verde (Santa Eulalia),Chosicano verde,Santa Eulalia,chosicano verde | santa eulalia
+1086,Etramsmsa,Etramsmsa,,etramsmsa
+1087,La 52T / La 52-T (Etusa),La 52T | La 52-T,Etusa,52-t | 52t | etusa | la 52-t | la 52t | linea 52t
+1088,La renacimiento,La renacimiento,,la renacimiento | renacimiento
+1089,La 24 (ATCR),La 24,ATCR,24 | atcr | la 24 | linea 24
+1090,La C (Chama),La C,Chama,c | chama | la c | linea c
+1091,La 160,La 160,,160 | la 160 | linea 160
+1092,La San Genaro,La San Genaro,,la san genaro | san genaro
+1093,La I (1 de junio),La I,1 de junio,1 de junio | i | la i | linea i
+1094,La Etusa,La Etusa,,etusa | la etusa | linea etusa
+1095,La 57 (La Norteamerica),La 57,La Norteamerica,57 | la 57 | la norteamerica | linea 57 | norteamerica
+1096,La B / La Banchero (Lubarsa),La B | La Banchero,Lubarsa,b | banchero | la b | la banchero | linea b | lubarsa
+1097,La 10-E (Etrascpsa),La 10-E,Etrascpsa,10-e | etrascpsa | la 10-e | linea 10e
+1098,La 8 / La L (Etul4sa),La 8 | La L,Etul4sa,8 | etul4sa | l | la 8 | la l | linea 8 | linea l
+1099,La 9 / La Banchero (Lubarsa),La 9 | La Banchero,Lubarsa,9 | banchero | la 9 | la banchero | linea 9 | lubarsa
+1100,La P (Etul4sa),La P,Etul4sa,etul4sa | la p | linea p | p
+1107,La C / Etmosac (Transportes Montenegro),La C | Etmosac,Transportes Montenegro,c | etmosac | la c | linea c | transportes montenegro
+1108,La 23A / 23-A (Santa Catalina),La 23A | 23-A,Santa Catalina,23-a | 23a | la 23a | linea 23a | santa catalina
+1109,La 25 (Eteusa),La 25,Eteusa,25 | eteusa | la 25 | linea 25
+1110,La G (Chama),La G,Chama,chama | g | la g | linea g
+1111,La 73A / 73-A (Etupsa),La 73A | 73-A,Etupsa,73-a | 73a | etupsa | la 73a | linea 73a
+1112,Red Lima Móvil,Red Lima Móvil,,red lima movil
+1113,Translima,Translima,,translima
+1114,La D2 / D-2 (Etrapersac),La D2 | D-2,Etrapersac,d-2 | d2 | etrapersac | la d2 | linea d2
+1115,La A (Etepsa),La A,Etepsa,a | etepsa | la a | linea a
+1116,La A (Etersac),La A,Etersac,a | etersac | la a | linea a
+1117,La Tablada,La Tablada,,la tablada | tablada
+1118,La U (Urano Tours),La U,Urano Tours,la u | linea u | u | urano tours
+1119,La D (ATCR),La D,ATCR,atcr | d | la d | linea d
+1120,La 190 (Real Star),La 190,Real Star,190 | la 190 | linea 190 | real star
+1121,La A (Línea 3),La A,Línea 3,a | la a | linea 3 | linea a
+1122,La 6 (Lapso),La 6,Lapso,6 | la 6 | lapso | linea 6
+1123,La A (Chama),La A,Chama,a | chama | la a | linea a
+1124,Expreso Tablada,Expreso Tablada,,expreso tablada
+1125,La Cora Cora,La Cora Cora,,cora cora | la cora cora
+1126,Villa Alejandro,Villa Alejandro,,villa alejandro
+1127,La Zevallos,La Zevallos,,la zevallos | zevallos
+1128,La G / La 65,La G | La 65,,65 | g | la 65 | la g | linea 65 | linea g
+1129,La San Juan de Dios (Etsajudsa),La San Juan de Dios,Etsajudsa,etsajudsa | la san juan de dios | san juan de dios
+1130,Emptonsa,Emptonsa,,emptonsa
+1131,La D (Vipusa),La D,Vipusa,d | la d | linea d | vipusa
+1132,El urbanito,El urbanito,,el urbanito | urbanito
+1133,La Etmarsa,La Etmarsa,,etmarsa | la etmarsa
+1134,La A (Etsesac),La A,Etsesac,a | etsesac | la a | linea a
+1135,La 105 (Mariscal Castilla),La 105,Mariscal Castilla,105 | la 105 | linea 105 | mariscal castilla
+1136,La 120 (Nueva Unión),La 120,Nueva Unión,120 | la 120 | linea 120 | nueva union
+1137,La San Antonio,La San Antonio,,la san antonio | san antonio
+1138,La Chim Pum Callao / La Pequeña Lulú,La Chim Pum Callao | La Pequeña Lulú,,chim pum callao | la chim pum callao | la pequena lulu | pequena lulu
+1139,La Uvita,La Uvita,,la uvita | linea uvita | uvita
+1140,Combi Lima-Callao (Emiscasa),Combi Lima-Callao,Emiscasa,combi lima-callao | emiscasa
+1141,La Etfocamsa,La Etfocamsa,,etfocamsa | la etfocamsa
+1142,La Proyecto 7,La Proyecto 7,,la proyecto 7 | proyecto 7
+1143,La 524 (Gruplan),La 524,Gruplan,524 | gruplan | la 524 | linea 524
+1144,La NG / La N-G / La Gambetta,La NG | La N-G | La Gambetta,,gambetta | la gambetta | la n-g | la ng | linea ng | n-g | ng
+1145,La Transcallao,La Transcallao,,la transcallao | transcallao
+1146,La San Benito de Palermo / Lima - La Punta (Etsabepsa),La San Benito de Palermo | Lima - La Punta,Etsabepsa,etsabepsa | la san benito de palermo | lima - la punta | san benito de palermo
+1147,La COlonial,La COlonial,,colonial | la colonial
+1148,Combi Lma-Callao (Waylluy),Combi Lma-Callao,Waylluy,combi lma-callao | waylluy
+1149,Combi Perto Nuevo (Waylluy),Combi Perto Nuevo,Waylluy,combi perto nuevo | waylluy
+1150,La 102,La 102,,102 | la 102 | linea 102
+1151,La Etpevesa,La Etpevesa,,etpevesa | la etpevesa
+1152,La Liventur,La Liventur,,la liventur | liventur
+1153,La Etrasilsa,La Etrasilsa,,etrasilsa | la etrasilsa
+1154,La COnsorcio Briza,La COnsorcio Briza,,consorcio briza | la consorcio briza
+1155,La Holrex / La Orión,La Holrex | La Orión,,holrex | la holrex | la orion | linea orion | orion
+1156,La Reynoso,La Reynoso,,la reynoso | reynoso
+1157,La Sol y Mar,La Sol y Mar,,la sol y mar | sol y mar
+1158,Combi Lima - Ventanilla (SIT),Combi Lima - Ventanilla,SIT,combi lima - ventanilla | sit
+1159,La 21 (Translima),La 21,Translima,21 | la 21 | linea 21 | translima
+1160,La OP / La O-P (Chim Pum Callao),La OP | La O-P,Chim Pum Callao,chim pum callao | la o-p | la op | linea op | o-p | op
+1161,La 89,La 89,,89 | la 89 | linea 89
+1162,La Consorcio Briza,La Consorcio Briza,,consorcio briza | la consorcio briza
+1163,La SV / La S-V (Consorcio Avagon),La SV | La S-V,Consorcio Avagon,consorcio avagon | la s-v | la sv | linea sv | s-v | sv
+1164,La CTCJ (Corazón de Jesús),La CTCJ,Corazón de Jesús,corazon de jesus | ctcj | la ctcj | linea ctcj
+1165,La COnsorcio Briza / La Orión,La COnsorcio Briza | La Orión,,consorcio briza | la consorcio briza | la orion | linea orion | orion
+1166,La VB / La V-B (Vía Bus),La VB | La V-B,Vía Bus,la v-b | la vb | linea vb | v-b | vb | via bus
+1167,La Consorcio Briza,La Consorcio Briza,,consorcio briza | la consorcio briza
+1168,El Anconero / La Nueva Estrella,El Anconero | La Nueva Estrella,,anconero | el anconero | la nueva estrella | nueva estrella
+1169,La JV / La J-V (Mar y Tierra / ETCIMATISA),La JV | La J-V,Mar y Tierra / ETCIMATISA,j-v | jv | la j-v | la jv | linea jv | mar y tierra / etcimatisa
+1170,La 93 (La PASA),La 93,La PASA,93 | la 93 | la pasa | linea 93 | linea pasa | pasa
+1171,La DC / La D-C / La SB / La S-B (El Álamo / La Cosbasa),La DC | La D-C | La SB | La S-B,El Álamo / La Cosbasa,alamo / la cosbasa | d-c | dc | el alamo / la cosbasa | la d-c | la dc | la s-b | la sb | linea dc | linea sb | s-b | sb
+1172,La B (Etunijesa),La B,Etunijesa,b | etunijesa | la b | linea b
+1173,La 9V / La 9-V (Santa Rosa de Lima),La 9V | La 9-V,Santa Rosa de Lima,9-v | 9v | la 9-v | la 9v | linea 9v | santa rosa de lima
+1174,La D1 / La D-1 (La CILAP),La D1 | La D-1,La CILAP,cilap | d-1 | d1 | la cilap | la d-1 | la d1 | linea cilap | linea d1
+1175,La P (Pegaso Express),La P,Pegaso Express,la p | linea p | p | pegaso express
+1176,La 6 / La 6-M / La Collique (La Evipusa),La 6 | La 6-M | La Collique,La Evipusa,6 | 6-m | collique | evipusa | la 6 | la 6-m | la collique | la evipusa | linea 6 | linea 6m
+1177,La 2 (Cruz del Centro),La 2,Cruz del Centro,2 | cruz del centro | la 2 | linea 2
+1178,La E (La Encantada),La E,La Encantada,e | encantada | la e | la encantada | linea e
+1179,El Anconero / La SESOSA,El Anconero | La SESOSA,,anconero | el anconero | la sesosa | sesosa
+1180,La A (Nueva América),La A,Nueva América,a | la a | linea a | nueva america
+1181,La 70,La 70,,70 | la 70 | linea 70
+1182,La V,La V,,la v | linea v | v
+1183,La A (Urano Tours),La A,Urano Tours,a | la a | linea a | urano tours
+1184,La B39 / La B-39 / La Edilberto Ramos / La C (Etersac),La B39 | La B-39 | La Edilberto Ramos | La C,Etersac,b-39 | b39 | c | edilberto ramos | etersac | la b-39 | la b39 | la c | la edilberto ramos | linea b39 | linea c
+1185,Los Chinos / La A (Los Chinos) / ETUCHISAC,Los Chinos | La A | ETUCHISAC,Los Chinos,a | chinos | etuchisac | la a | linea a | los chinos
+1187,La Nazareno,La Nazareno,,la nazareno | nazareno
+1189,La 35B / La 35-B (Etinsa),La 35B | La 35-B,Etinsa,35-b | 35b | etinsa | la 35-b | la 35b | linea 35b
+1190,La azul / La Estirsa (Inversiones El Rápido),La azul | La Estirsa,Inversiones El Rápido,azul | estirsa | inversiones el rapido | la azul | la estirsa | linea azul
+1191,La 35A / La 35-A (Excelentes Unidos),La 35A | La 35-A,Excelentes Unidos,35-a | 35a | excelentes unidos | la 35-a | la 35a | linea 35a
+1192,La Santa CLara (Etissa),La Santa CLara,Etissa,etissa | la santa clara | santa clara
+1193,La 148 (Etvircosa),La 148,Etvircosa,148 | etvircosa | la 148 | linea 148
+1194,La B / La Evifasa B (Evifasa),La B | La Evifasa B,Evifasa,b | evifasa | evifasa b | la b | la evifasa b | linea b
+1195,La 42 / El Rápido,La 42 | El Rápido,,42 | el rapido | la 42 | linea 42 | rapido
+1196,La A (Cruz del Centro),La A,Cruz del Centro,a | cruz del centro | la a | linea a
+1197,La 44A / la 44-A (La Etradijusa),La 44A | la 44-A,La Etradijusa,44-a | 44a | etradijusa | la 44-a | la 44a | la etradijusa | linea 44a
+1199,La 36,La 36,,36 | la 36 | linea 36
+1200,La 9A / La 9-A (17 de noviembre),La 9A | La 9-A,17 de noviembre,17 de noviembre | 9-a | 9a | la 9-a | la 9a | linea 9a
+1203,La San Germán / La C / La 128 (TISGSA),La San Germán | La C | La 128,TISGSA,128 | c | la 128 | la c | la san german | linea 128 | linea c | san german | tisgsa
+1204,La 2H / LA 2-H (Huancayo City),La 2H | LA 2-H,Huancayo City,2-h | 2h | huancayo city | la 2-h | la 2h | linea 2h
+1205,La E (La Niño Emanuel),La E,La Niño Emanuel,e | la e | la nino emanuel | linea e | nino emanuel
+1207,La C1 / La C-1 (La Huayrona),La C1 | La C-1,La Huayrona,c-1 | c1 | huayrona | la c-1 | la c1 | la huayrona | linea c1
+1210,La San Felipe Express,La San Felipe Express,,la san felipe express | san felipe express
+1214,La 32A / La 32-A (ETVASA),La 32A | La 32-A,ETVASA,32-a | 32a | etvasa | la 32-a | la 32a | linea 32a
+1218,El Chosicano / Chosicano rojo / Lima-Chosica (ETYSLCHSA),El Chosicano | Chosicano rojo | Lima-Chosica,ETYSLCHSA,chosicano | chosicano rojo | el chosicano | etyslchsa | lima-chosica
+1219,La B (Vargasant),La B,Vargasant,b | la b | linea b | vargasant
+1220,Los Peralitos,Los Peralitos,,los peralitos | peralitos
+1221,La 20,La 20,,20 | la 20 | linea 20
+1222,La 19N / La 19-N (Gocarive 19),La 19N | La 19-N,Gocarive 19,19-n | 19n | gocarive 19 | la 19-n | la 19n | linea 19n
+1223,La 129B / La 129-B (Pesqueros),La 129B | La 129-B,Pesqueros,129-b | 129b | la 129-b | la 129b | linea 129b | pesqueros
+1224,La 19,La 19,,19 | la 19 | linea 19
+1225,La C / La 1 / Los Celestes (Etalexsa),La C | La 1 | Los Celestes,Etalexsa,1 | c | celestes | etalexsa | la 1 | la c | linea 1 | linea c | los celestes
+1226,La 71B / LA 71-B (Etcapsa),La 71B | LA 71-B,Etcapsa,71-b | 71b | etcapsa | la 71-b | la 71b | linea 71b
+1227,La verde (Etsamigsa),La verde,Etsamigsa,etsamigsa | la verde | linea verde | verde
+1228,La H / La Z (Santa Rosa de Lima - Huaycán),La H | La Z,Santa Rosa de Lima - Huaycán,h | la h | la z | linea h | linea z | santa rosa de lima - huaycan | z
+1229,La M / La Próceres,La M | La Próceres,,la m | la proceres | linea m | m | proceres
+1230,La 3 / La Fenix 2000 / La 3 Huascar,La 3 | La Fenix 2000 | La 3 Huascar,,3 | 3 huascar | fenix 2000 | la 3 | la 3 huascar | la fenix 2000 | linea 3
+1231,La 35 / La Machu Picchu,La 35 | La Machu Picchu,,35 | la 35 | la machu picchu | linea 35 | machu picchu
+1232,La A / La Translicsa,La A | La Translicsa,,a | la a | la translicsa | linea a | translicsa
+1233,La P1 / La P-1 (La San Pedro de Pamplona),La P1 | La P-1,La San Pedro de Pamplona,la p-1 | la p1 | la san pedro de pamplona | linea p1 | p-1 | p1 | san pedro de pamplona
+1234,La W,La W,,la w | linea w | w
+1235,La S / La Salamanca Parral (ETSPSA),La S | La Salamanca Parral,ETSPSA,etspsa | la s | la salamanca parral | linea s | s | salamanca parral
+1236,La 40 / La roja (ETsafrasa),La 40 | La roja,ETsafrasa,40 | etsafrasa | la 40 | la roja | linea 40 | linea roja | roja
+1237,La 5 / El Rápido,La 5 | El Rápido,,5 | el rapido | la 5 | linea 5 | rapido
+1238,La C / Los azules (San Felipe Express),La C | Los azules,San Felipe Express,azules | c | la c | linea c | los azules | san felipe express
+1239,La C / La Celeste / Los Chinos (ETUCHISA),La C | La Celeste | Los Chinos,ETUCHISA,c | celeste | chinos | etuchisa | la c | la celeste | linea c | los chinos
+1240,La A (Vipusa),La A,Vipusa,a | la a | linea a | vipusa
+1241,La C / La Celeste (Roluesa),La C | La Celeste,Roluesa,c | celeste | la c | la celeste | linea c | roluesa
+1242,La C / La Celeste (Nuevo Perú),La C | La Celeste,Nuevo Perú,c | celeste | la c | la celeste | linea c | nuevo peru
+1243,La C / LA Roja (El Rápido),La C | LA Roja,El Rápido,c | el rapido | la c | la roja | linea c | linea roja | rapido | roja
+1244,La 73-1 (ETUPSA),La 73-1,ETUPSA,73-1 | etupsa | la 73-1 | linea 731
+1245,La San Judas Tadeo,La San Judas Tadeo,,la san judas tadeo | san judas tadeo
+1246,La C / La Celeste (ETSIBOSA),La C | La Celeste,ETSIBOSA,c | celeste | etsibosa | la c | la celeste | linea c
+1247,La G (Sur Express),La G,Sur Express,g | la g | linea g | sur express
+1248,La C / La Celeste (Real Star),La C | La Celeste,Real Star,c | celeste | la c | la celeste | linea c | real star
+1249,La 15C / LA 15-C / La Salvador (ETSSSAC),La 15C | LA 15-C | La Salvador,ETSSSAC,15-c | 15c | etsssac | la 15-c | la 15c | la salvador | linea 15c | salvador
+1250,La L (Lapso),La L,Lapso,l | la l | lapso | linea l
+1251,La B / Los Chocolates / La San José (ETSAJOSA),La B | Los Chocolates | La San José,ETSAJOSA,b | chocolates | etsajosa | la b | la san jose | linea b | los chocolates | san jose
+1252,La San Judas Tadeo,La San Judas Tadeo,,la san judas tadeo | san judas tadeo
+1253,La A / La Guadulfo Silva / La San Bartolo (ETGUSICSA),La A | La Guadulfo Silva | La San Bartolo,ETGUSICSA,a | etgusicsa | guadulfo silva | la a | la guadulfo silva | la san bartolo | linea a | san bartolo
+1254,La B / La Guadulfo Silva / La Pucusana (ETGUSICSA),La B | La Guadulfo Silva | La Pucusana,ETGUSICSA,b | etgusicsa | guadulfo silva | la b | la guadulfo silva | la pucusana | linea b | pucusana
+1255,La Etcapesa,La Etcapesa,,etcapesa | la etcapesa
+1256,La Z1 / La Z-1 (Millenium),La Z1 | La Z-1,Millenium,la z-1 | la z1 | linea z1 | millenium | z-1 | z1
+1257,La 26 de mayo,La 26 de mayo,,26 de mayo | la 26 de mayo
+1258,La 57 / La A1 / La A-1 (Las Flores),La 57 | La A1 | La A-1,Las Flores,57 | a-1 | a1 | flores | la 57 | la a-1 | la a1 | las flores | linea 57 | linea a1
+1259,La S2C / la S-2-C (Nueva Estrella),La S2C | la S-2-C,Nueva Estrella,la s-2-c | la s2c | linea s2c | nueva estrella | s-2-c | s2c
+1260,El Lorito (EL Polo),El Lorito,EL Polo,el lorito | el polo | lorito | polo
+1261,La Covida (La ETFVSA),La Covida,La ETFVSA,covida | etfvsa | la covida | la etfvsa
+1262,La 41,La 41,,41 | la 41 | linea 41
+1263,La P (Señor de Pachacamilla / ETMISPSA),La P,Señor de Pachacamilla / ETMISPSA,la p | linea p | p | senor de pachacamilla / etmispsa
+1264,La Monterrico / La ETMIMSA,La Monterrico | La ETMIMSA,,etmimsa | la etmimsa | la monterrico | monterrico
+1265,La S (Hogar Tours),La S,Hogar Tours,hogar tours | la s | linea s | s
+1266,La JV / La J-V (Lima Express),La JV | La J-V,Lima Express,j-v | jv | la j-v | la jv | lima express | linea jv
+1267,La V (Expreso Santa Anita),La V,Expreso Santa Anita,expreso santa anita | la v | linea v | v
+1268,Combi Ate - Callao (El Álamo),Combi Ate - Callao,El Álamo,alamo | combi ate - callao | el alamo
+1269,La X37 / La X-37 (Excelentes Unidos),La X37 | La X-37,Excelentes Unidos,excelentes unidos | la x-37 | la x37 | linea x37 | x-37 | x37
+1270,La S (Consorcio Angamos),La S,Consorcio Angamos,consorcio angamos | la s | linea s | s
+1271,La California 2000,La California 2000,,california 2000 | la california 2000
+1272,La 22,La 22,,22 | la 22 | linea 22
+1273,Transportes Ijecorpjyl,Transportes Ijecorpjyl,,transportes ijecorpjyl
+1274,Transportes Toro,Transportes Toro,,transportes toro
+1275,La R (Grupo Diez),La R,Grupo Diez,grupo diez | la r | linea r | r
+1276,La S (Star Tours),La S,Star Tours,la s | linea s | s | star tours
+1277,La California Siglo XXI,La California Siglo XXI,,california siglo xxi | la california siglo xxi
+1278,La 505 (Consorcio Línea 3),La 505,Consorcio Línea 3,505 | consorcio linea 3 | la 505 | linea 505
+1279,La 505 (Trans y Service Canada),La 505,Trans y Service Canada,505 | la 505 | linea 505 | trans y service canada
+1280,Los moraditos / La Génesis (Inversiones Génesis),Los moraditos | La Génesis,Inversiones Génesis,genesis | inversiones genesis | la genesis | los moraditos | moraditos
+1281,La 15 (Trans y Service Canadá),La 15,Trans y Service Canadá,15 | la 15 | linea 15 | trans y service canada
+1282,La D (Etraserpisa),La D,Etraserpisa,d | etraserpisa | la d | linea d
+1283,Las Flores 18 / La 18 (Proyecto Las Flores 18 / Grupo Express del Perú - GEP),Las Flores 18 | La 18,Proyecto Las Flores 18 / Grupo Express del Perú - GEP,18 | flores 18 | la 18 | las flores 18 | linea 18 | proyecto las flores 18 / grupo express del peru - gep
+1284,La 33,La 33,,33 | la 33 | linea 33
+1285,La 129A / La 129-A (Transportes Pesqueros),La 129A | La 129-A,Transportes Pesqueros,129-a | 129a | la 129-a | la 129a | linea 129a | transportes pesqueros
+1286,La C (Transportes Huáscar),La C,Transportes Huáscar,c | la c | linea c | transportes huascar
+1287,El Tigrillo,El Tigrillo,,el tigrillo | tigrillo
+1288,La 19 (ETUVISA),La 19,ETUVISA,19 | etuvisa | la 19 | linea 19
+1289,La Starlet,La Starlet,,la starlet | starlet
+1290,La 32B / La 32-B (Etvasa),La 32B | La 32-B,Etvasa,32-b | 32b | etvasa | la 32-b | la 32b | linea 32b
+1291,La S / La HRE / La Orión (Holding Real Express),La S | La HRE | La Orión,Holding Real Express,holding real express | hre | la hre | la orion | la s | linea hre | linea orion | linea s | orion | s
+1292,Turismo Californi Siglo XXI,Turismo Californi Siglo XXI,,turismo californi siglo xxi
+1293,La C / La Orión (Holding Real Express),La C | La Orión,Holding Real Express,c | holding real express | la c | la orion | linea c | linea orion | orion
+1294,La S / La Orión (Holding Real Express),La S | La Orión,Holding Real Express,holding real express | la orion | la s | linea orion | linea s | orion | s
+1295,La Milán (ETS Turismo Eureks),La Milán,ETS Turismo Eureks,ets turismo eureks | la milan | linea milan | milan
+1296,La C / La Orión (Holding Real Express),La C | La Orión,Holding Real Express,c | holding real express | la c | la orion | linea c | linea orion | orion
+1297,La G / La Orión (Holding Real Express),La G | La Orión,Holding Real Express,g | holding real express | la g | la orion | linea g | linea orion | orion
+1298,La 30 / La Orión (Holding Real Express),La 30 | La Orión,Holding Real Express,30 | holding real express | la 30 | la orion | linea 30 | linea orion | orion
+1299,La G (Galilea Express),La G,Galilea Express,g | galilea express | la g | linea g
+1300,La B / La Roma B (Roma Internacional),La B | La Roma B,Roma Internacional,b | la b | la roma b | linea b | roma b | roma internacional
+1301,El Chama Blanco (ETRAPERSAC),El Chama Blanco,ETRAPERSAC,chama blanco | el chama blanco | etrapersac
+1302,La 12 (Transportes Huáscar),La 12,Transportes Huáscar,12 | la 12 | linea 12 | transportes huascar
+1303,La V (Nueva Lima),La V,Nueva Lima,la v | linea v | nueva lima | v
+1304,LA CTI / La C-T-I (Corporación de Transportes Interurbano),LA CTI | La C-T-I,Corporación de Transportes Interurbano,c-t-i | corporacion de transportes interurbano | cti | la c-t-i | la cti | linea cti
+1305,La 71A / La 71-A (ETCAPSA),La 71A | La 71-A,ETCAPSA,71-a | 71a | etcapsa | la 71-a | la 71a | linea 71a
+1306,La J (Puente Piedra),La J,Puente Piedra,j | la j | linea j | puente piedra
+1307,Transportes California,Transportes California,,transportes california
+1308,La P (Pegaso Express),La P,Pegaso Express,la p | linea p | p | pegaso express
+1309,La S / La Orión (Holding Real Express),La S | La Orión,Holding Real Express,holding real express | la orion | la s | linea orion | linea s | orion | s
+1310,La 19B / La 19-B / La Orión (Holding Real Express),La 19B | La 19-B | La Orión,Holding Real Express,19-b | 19b | holding real express | la 19-b | la 19b | la orion | linea 19b | linea orion | orion
+1311,La 21 / La Orión (Holding Real Express),La 21 | La Orión,Holding Real Express,21 | holding real express | la 21 | la orion | linea 21 | linea orion | orion
+1312,La 20 (Etranslamar),La 20,Etranslamar,20 | etranslamar | la 20 | linea 20
+1313,Los morados (ETSMARSA),Los morados,ETSMARSA,etsmarsa | los morados | morados
+1314,La 36 (Transcastel),La 36,Transcastel,36 | la 36 | linea 36 | transcastel
+1315,La 37 / La Orión (Holding Real Express),La 37 | La Orión,Holding Real Express,37 | holding real express | la 37 | la orion | linea 37 | linea orion | orion
+1316,La A / La Roma A (Roma Internacional),La A | La Roma A,Roma Internacional,a | la a | la roma a | linea a | roma a | roma internacional
+1317,LA CTI / La C-T-I (Corporación de Transportes Interurbano),LA CTI | La C-T-I,Corporación de Transportes Interurbano,c-t-i | corporacion de transportes interurbano | cti | la c-t-i | la cti | linea cti
+1318,Consorcio Salamanca),Consorcio Salamanca),,consorcio salamanca)
+1319,El Chosicano (Pachacutec Internacional),El Chosicano,Pachacutec Internacional,chosicano | el chosicano | pachacutec internacional
+1320,La Laderas (Laderas de Chillón),La Laderas,Laderas de Chillón,la laderas | laderas | laderas de chillon
+1321,La Santa Rosa de Quives,La Santa Rosa de Quives,,la santa rosa de quives | santa rosa de quives
+1322,La L (Manuel Pardo),La L,Manuel Pardo,l | la l | linea l | manuel pardo
+1323,La Ch / La Z (ETRANSPPISA),La Ch | La Z,ETRANSPPISA,ch | etransppisa | la ch | la z | linea ch | linea z | z
+1324,La Z1 / La Z-1,La Z1 | La Z-1,,la z-1 | la z1 | linea z1 | z-1 | z1
+1325,La Z (Lomas de Zapallal / LODEZA),La Z,Lomas de Zapallal / LODEZA,la z | linea z | lomas de zapallal / lodeza | z
+1326,La T (El Rápido Inversiones),La T,El Rápido Inversiones,el rapido inversiones | la t | linea t | rapido inversiones | t
+1326-X,Aerodirecto Terminal Norte,Aerodirecto Terminal Norte,,aerodirecto terminal norte
+1327,El Retablo,El Retablo,,el retablo | retablo
+1328,La Ensenada (ETECHSA),La Ensenada,ETECHSA,ensenada | etechsa | la ensenada
+1329,La 26 (Los Jilgueros),La 26,Los Jilgueros,26 | jilgueros | la 26 | linea 26 | los jilgueros
+1330,Consorcio Gómez,Consorcio Gómez,,consorcio gomez
+1331,Ñaña - Vallecito,Ñaña - Vallecito,,nana - vallecito
+1332,Pachacutec - Pasamayo,Pachacutec - Pasamayo,,pachacutec - pasamayo
+1333,Santa Rosa - Zapallal,Santa Rosa - Zapallal,,santa rosa - zapallal
+1334,Musa - Cieneguilla,Musa - Cieneguilla,,musa - cieneguilla
+1335,La San Felipe / Los Azules (Inveriones San Felipe),La San Felipe | Los Azules,Inveriones San Felipe,azules | inveriones san felipe | la san felipe | los azules | san felipe
+1336,La F / La Norlima (ETNOLSA),La F | La Norlima,ETNOLSA,etnolsa | f | la f | la norlima | linea f | norlima
+1337,La JC / La J-C,La JC | La J-C,,j-c | jc | la j-c | la jc | linea jc
+1338,La O / La COnsorcio Vïa / La Daewoo,La O | La COnsorcio Vïa | La Daewoo,,consorcio via | daewoo | la consorcio via | la daewoo | la o | linea o | o
+1339,La Etbosa,La Etbosa,,etbosa | la etbosa
+1340,La Triunfo (Etsutrisa),La Triunfo,Etsutrisa,etsutrisa | la triunfo | triunfo
+1341,La 41 (Santa Rosa de Jicamarca),La 41,Santa Rosa de Jicamarca,41 | la 41 | linea 41 | santa rosa de jicamarca
+1342,La A1 / La A-1 (Vara),La A1 | La A-1,Vara,a-1 | a1 | la a-1 | la a1 | linea a1 | vara
+1343,La D (Negociaciones Santa Anita),La D,Negociaciones Santa Anita,d | la d | linea d | negociaciones santa anita
+1344,La C (Negociaciones Santa Anita),La C,Negociaciones Santa Anita,c | la c | linea c | negociaciones santa anita
+1345,La C / La 5 Estrellas (ETRACESA),La C | La 5 Estrellas,ETRACESA,5 estrellas | c | etracesa | la 5 estrellas | la c | linea c
+1346,La ZA / La Z-A (Nuevo San Juan),La ZA | La Z-A,Nuevo San Juan,la z-a | la za | linea za | nuevo san juan | z-a | za
+1347,La 102,La 102,,102 | la 102 | linea 102
+1348,La Jerrbus (ETJBSAC,La Jerrbus (ETJBSAC,,jerrbus (etjbsac | la jerrbus (etjbsac
+1349,La Becami,La Becami,,becami | la becami
+1350,La Urano Tours,La Urano Tours,,la urano tours | urano tours
+1351,La Varant,La Varant,,la varant | varant
+1352,La B1 / La B-1 (Nuevo Amanecer),La B1 | La B-1,Nuevo Amanecer,b-1 | b1 | la b-1 | la b1 | linea b1 | nuevo amanecer
+1353,La D / La H2 / ETH-2,La D | La H2 | ETH-2,,d | eth-2 | h2 | la d | la h2 | linea d | linea h2
+1354,La 119 (El Triunfo),La 119,El Triunfo,119 | el triunfo | la 119 | linea 119 | triunfo
+1355,La verde / La Cruz de Nazareno,La verde | La Cruz de Nazareno,,cruz de nazareno | la cruz de nazareno | la verde | linea verde | verde
+1356,La N (Premier El Nazareno),La N,Premier El Nazareno,la n | linea n | n | premier el nazareno
+1357,La A1 / La A-1 (Etranscosa),La A1 | La A-1,Etranscosa,a-1 | a1 | etranscosa | la a-1 | la a1 | linea a1
+1358,La azul / La Molinero Express (ETRUMESA),La azul | La Molinero Express,ETRUMESA,azul | etrumesa | la azul | la molinero express | linea azul | molinero express
+1359,LA C (ATCR),LA C,ATCR,atcr | c | la c | linea c
+1360,La G / La Musa (Etramusa),La G | La Musa,Etramusa,etramusa | g | la g | la musa | linea g | linea musa | musa
+1361,La B1 / La B-1 (Nuevo Amanecer),La B1 | La B-1,Nuevo Amanecer,b-1 | b1 | la b-1 | la b1 | linea b1 | nuevo amanecer
+1362,La 101 (Rimarz),La 101,Rimarz,101 | la 101 | linea 101 | rimarz
+1375,REZNA (Hermanos Galindo),REZNA,Hermanos Galindo,hermanos galindo | rezna
+1376,La 30 (José Olaya),La 30,José Olaya,30 | jose olaya | la 30 | linea 30
+1377,La 8 (Translima),La 8,Translima,8 | la 8 | linea 8 | translima
+1380,La 12 (Emtratasa),La 12,Emtratasa,12 | emtratasa | la 12 | linea 12
+1381,La 12 / LA A1 / La A-1 (ETUSA),La 12 | LA A1 | La A-1,ETUSA,12 | a-1 | a1 | etusa | la 12 | la a-1 | la a1 | linea 12 | linea a1
+1388,Los rojitos (San Pedro de Pamplona),Los rojitos,San Pedro de Pamplona,los rojitos | rojitos | san pedro de pamplona
+1391,La 41 / La San Juanito,La 41 | La San Juanito,,41 | la 41 | la san juanito | linea 41 | san juanito
+1394,REZNA (Etsdesa),REZNA,Etsdesa,etsdesa | rezna
+1395,La L (Los Laureles de Manchay),La L,Los Laureles de Manchay,l | la l | laureles de manchay | linea l | los laureles de manchay
+1396,La 6B / La 6-B (Turismo Márquez),La 6B | La 6-B,Turismo Márquez,6-b | 6b | la 6-b | la 6b | linea 6b | turismo marquez
+1397,REZNA (Rshedi),REZNA,Rshedi,rezna | rshedi
+1399,La J (San Juanito),La J,San Juanito,j | la j | linea j | san juanito
+1413,La 64 / La Corazón Valiente (Etracovasa),La 64 | La Corazón Valiente,Etracovasa,64 | corazon valiente | etracovasa | la 64 | la corazon valiente | linea 64
+1417,REZNA (Transpimesac),REZNA,Transpimesac,rezna | transpimesac
+1418,REZNA (Tinesa),REZNA,Tinesa,rezna | tinesa
+1421,La L1 / La L-1 (Latinoamérica),La L1 | La L-1,Latinoamérica,l-1 | l1 | la l-1 | la l1 | latinoamerica | linea l1
+1422,La S (San Antonio),La S,San Antonio,la s | linea s | s | san antonio
+1423,La SJ / LA S-J / Los verdes (San José),La SJ | LA S-J | Los verdes,San José,la s-j | la sj | linea sj | los verdes | s-j | san jose | sj | verdes
+1424,La C (Etrosmasac),La C,Etrosmasac,c | etrosmasac | la c | linea c
+1425,La Comas Express (Esticosa),La Comas Express,Esticosa,comas express | esticosa | la comas express
+1426,La Liventur,La Liventur,,la liventur | liventur
+1430,La 78 (Integración San Felipe),La 78,Integración San Felipe,78 | integracion san felipe | la 78 | linea 78
+1431,La 4S / La 4-S,La 4S | La 4-S,,4-s | 4s | la 4-s | la 4s | linea 4s
+1432,La Líder,La Líder,,la lider | lider | linea lider
+1434,La Levtsa,La Levtsa,,la levtsa | levtsa
+1435,La C (Nueva América),La C,Nueva América,c | la c | linea c | nueva america
+1435-X,Aerodirecto Norte,Aerodirecto Norte,,aerodirecto norte
+1436,La Collique / Los azules(Etssacocsac),La Collique | Los azules,Etssacocsac,azules | collique | etssacocsac | la collique | los azules
+1437,La Haydée / La Tahuantinsuyo,La Haydée | La Tahuantinsuyo,,haydee | la haydee | la tahuantinsuyo | tahuantinsuyo
+1438,La JV / La J-V (Sol y Mar),La JV | La J-V,Sol y Mar,j-v | jv | la j-v | la jv | linea jv | sol y mar
+1439,La Ramón Castilla,La Ramón Castilla,,la ramon castilla | ramon castilla
+1440,Consorcio Briza,Consorcio Briza,,consorcio briza
+1441,Consorcio Briza,Consorcio Briza,,consorcio briza
+1442,La P (Avagon),La P,Avagon,avagon | la p | linea p | p
+1443,La California,La California,,california | la california
+1444,La Uvita,La Uvita,,la uvita | linea uvita | uvita
+1445,La BG / LA B-G (Avagon),La BG | LA B-G,Avagon,avagon | b-g | bg | la b-g | la bg | linea bg
+1446,La 87C1 / La 87-C1 / La 87-C-1 (Cruz de Motupe),La 87C1 | La 87-C1 | La 87-C-1,Cruz de Motupe,87-c-1 | 87-c1 | 87c1 | cruz de motupe | la 87-c-1 | la 87-c1 | la 87c1 | linea 87c1
+1447,La B (ETSABEPSA),La B,ETSABEPSA,b | etsabepsa | la b | linea b
+1448,La 87C2 / La 87-C2 / La 87-C-2 (Transportes Kilmer),La 87C2 | La 87-C2 | La 87-C-2,Transportes Kilmer,87-c-2 | 87-c2 | 87c2 | la 87-c-2 | la 87-c2 | la 87c2 | linea 87c2 | transportes kilmer
+1449,El Lorito / La A / Lorito A (Etrarsac),El Lorito | La A | Lorito A,Etrarsac,a | el lorito | etrarsac | la a | linea a | lorito | lorito a
+1450,El Lorito / La B1 / La B-1 (Etrarsac),El Lorito | La B1 | La B-1,Etrarsac,b-1 | b1 | el lorito | etrarsac | la b-1 | la b1 | linea b1 | lorito
+1451,La Q (La Esperanza),La Q,La Esperanza,esperanza | la esperanza | la q | linea q | q
+1456,Los Azules (Vencasa),Los Azules,Vencasa,azules | los azules | vencasa
+1457,La Aries,La Aries,,aries | la aries | linea aries
+1461,La J (Emjupasa),La J,Emjupasa,emjupasa | j | la j | linea j
+1462,La Huandoy / La H / La 27,La Huandoy | La H | La 27,,27 | h | huandoy | la 27 | la h | la huandoy | linea 27 | linea h
+1463,La L / La 108 (La ETCOSA),La L | La 108,La ETCOSA,108 | etcosa | l | la 108 | la etcosa | la l | linea 108 | linea l
+1465,La 27 / La Guadulfo Silva (ETGUSICSA),La 27 | La Guadulfo Silva,ETGUSICSA,27 | etgusicsa | guadulfo silva | la 27 | la guadulfo silva | linea 27
+1466,La San Judas Tadeo,La San Judas Tadeo,,la san judas tadeo | san judas tadeo
+1468,La C (Vipusa),La C,Vipusa,c | la c | linea c | vipusa
+1469,La A / La Evifasa A (Evifasa),La A | La Evifasa A,Evifasa,a | evifasa | evifasa a | la a | la evifasa a | linea a
+1470,La 49 (RUMISAC),La 49,RUMISAC,49 | la 49 | linea 49 | rumisac
+1471,El Triángulo (Lipetsa),El Triángulo,Lipetsa,el triangulo | lipetsa | triangulo
+1472,La A (ETSOSAC),La A,ETSOSAC,a | etsosac | la a | linea a
+1473,La 80 (ETECSA),La 80,ETECSA,80 | etecsa | la 80 | linea 80
+1474,La 48 (Chabaquito),La 48,Chabaquito,48 | chabaquito | la 48 | linea 48
+1475,La 94 / La Colonial (ETCOLSA),La 94 | La Colonial,ETCOLSA,94 | colonial | etcolsa | la 94 | la colonial | linea 94
+1476,La 47 / La Sol de Oro (ETSOSAC),La 47 | La Sol de Oro,ETSOSAC,47 | etsosac | la 47 | la sol de oro | linea 47 | sol de oro
+1477,La 505 (Vishenzo Company),La 505,Vishenzo Company,505 | la 505 | linea 505 | vishenzo company
+1480,El Chosicano / Chosicano verde (Etrescovissa),El Chosicano | Chosicano verde,Etrescovissa,chosicano | chosicano verde | el chosicano | etrescovissa
+1481,La 50 (San Sebastián),La 50,San Sebastián,50 | la 50 | linea 50 | san sebastian
+1482,La S (Aquarius),La S,Aquarius,aquarius | la s | linea s | s
+1483,La 22 (Unidad de Villa),La 22,Unidad de Villa,22 | la 22 | linea 22 | unidad de villa
+1490,La S1 / La S-1 (Emtessa),La S1 | La S-1,Emtessa,emtessa | la s-1 | la s1 | linea s1 | s-1 | s1
+1491,La S (Consorcio Salamanca),La S,Consorcio Salamanca,consorcio salamanca | la s | linea s | s
+1492,La M (Salvador),La M,Salvador,la m | linea m | m | salvador
+1493,La 10A / La 10-A (ETCAPSA),La 10A | La 10-A,ETCAPSA,10-a | 10a | etcapsa | la 10-a | la 10a | linea 10a
+1494,La 78 (San Felipe),La 78,San Felipe,78 | la 78 | linea 78 | san felipe

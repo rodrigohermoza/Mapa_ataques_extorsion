@@ -1,0 +1,18 @@
+# Entorno local
+.venv
+__pycache__/
+*.pyc
+.DS_Store
+
+# Nunca subir cargos ni documentos con datos personales
+solicitudes/cargo*
+*cargo*.pdf
+
+# Textos de artículos: derechos de autor, solo en disco local
+data/raw/articulos/
+data/raw/archivo_texto.log
+
+# Respuesta de la ATU: la carta y el memorando traen datos personales. Los datos públicos van a data/raw/atu/
+# (sin el .xlsx, cuyos metadatos traen nombres de funcionarios; va su contenido en CSV)
+data/ATU/
+data/raw/atu/*.xlsx
